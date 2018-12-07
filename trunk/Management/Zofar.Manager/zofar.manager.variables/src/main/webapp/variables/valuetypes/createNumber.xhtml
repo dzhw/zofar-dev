@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Variables (Value Types) Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{variables.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<h1>Create Number Type</h1>
+
+		<p>
+			<h:panelGrid id="grid" columns="2">
+				<h:outputLabel value="Identifier:" for="identifier" />
+				<h:inputText id="identifier" value="#{valueType.identifier}" />
+				<h:outputLabel value="Description:" for="description" />
+				<h:inputText id="description" value="#{valueType.description}" />
+				<h:outputLabel value="Measurement Level:" for="measurementLevel" />
+				<h:selectOneMenu id="measurementLevel" value="#{measurementLevel}">
+					<f:selectItems value="#{valueType.measurementLevels}" />
+				</h:selectOneMenu>
+
+				<h:outputLabel value="DecimalPlaces:" for="decimalplaces" />
+				<h:inputText id="decimalplaces" value="#{valueType.decimalPlaces}" />
+				<h:outputLabel value="Minimum:" for="minimum" />
+				<h:inputText id="minimum" value="#{valueType.minimum}" />
+				<h:outputLabel value="Maximum:" for="maximum" />
+				<h:inputText id="maximum" value="#{valueType.maximum}" />
+
+			</h:panelGrid>
+		</p>
+		<h:commandButton value="Save" actionListener="#{valueType.createNumber}" action="save" />
+		<h:commandButton value="Back to Value  Type Index" action="sub1_index" />
+	</h:form>
+</h:body>
+</html>

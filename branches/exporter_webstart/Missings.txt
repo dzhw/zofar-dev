@@ -1,0 +1,21 @@
+Missings im Export
+------------------
+
+Frage wurde gesehen, aber nicht beantwortet ==>	NOT ANSWERED
+Frage wurde nicht angezeigt, bzw. die Seite,
+auf der sich die Frage befindet angesteuert ==>	(SC) UNSELECTED[*], (MC) UNSET, (OPEN) EMPTY, (Variable) NOT CALCULATED
+
+[*] Auswahl eines Missings in einer SingleChoice-Frage
+
+1. Existiert in einer SC-Frage genau eine Antwort-Option, die als Missing markiert ist, so wird diese ausgewählt.
+2. Existieren in einer SC-Frage mehrere Antwort-Optionen, die als Missing markiert sind, so wird die Antwort-Option ausgewählt, die dem Default-Missing-Wert entspricht.
+3. Existiert in einer SC-Frage keine einzelene Antwort-Option, die als Missing markiert ist, oder entspricht keine von mehreren als Missing markierten Antwort-Optionen
+   dem Default-Missing-Wert, so wird UNSELECTED ausgewählt.
+   
+NICHT BEANTWORTET 
+NOT ANSWERED = -2
+
+NICHT GESEHEN
+UNSELECTED, EMPTY, UNSET, NOT CALCULATED = -1
+
+DEFAULT-Missing	= -1

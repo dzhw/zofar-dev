@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:variables>
+		<!-- Definition der Variablen -->
+		<zofar:variable name="var1" type="string"></zofar:variable>
+		<zofar:variable name="var2" type="boolean"></zofar:variable>
+		<zofar:variable name="var3" type="number"></zofar:variable>
+		<zofar:variable name="var4" type="singleChoiceAnswerOption"></zofar:variable>
+	</zofar:variables>
+	
+	<!-- Startseite -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+			<zofar:title uid="t1">Das ist eine Zofar Befragung.
+			</zofar:title>
+			<zofar:text uid="t2">Hier haben Sie die Möglichkeit eine
+				Befragung zu erstellen.
+			</zofar:text>
+		</zofar:header>
+		<zofar:body uid="body">
+			<!-- Bereich für Fragen -->
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation-->
+			
+			<!-- bedingter Seitenübergang -->
+			<zofar:transition target="page2" condition="false" />
+			
+			<!-- unbedingter Seitenübergang -->
+			<zofar:transition target="page1" />
+		</zofar:transitions>
+	</zofar:page>
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

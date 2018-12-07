@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/data/jpa
+        http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan
+        base-package="de.zofar.management.persistence.entities" />
+
+    <context:property-placeholder order="10"
+        location="classpath:database.properties" />
+
+    <bean id="pooledDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+        destroy-method="close">
+        <property name="driverClass" value="${jdbc.driver}" />
+        <property name="jdbcUrl" value="${jdbc.url}" />
+        <property name="user" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="maxPoolSize" value="${connectionPool.maxSize}" />
+        <property name="maxStatements" value="${connectionPool.maxStatements}" />
+        <property name="minPoolSize" value="${connectionPool.minSize}" />
+    </bean>
+
+    <bean id="persistenceUnitManager"
+        class="org.springframework.data.jpa.support.MergingPersistenceUnitManager">
+        <property name="defaultDataSource" ref="pooledDataSource" />
+    </bean>
+
+    <bean id="entityManagerFactory"
+        class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="management.persistence" />
+        <property name="dataSource" ref="pooledDataSource" />
+        <property name="persistenceUnitManager" ref="persistenceUnitManager" />
+        <property name="jpaVendorAdapter">
+            <bean
+                class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="showSql" value="false" />
+                <!-- <property name="generateDdl" value="true" /> -->
+                <property name="databasePlatform" value="${hibernate.dialect}" />
+            </bean>
+        </property>
+    </bean>
+
+    <jpa:repositories base-package="de.zofar.management.persistence.daos" 
+        repository-impl-postfix="Impl" />
+
+    <context:annotation-config />
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager" />
+
+    <tx:annotation-driven />
+
+</beans>

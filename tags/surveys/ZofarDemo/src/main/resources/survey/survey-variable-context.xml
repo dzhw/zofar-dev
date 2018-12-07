@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd" default-autowire="byName" xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <bean name="sessionController" class="de.his.zofar.presentation.surveyengine.controller.SessionController" scope="session"/>
+  <bean name="url" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="url"/>
+  </bean>
+  <bean name="offen" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="offen"/>
+  </bean>
+  <bean name="filter1" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="filter1"/>
+    <constructor-arg value="ao1"/>
+  </bean>
+  <bean name="einfach" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="einfach"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="Wert 1"/>
+        <entry key="ao2" value="Wert 2"/>
+        <entry key="ao3" value="Wert 3"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="filter2" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="filter2"/>
+    <constructor-arg value="ao1"/>
+  </bean>
+  <bean name="v214" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v214"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v215" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v215"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v216" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v216"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v217" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v217"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v218" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v218"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v219" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v219"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v220" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v220"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v221" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v221"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v222" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v222"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v223" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v223"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v224" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v224"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v225" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v225"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v226" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v226"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v227" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v227"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v228" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v228"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v229" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v229"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-999"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="stsiteig" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="stsiteig"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-12"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="stwirteig" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="stwirteig"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map>
+        <entry key="ao6" value="-12"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="v33" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v33"/>
+  </bean>
+  <bean name="v34" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v34"/>
+  </bean>
+  <bean name="v35" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v35"/>
+  </bean>
+  <bean name="v36" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v36"/>
+  </bean>
+  <bean name="v37" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v37"/>
+  </bean>
+  <bean name="v38" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v38"/>
+  </bean>
+  <bean name="v39" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v39"/>
+  </bean>
+  <bean name="v40" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v40"/>
+  </bean>
+  <bean name="v41" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v41"/>
+  </bean>
+  <bean name="v42" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v42"/>
+  </bean>
+  <bean name="v43" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v43"/>
+  </bean>
+  <bean name="v44" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v44"/>
+  </bean>
+  <bean name="v45" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v45"/>
+  </bean>
+  <bean name="v46" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v46"/>
+  </bean>
+  <bean name="v47" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v47"/>
+  </bean>
+  <bean name="v48" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v48"/>
+  </bean>
+  <bean name="v49" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v49"/>
+  </bean>
+  <bean name="v50" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v50"/>
+  </bean>
+  <bean name="v51" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v51"/>
+  </bean>
+  <bean name="v52" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v52"/>
+  </bean>
+  <bean name="v53" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v53"/>
+  </bean>
+  <bean name="v841" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v841"/>
+  </bean>
+  <bean name="v842" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v842"/>
+  </bean>
+  <bean name="v843" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v843"/>
+  </bean>
+  <bean name="v844" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v844"/>
+  </bean>
+  <bean name="v845" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v845"/>
+  </bean>
+  <bean name="v846" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v846"/>
+  </bean>
+  <bean name="v847" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v847"/>
+  </bean>
+  <bean name="v848" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v848"/>
+  </bean>
+  <bean name="v849" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v849"/>
+  </bean>
+  <bean name="v850" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v850"/>
+  </bean>
+  <bean name="v851" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v851"/>
+  </bean>
+  <bean name="v852" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v852"/>
+  </bean>
+  <bean name="v853" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v853"/>
+  </bean>
+  <bean name="v854" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v854"/>
+  </bean>
+  <bean name="v855" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v855"/>
+  </bean>
+  <bean name="v856" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v856"/>
+  </bean>
+  <bean name="v857" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v857"/>
+  </bean>
+  <bean name="v858" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v858"/>
+  </bean>
+  <bean name="v859" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v859"/>
+  </bean>
+  <bean name="v860" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v860"/>
+  </bean>
+  <bean name="v861" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v861"/>
+  </bean>
+  <bean name="o53vfbkzahl" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53vfbkzahl"/>
+  </bean>
+  <bean name="varconsentF5" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="varconsentF5"/>
+    <constructor-arg value="aoc"/>
+  </bean>
+  <bean name="o53vfbkkwill" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53vfbkkwill"/>
+    <constructor-arg value="ao1"/>
+  </bean>
+  <bean name="o53vfbkkwun" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53vfbkkwun"/>
+    <constructor-arg value="ao2"/>
+  </bean>
+  <bean name="o53vfbkknns" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53vfbkknns"/>
+    <constructor-arg value="ao3"/>
+  </bean>
+  <bean name="o53vfbkkmed" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53vfbkkmed"/>
+    <constructor-arg value="ao4"/>
+  </bean>
+  <bean name="o53vfbkkson" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53vfbkkson"/>
+    <constructor-arg value="ao5"/>
+  </bean>
+  <bean name="o53vfbkksox" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53vfbkksox"/>
+  </bean>
+  <bean name="o53gbmkind1" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind1"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbjkind1" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind1"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao4" value="2013"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao18" value="2000"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbmkind2" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind2"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbjkind2" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind2"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao4" value="2013"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao18" value="2000"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbmkind3" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind3"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbjkind3" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind3"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao4" value="2013"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao18" value="2000"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbmkind4" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind4"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbjkind4" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind4"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao4" value="2013"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao18" value="2000"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbmkind5" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind5"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao4" value="4"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbjkind5" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind5"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao0" value="0"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao4" value="2013"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao18" value="2000"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="language" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="language"/>
+  </bean>
+  <bean name="v767" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v767"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="v768" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v768"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="v769" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v769"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="v770" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v770"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="v771" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v771"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="v772" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="v772"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="o53gbmkind1dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind1dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="Oktober"/>
+        <entry key="ao11" value="November"/>
+        <entry key="ao12" value="Dezember"/>
+        <entry key="ao7" value="Juli"/>
+        <entry key="ao6" value="Juni"/>
+        <entry key="ao9" value="September"/>
+        <entry key="ao8" value="August"/>
+        <entry key="ao1" value="Januar"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="März"/>
+        <entry key="ao2" value="Februar"/>
+        <entry key="ao5" value="Mai"/>
+        <entry key="ao4" value="April"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="o53gbmkind3dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind3dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="Oktober"/>
+        <entry key="ao11" value="November"/>
+        <entry key="ao12" value="Dezember"/>
+        <entry key="ao7" value="Juli"/>
+        <entry key="ao6" value="Juni"/>
+        <entry key="ao9" value="September"/>
+        <entry key="ao8" value="August"/>
+        <entry key="ao1" value="Januar"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="März"/>
+        <entry key="ao2" value="Februar"/>
+        <entry key="ao5" value="Mai"/>
+        <entry key="ao4" value="April"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="PRELOADfullname" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="PRELOADfullname"/>
+  </bean>
+  <bean name="PRELOADpanel" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="PRELOADpanel"/>
+  </bean>
+  <bean name="o53gbjkind2dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind2dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000 und früher"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="o53gbjkind5dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind5dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000 und früher"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="PRELOADemail" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="PRELOADemail"/>
+  </bean>
+  <bean name="o53gbmkind2dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind2dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="Oktober"/>
+        <entry key="ao11" value="November"/>
+        <entry key="ao12" value="Dezember"/>
+        <entry key="ao7" value="Juli"/>
+        <entry key="ao6" value="Juni"/>
+        <entry key="ao9" value="September"/>
+        <entry key="ao8" value="August"/>
+        <entry key="ao1" value="Januar"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="März"/>
+        <entry key="ao2" value="Februar"/>
+        <entry key="ao5" value="Mai"/>
+        <entry key="ao4" value="April"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="o53gbmkind5dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind5dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="Oktober"/>
+        <entry key="ao11" value="November"/>
+        <entry key="ao12" value="Dezember"/>
+        <entry key="ao7" value="Juli"/>
+        <entry key="ao6" value="Juni"/>
+        <entry key="ao9" value="September"/>
+        <entry key="ao8" value="August"/>
+        <entry key="ao1" value="Januar"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="März"/>
+        <entry key="ao2" value="Februar"/>
+        <entry key="ao5" value="Mai"/>
+        <entry key="ao4" value="April"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="PRELOADgroup" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="PRELOADgroup"/>
+  </bean>
+  <bean name="o53gbjkind4dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind4dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000 und früher"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="o53gbmkind4dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbmkind4dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="10"/>
+        <entry key="ao11" value="11"/>
+        <entry key="ao12" value="12"/>
+        <entry key="ao7" value="7"/>
+        <entry key="ao6" value="6"/>
+        <entry key="ao9" value="9"/>
+        <entry key="ao8" value="8"/>
+        <entry key="ao1" value="1"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="Oktober"/>
+        <entry key="ao11" value="November"/>
+        <entry key="ao12" value="Dezember"/>
+        <entry key="ao7" value="Juli"/>
+        <entry key="ao6" value="Juni"/>
+        <entry key="ao9" value="September"/>
+        <entry key="ao8" value="August"/>
+        <entry key="ao1" value="Januar"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="März"/>
+        <entry key="ao2" value="Februar"/>
+        <entry key="ao5" value="Mai"/>
+        <entry key="ao4" value="April"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="o53gbjkind3dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind3dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000 und früher"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+  </bean>
+  <bean name="o53gbjkind1dropDown" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="o53gbjkind1dropDown"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="0"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+    <property name="labels">
+      <map>
+        <entry key="ao10" value="2008"/>
+        <entry key="ao11" value="2007"/>
+        <entry key="ao12" value="2006"/>
+        <entry key="ao14" value="2004"/>
+        <entry key="ao7" value="2010"/>
+        <entry key="ao13" value="2005"/>
+        <entry key="ao6" value="2011"/>
+        <entry key="ao16" value="2002"/>
+        <entry key="ao15" value="2003"/>
+        <entry key="ao8" value="2009"/>
+        <entry key="ao18" value="2000 und früher"/>
+        <entry key="ao17" value="2001"/>
+        <entry key="ao1" value="2016"/>
+        <entry key="ao0" value="Bitte wählen"/>
+        <entry key="ao3" value="2014"/>
+        <entry key="ao2" value="2015"/>
+        <entry key="ao5" value="2012"/>
+        <entry key="ao4" value="2013"/>
+      </map>
+    </property>
+  </bean>
+</beans>

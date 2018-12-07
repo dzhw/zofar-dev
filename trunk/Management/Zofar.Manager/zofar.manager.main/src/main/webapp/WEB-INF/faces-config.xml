@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
+	version="2.1">
+	<application>
+		<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+	</application>
+	<lifecycle>
+		<phase-listener>de.dzhw.manager.main.security.ModuleAccessListener</phase-listener>
+	</lifecycle>
+
+	<navigation-rule>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>root_index</from-outcome>
+			<to-view-id>/index.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/modules/questionnaire/*</from-view-id>
+		<navigation-case>
+			<from-outcome>qml_details</from-outcome>
+			<if>#{managementsession.projectExist()}</if>
+			<to-view-id>/modules/questionnaire/qmlDetails.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>project_details</from-outcome>
+			<if>#{managementsession.projectExist()}</if>
+			<to-view-id>/modules/questionnaire/projectDetails.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-outcome>project_create</from-outcome>
+			<to-view-id>/modules/questionnaire/createProject.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>project_load</from-outcome>
+			<to-view-id>/modules/questionnaire/loadProject.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-outcome>project_error</from-outcome>
+			<to-view-id>/modules/questionnaire/error.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-outcome>module_index</from-outcome>
+			<to-view-id>/modules/questionnaire/index.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+</faces-config>

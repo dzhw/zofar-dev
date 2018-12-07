@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui:composition template="template/special.xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<ui:param name="userpassHandler"
+		value="#{facesContext.externalContext.requestContextPath}/j_spring_security_check" />
+	<ui:param name="tokenHandler"
+		value="#{facesContext.externalContext.requestContextPath}/special/login.html" />
+	<ui:param name="method"
+		value="#{loginController.loginMode() == 'TOKEN' ? 'GET' : 'POST'}" />
+	<ui:param name="target"
+		value="#{loginController.loginMode() == 'TOKEN' ? tokenHandler : userpassHandler}" />
+
+	<ui:define name="template-content">
+		#{loginController.loginMode()}
+		<ui:fragment rendered="#{loginController.loginMode() == 'TOKEN'}">
+			<ui:fragment rendered="#{(not empty param['zofar_token']) and (empty param['message'])}">
+				#{loginController.directLogin(param['zofar_token'])}
+			</ui:fragment>
+		</ui:fragment>
+		
+		<ui:fragment rendered="#{param['message']=='SessionExpired'}">
+			<b>Ihre Sitzung ist abgelaufen!</b><br></br>
+	        <p>Aufgrund der vergangener Zeitspanne seit Ihrer letzten Aktivität im Fragebogen wurden Sie aus Sicherheitsgründen automatisch abgemeldet. Bitte melden Sie sich erneut mit Ihrem Zugangspasswort (token) an. Falls Sie die Befragung durch anklicken eines per Email erhaltenen Links gestartet haben, können Sie diesen Link nochmals anklicken, um mit der Befragung fortzufahren. Nach erfolgreicher Anmeldung werden Sie automatisch auf die zuletzt besuchte Seite geleitet.</p>
+		</ui:fragment>
+		<ui:fragment rendered="#{param['message']=='LoggedOut'}">
+			<b>Ihre Abmeldung war erfolgreich!</b><br></br>
+	        <p>Sie wurden erfolgreich vom System abgemeldet. Sie können sich jederzeit wieder anmelden, um die Befragung weiter zu bearbeiten. Sie werden dann automatisch auf die zuletzt besuchte Seite geleitet.</p>
+		</ui:fragment>
+		<ui:fragment rendered="#{param['message']=='AuthentificationFailed'}">
+			<b>Login fehlgeschlagen!</b><br></br>
+	        <p></p>
+		</ui:fragment>
+		
+		<p></p>
+		
+		<ui:fragment rendered="#{loginController.loginMode() == 'TOKEN'}">
+			<div class="form_line">
+				<div class="line_label">
+					<h:outputLabel value="Token: ">
+						<input type="text" name="zofar_token" tabindex="1" value="#{param['zofar_token']}" size="20" checked="checked" />
+					</h:outputLabel>
+				</div>
+			</div>
+		</ui:fragment>
+		<ui:fragment rendered="#{loginController.loginMode() != 'TOKEN'}">
+			<div class="form_line">
+				<div class="line_label">
+					<h:outputLabel value="Username:">
+	
+					</h:outputLabel>
+					<input type="text" name="j_username" tabindex="1" size="20"
+						checked="checked" />
+				</div>
+			</div>
+	
+			<div class="form_line">
+				<div class="line_label">
+					<br></br>
+					<h:outputLabel value="Password: ">
+	
+					</h:outputLabel>
+					<input type="password" name="j_password" size="20" tabindex="2" />
+				</div>
+			</div>
+		</ui:fragment>
+	</ui:define>
+	
+	<ui:define name="template-buttons">
+		<input type="submit" value="Login" tabindex="3"
+			style="text-align: center;" class="zo-button" />
+	</ui:define>
+</ui:composition>

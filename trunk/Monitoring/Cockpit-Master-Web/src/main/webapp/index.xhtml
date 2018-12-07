@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>index JSF page</title>
+</h:head>
+<h:body>
+	<h:form id="indexPageForm">
+		<h2>Hauptseite</h2>
+		User: #{userOutput.userName} <br />
+		<ui:repeat value="#{userOutput.getSurveys()}" var="survey"
+			varStatus="surveyStatus">
+			<h:outputText value="#{survey.survey_id}" />
+			<rich:dataGrid value="#{survey.getServer()}" var="serverItem"
+				columns="2" elements="4" width="600px" border="0">
+				<rich:panel bodyClass="pbody">
+					<f:facet name="header">
+						<h:outputText value="#{serverItem.address}"></h:outputText>
+					</f:facet>
+					<h:panelGrid columns="2">
+						<h:outputText value="Participated :" />
+						<h:outputText value="#{serverItem.participated}" />
+						<h:outputText value="Finished :" />
+						<h:outputText value="#{serverItem.finished}" />
+						<h:outputText value="DB URL :" />
+						<h:outputText value="#{serverItem.healthStatus.location}" />
+						<h:outputText value="CPU load :" />
+						<h:outputText value="#{serverItem.healthStatus.load} %" />
+						<h:outputText value="Memory Used :" />
+						<h:outputText
+							value=" #{userOutput.convertMemoryUsage(serverItem.healthStatus.usedHeap)}" />
+						<h:outputText value="Last update :" />
+						<h:outputText
+							value="#{userOutput.convertTime(serverItem.lastContact)}" />
+					</h:panelGrid>
+					<p:chart type="bar" model="#{userOutput.convertExitPagesAsGraph(serverItem.exitPages)}"
+						style="height:300px;width:1400px;" />
+				</rich:panel>
+				<f:facet name="footer">
+					<rich:dataScroller />
+				</f:facet>
+			</rich:dataGrid>
+		</ui:repeat>
+		<!-- 		<ui:repeat value="#{userOutput.getSurveys()}" var="survey"
+			varStatus="surveyStatus">
+			<h:panelGrid columns="2">
+				<h:outputText value="#{survey.survey_id}" />
+				<ui:repeat value="#{survey.getServer()}" var="serverItem"
+					varStatus="serverStatus">
+					<h:outputText value="Address : #{serverItem.address}" />
+					<br />
+					<h:outputText value="Participated : #{serverItem.participated}" />
+					<br />
+					<h:outputText value="Finished : #{serverItem.finished}" />
+					<br />
+
+					<h:dataTable id="row"
+						value="#{userOutput.convertExitPages(serverItem.exitPages)}"
+						var="entry">
+						<h:column id="column1">
+							<f:facet name="header">
+								<h:outputText value="Page"></h:outputText>
+							</f:facet>
+							<h:outputText value="#{entry.key}"></h:outputText>
+						</h:column>
+						<h:column id="column2">
+							<f:facet name="header">
+								<h:outputText value="Count"></h:outputText>
+							</f:facet>
+							<h:outputText value="#{entry.value}"></h:outputText>
+						</h:column>
+					</h:dataTable>
+
+					<br />
+					<h:outputText value="DB URL : #{serverItem.healthStatus.location}" />
+					<br />
+					<h:outputText value="CPU load : #{serverItem.healthStatus.load} %" />
+					<br />
+					<h:outputText
+						value="Memory Used : #{userOutput.convertMemoryUsage(serverItem.healthStatus.usedHeap)}" />
+					<br />
+					<h:outputText
+						value="Last update : #{userOutput.convertTime(serverItem.lastContact)}" />
+					<br />
+					<hr />
+				</ui:repeat>
+			</h:panelGrid>
+			<br />
+			<br />
+		</ui:repeat> -->
+		<br />
+		<h:commandButton id="updateBt" value="Update">
+			<f:actionListener binding="#{userOutput}" />
+		</h:commandButton>
+		<h:outputLink value="#{request.contextPath}/j_spring_security_logout">Logout</h:outputLink>
+	</h:form>
+</h:body>
+</html>

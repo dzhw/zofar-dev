@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:matrix="http://java.sun.com/jsf/composite/matrix" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:answer="http://java.sun.com/jsf/composite/answer">
+  <ui:param name="progress" value="88"/>
+  <ui:define name="template-content">
+    <container:section id="page15">
+      <matrix:singleChoiceMatrix id="msc">
+        <f:facet name="header">
+          <text:question id="q1">#{msgs['page15.b.msc.q1_0']}</text:question>
+        </f:facet>
+        <matrix:singleChoiceMatrixResponseDomain id="rd" noResponseOptions="1">
+          <f:facet name="header">
+            <text:text id="t1"/>
+          </f:facet>
+          <matrix:singleChoiceMatrixItem id="i1">
+            <f:facet name="header">
+              <text:question id="qq1" block="true">#{msgs['page15.b.msc.rd.i1.qq1_0']}</text:question>
+            </f:facet>
+            <answer:dropDownMissingResponseDomain value="#{o53gbmkind5.valueId}" var="#{o53gbmkind5}">
+              <f:facet name="dropDown">
+                <answer:comboSingleChoiceResponseDomain value="#{o53gbmkind5dropDown.valueId}" id="dropDown" showValues="false">
+                  <answer:singleOption id="ao0" itemValue="0">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao0.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao1" itemValue="1">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao1.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao2" itemValue="2">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao2.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao3" itemValue="3">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao3.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao4" itemValue="4">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao4.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao5" itemValue="5">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao5.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao6" itemValue="6">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao6.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao7" itemValue="7">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao7.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao8" itemValue="8">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao8.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao9" itemValue="9">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao9.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao10" itemValue="10">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao10.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao11" itemValue="11">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao11.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao12" itemValue="12">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i1.rd1.ao12.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                </answer:comboSingleChoiceResponseDomain>
+              </f:facet>
+            </answer:dropDownMissingResponseDomain>
+          </matrix:singleChoiceMatrixItem>
+          <matrix:singleChoiceMatrixItem id="i2">
+            <f:facet name="header">
+              <text:question id="q1" block="true">#{msgs['page15.b.msc.rd.i2.q1_0']}</text:question>
+            </f:facet>
+            <answer:dropDownMissingResponseDomain value="#{o53gbjkind5.valueId}" var="#{o53gbjkind5}">
+              <f:facet name="dropDown">
+                <answer:comboSingleChoiceResponseDomain value="#{o53gbjkind5dropDown.valueId}" id="dropDown" showValues="false">
+                  <answer:singleOption id="ao0" itemValue="0">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao0.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao1" itemValue="2016">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao1.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao2" itemValue="2015">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao2.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao3" itemValue="2014">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao3.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao4" itemValue="2013">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao4.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao5" itemValue="2012">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao5.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao6" itemValue="2011">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao6.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao7" itemValue="2010">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao7.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao8" itemValue="2009">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao8.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao10" itemValue="2008">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao10.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao11" itemValue="2007">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao11.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao12" itemValue="2006">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao12.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao13" itemValue="2005">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao13.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao14" itemValue="2004">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao14.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao15" itemValue="2003">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao15.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao16" itemValue="2002">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao16.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao17" itemValue="2001">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao17.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                  <answer:singleOption id="ao18" itemValue="2000">
+                    <f:facet name="labels">
+                      <text:responseOption id="label">#{msgs['page15.b.msc.rd.i2.rd2.ao18.label']}</text:responseOption>
+                    </f:facet>
+                  </answer:singleOption>
+                </answer:comboSingleChoiceResponseDomain>
+              </f:facet>
+            </answer:dropDownMissingResponseDomain>
+          </matrix:singleChoiceMatrixItem>
+        </matrix:singleChoiceMatrixResponseDomain>
+      </matrix:singleChoiceMatrix>
+      <container:section id="section">
+        <f:facet name="header">
+          <text:text id="text" block="true">#{msgs['page15.b.section.text_0']}</text:text>
+        </f:facet>
+      </container:section>
+    </container:section>
+  </ui:define>
+</ui:composition>

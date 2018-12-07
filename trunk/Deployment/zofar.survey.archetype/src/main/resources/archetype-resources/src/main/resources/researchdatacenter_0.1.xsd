@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.dzhw.eu/zofar/xml/researchdatacenter"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:research="http://www.dzhw.eu/zofar/xml/researchdatacenter"
+	elementFormDefault="qualified">
+
+	<xs:simpleType name="variabletypes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="variableLabel" />
+			<xs:enumeration value="variableValue" />
+			<xs:enumeration value="remark" />
+			<xs:enumeration value="note" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="triggertypes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="derivation" />
+			<xs:enumeration value="remark" />
+			<xs:enumeration value="note" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="questiontypes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="remark" />
+			<xs:enumeration value="note" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:complexType name="variableType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="research:variabletypes" name="type" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="triggerType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="research:triggertypes" name="type" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="questionType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="research:questiontypes" name="type" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="variableContainerType">
+		<xs:choice>
+			<xs:element name="comment" type="research:variableType" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="questionContainerType">
+		<xs:choice>
+			<xs:element name="comment" type="research:questionType" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="triggerContainerType">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element name="comment" type="research:triggerType" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+</xs:schema>

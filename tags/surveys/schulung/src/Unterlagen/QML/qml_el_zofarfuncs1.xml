@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+
+	</zofar:preloads>
+	<zofar:variables>
+		<!-- Definition der Variablen -->
+		<zofar:variable name="sc1" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="mc1" type="boolean"></zofar:variable>
+		<zofar:variable name="mc2" type="boolean"></zofar:variable>
+		<zofar:variable name="open1" type="string"></zofar:variable>
+
+	</zofar:variables>
+
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<zofar:questionOpen size="25" uid="o1" variable="open1">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:prefix>
+					<zofar:label uid="label">Text:</zofar:label>
+				</zofar:prefix>
+			</zofar:questionOpen>
+
+			<zofar:questionSingleChoice uid="SingleChoice1">
+				<zofar:header>
+					<!-- Fragenkopf -->
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:responseDomain variable="sc1" uid="rdc"
+					type="radio">
+					<!-- Antwortcontainer -->
+					<!-- Antwortoption 1 -->
+					<zofar:answerOption uid="ao1" value="Wert1"
+						label="Label1" />
+					<!-- Antwortoption 2 -->
+					<zofar:answerOption uid="ao2" value="Wert2"
+						label="Label2" />
+					<!-- Missingoption 1 -->
+					<zofar:answerOption uid="ao3" value="Missing Wert 1"
+						label="weiß ich nicht" missing="true" />
+				</zofar:responseDomain>
+			</zofar:questionSingleChoice>
+
+			<zofar:multipleChoice uid="mc1">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+
+				<zofar:responseDomain uid="rd">
+					<zofar:answerOption uid="ao1" variable="mc1" />
+					<zofar:answerOption uid="ao2" label="Dies ist ein Label"
+						variable="mc2" />
+				</zofar:responseDomain>
+			</zofar:multipleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="page1" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page1">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<!-- Einfache EL Ausdrücke -->
+			<zofar:display uid="cond1a">
+				<display:text uid="t1">sc1.value = </display:text>
+				<display:text uid="t2">#{sc1.value}</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond1b">
+				<display:text uid="t1">sc1.valueId = </display:text>
+				<display:text uid="t2">#{sc1.valueId}</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond1c">
+				<display:text uid="t1">sc1 = </display:text>
+				<display:text uid="t2">#{sc1}</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond1d">
+				<display:text uid="t1">sc1.value == 'Missing Wert 1' :
+				</display:text>
+				<display:text uid="t2">#{sc1.value == 'Missing Wert 1'}
+				</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond1e">
+				<display:text uid="t1">sc1.valueId == 'ao3' :
+				</display:text>
+				<display:text uid="t2">#{sc1.valueId == 'ao3'}
+				</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="break1">
+				<display:text uid="t1">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond2a">
+				<display:text uid="t1">open1.value = </display:text>
+				<display:text uid="t2">#{open1.value}</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond2b">
+				<display:text uid="t1">open1 = </display:text>
+				<display:text uid="t2">#{open1}</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond2c">
+				<display:text uid="t1">open1.value == 'banane' :
+				</display:text>
+				<display:text uid="t2">#{open1.value == 'banane'}
+				</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond2d">
+				<display:text uid="t1">zofar.startwith(open1.value,'blau') :
+				</display:text>
+				<display:text uid="t2">#{zofar.startwith(open1.value,'blau')}
+				</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="break2">
+				<display:text uid="t1">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond3a">
+				<display:text uid="t1">mc1.value = </display:text>
+				<display:text uid="t2">#{mc1.value}</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond3b">
+				<display:text uid="t1">mc1 = </display:text>
+				<display:text uid="t2">#{mc1}</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond3c">
+				<display:text uid="t1">mc2.value = </display:text>
+				<display:text uid="t2">#{mc2.value}</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond3d">
+				<display:text uid="t1">mc2 = </display:text>
+				<display:text uid="t2">#{mc2}</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+			<zofar:display uid="cond3e">
+				<display:text uid="t1">zofar.ifthenelse(mc2.value,'huschel','puschel')
+					: </display:text>
+				<display:text uid="t2">#{zofar.ifthenelse(mc2.value,'huschel','puschel')}
+				</display:text>
+				<display:text uid="t3">#{layout.BREAK}</display:text>
+			</zofar:display>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="end" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

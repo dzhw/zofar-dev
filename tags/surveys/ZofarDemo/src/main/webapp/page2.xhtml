@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:question="http://java.sun.com/jsf/composite/question" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:answer="http://java.sun.com/jsf/composite/answer">
+  <ui:param name="progress" value="11"/>
+  <ui:define name="template-content">
+    <container:section id="page2">
+      <question:singleChoice id="SingleChoice1">
+        <f:facet name="header">
+          <text:question id="question1">#{msgs['page2.body.SingleChoice1.question1_0']}</text:question>
+          <text:instruction id="instruction1">#{msgs['page2.body.SingleChoice1.instruction1_0']}</text:instruction>
+        </f:facet>
+        <answer:radioButtonSingleChoiceResponseDomain value="#{einfach.valueId}" var="#{einfach}" id="rdc" showValues="false" missingSeparated="true">
+          <answer:singleOption itemValue="Wert 1" id="ao1" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page2.body.SingleChoice1.rdc.ao1.label']}</text:responseOption>
+            </f:facet>
+          </answer:singleOption>
+          <answer:singleOption itemValue="Wert 2" id="ao2" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page2.body.SingleChoice1.rdc.ao2.label']}</text:responseOption>
+            </f:facet>
+          </answer:singleOption>
+          <answer:singleOption itemValue="Wert 3" id="ao3" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page2.body.SingleChoice1.rdc.ao3.label']}</text:responseOption>
+            </f:facet>
+          </answer:singleOption>
+        </answer:radioButtonSingleChoiceResponseDomain>
+      </question:singleChoice>
+      <container:section id="sw" rendered="#{navigatorBean.isSame() and einfach==''}">
+        <f:facet name="header">
+          <text:text id="t" block="true">#{msgs['page2.body.sw.t_0']}</text:text>
+        </f:facet>
+        <question:multipleChoice id="mc">
+          <f:facet name="header">
+            <text:question id="qm"/>
+          </f:facet>
+          <answer:multipleChoiceResponseDomain id="rd" missingSeparated="true">
+            <answer:multipleOption value="#{filter2.value}" id="ao1" missing="false">
+              <f:facet name="labels">
+                <text:responseOption id="label">#{msgs['page2.body.sw.bb.mc.rd.ao1.label']}</text:responseOption>
+              </f:facet>
+            </answer:multipleOption>
+          </answer:multipleChoiceResponseDomain>
+        </question:multipleChoice>
+      </container:section>
+      <container:section id="section">
+        <f:facet name="header">
+          <text:text id="text" block="true">#{msgs['page2.body.section.text_0']}</text:text>
+        </f:facet>
+      </container:section>
+    </container:section>
+  </ui:define>
+</ui:composition>

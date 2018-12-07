@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+
+	</zofar:preloads>
+	<zofar:variables>
+		<!-- Definition der Variablen -->
+		<zofar:variable name="mc1" type="boolean"></zofar:variable>
+		<zofar:variable name="mc2" type="boolean"></zofar:variable>
+	</zofar:variables>
+
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<zofar:multipleChoice uid="mc1">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+
+				<zofar:responseDomain uid="rd">
+					<zofar:answerOption uid="ao1" label="Zu Seite 1" variable="mc1" />
+					<zofar:answerOption uid="ao2" label="Zu Seite 2" variable="mc2" />
+				</zofar:responseDomain>
+			</zofar:multipleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="page1" condition="mc1.value"/>
+			<zofar:transition target="page2" condition="mc2.value"/>
+			<zofar:transition target="page3" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page1">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<zofar:display uid="text1">
+				<display:text uid="xx">Seite 1</display:text>
+			</zofar:display>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="page2" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page2">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<zofar:display uid="text2">
+				<display:text uid="xx">Seite 2</display:text>
+			</zofar:display>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="page3" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page3">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<zofar:display uid="text3">
+				<display:text uid="xx">Seite 3</display:text>
+			</zofar:display>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="end" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

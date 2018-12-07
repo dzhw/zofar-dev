@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:buttons="http://java.sun.com/jsf/composite/buttons"
+	xmlns:dialogs="http://java.sun.com/jsf/composite/dialogs"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Variables Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{variables.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<h1>Modify current Variable</h1>
+		<p>
+		#{variables.current}
+		</p>
+		<h:commandButton value="Back to Variable Overview" action="overview" />
+		<h:commandButton value="Back to Variable Index" action="module_index" />
+	</h:form>
+
+	<dialogs:chooseValueType update="valuetype" uid="vtype"
+		popuplabel="Choose a Value Type" loader="#{variables.modifyValueType}" />
+	<dialogs:chooseQuestion update="question" uid="questionChooser"
+		popuplabel="Choose a Question" loader="#{variables.modifyQuestion}" />
+</h:body>
+</html>

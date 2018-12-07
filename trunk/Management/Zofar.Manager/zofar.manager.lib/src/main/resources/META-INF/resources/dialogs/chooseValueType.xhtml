@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:composite="http://java.sun.com/jsf/composite">
+
+<composite:interface>
+	<composite:attribute name="uid" required="true" type="java.lang.String" />
+	<composite:attribute name="popuplabel" default="Load ValueType"
+		type="java.lang.String" />
+	<composite:attribute name="update" default="" type="java.lang.String" />
+	<composite:attribute name="loader" required="true"
+		method-signature="void f(javax.faces.event.ActionEvent)" />
+</composite:interface>
+
+<composite:implementation>
+	<rich:popupPanel id="#{cc.attrs.uid}" modal="true"
+		resizeable="true"
+		onmaskclick="#{rich:component(cc.attrs.uid)}.hide()">
+		<f:facet name="header">
+			<h:outputText value="#{cc.attrs.popuplabel}" />
+		</f:facet>
+		<f:facet name="controls">
+			<h:outputLink value="#"
+				onclick="#{rich:component(cc.attrs.uid)}.hide(); return false;">X
+            			</h:outputLink>
+		</f:facet>
+		<h:form ajaxSubmit="true">
+			<p>
+				<h:panelGrid id="#{cc.attrs.uid}_grid" columns="3">
+					<h:outputLabel value="Value Type Classes:" for="possibleValueTypes" />
+					<h:selectOneMenu id="possibleValueTypes"
+						value="#{valueType.currentPossibleType}">
+						<f:selectItems value="#{valueType.possibleTypes}" />
+					</h:selectOneMenu>
+					<a4j:commandButton id="#{cc.attrs.uid}_reload" value="Reload"
+						actionListener="#{valueType.loadByType}"
+						render="#{cc.attrs.uid}_resultTable" />
+				</h:panelGrid>
+			</p>
+
+			<rich:dataTable id="#{cc.attrs.uid}_resultTable" width="700"
+				var="record" value="#{valueType.loadedPossibleTypes}">
+				<f:facet name="header">
+					<rich:columnGroup>
+						<rich:column>
+							<h:outputText value="Possible Value Types" />
+						</rich:column>
+						<rich:column>
+						</rich:column>
+					</rich:columnGroup>
+				</f:facet>
+
+				<rich:column>
+					<h:outputText value="#{record.identifier}" />
+				</rich:column>
+
+
+				<rich:column>
+					<a4j:commandButton value="Load" actionListener="#{cc.attrs.loader}"
+						reRender="#{rich:clientId(cc.attrs.update)}" oncomplete="#{rich:component(cc.attrs.uid)}.hide(); return false;">
+						<f:attribute name="ref" value="#{record}" />
+					</a4j:commandButton>
+				</rich:column>
+			</rich:dataTable>
+		</h:form>
+	</rich:popupPanel>
+</composite:implementation>
+
+</html>

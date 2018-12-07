@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:composite="http://java.sun.com/jsf/composite">
+
+<composite:interface>
+	<composite:attribute name="uid" type="java.lang.String"
+		required="true" />
+	<composite:attribute name="chooserId" type="java.lang.String"
+		required="true" />
+
+	<composite:attribute name="valueType"
+		type="de.his.zofar.service.valuetype.model.ValueType" required="true" />
+
+	<composite:attribute name="visible" type="java.lang.Boolean"
+		default="true" />
+</composite:interface>
+
+<composite:implementation>
+	<a4j:outputPanel id="#{cc.attrs.uid}_panel" ajaxRendered="true" rendered="#{cc.attrs.visible}">
+		<h:commandButton id="#{cc.attrs.uid}"
+			value="#{cc.attrs.valueType != null ? cc.attrs.valueType.identifier : 'Load'}">
+			<rich:componentControl target="#{cc.attrs.chooserId}"
+				operation="show" />
+		</h:commandButton>
+	</a4j:outputPanel>
+</composite:implementation>
+
+</html>

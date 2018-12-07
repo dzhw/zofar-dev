@@ -1,0 +1,5 @@
+Encrypt
+openssl smime  -encrypt -aes256  -in  csv/data.csv -outform DEM -out csv/data.csv.encrypted  Certificates/export.pem
+
+Decrypt
+openssl smime -decrypt  -in  csv/data.csv.encrypted  -inform DEM -inkey Certificates/privatekey.pem  -out  csv/data.csv

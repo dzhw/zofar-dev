@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:matrix="http://java.sun.com/jsf/composite/matrix" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:answer="http://java.sun.com/jsf/composite/answer">
+  <ui:param name="progress" value="47"/>
+  <ui:define name="template-content">
+    <container:section id="page8">
+      <matrix:openMatrix id="openMatrix">
+        <f:facet name="header">
+          <text:question id="question">#{msgs['page8.body.openMatrix.question_0']}</text:question>
+          <text:instruction id="instruction">#{msgs['page8.body.openMatrix.instruction_0']}</text:instruction>
+        </f:facet>
+        <matrix:openMatrixResponseDomain id="response" noResponseOptions="7" itemClasses="zo-odd zo-even">
+          <f:facet name="scaleHeader">
+            <text:text id="sct">#{msgs['page8.body.openMatrix.response.sct_0']}</text:text>
+          </f:facet>
+          <f:facet name="header">
+            <text:text id="title1">#{msgs['page8.body.openMatrix.response.title1_0']}</text:text>
+            <text:text id="title2">#{msgs['page8.body.openMatrix.response.title2_0']}</text:text>
+            <text:text id="title3">#{msgs['page8.body.openMatrix.response.title3_0']}</text:text>
+            <text:text id="title4">#{msgs['page8.body.openMatrix.response.title4_0']}</text:text>
+            <text:text id="title5">#{msgs['page8.body.openMatrix.response.title5_0']}</text:text>
+            <text:text id="title6">#{msgs['page8.body.openMatrix.response.title6_0']}</text:text>
+            <text:text id="title7">#{msgs['page8.body.openMatrix.response.title7_0']}</text:text>
+          </f:facet>
+          <matrix:openMatrixResponseDomainUnit id="u1">
+            <f:facet name="header">
+              <text:text id="tt1">#{msgs['page8.body.openMatrix.response.u1.tt1_0']}</text:text>
+            </f:facet>
+            <matrix:openMatrixItem id="item1">
+              <f:facet name="header">
+                <text:question id="question1text">#{msgs['page8.body.openMatrix.response.u1.item1.question1text_0']}</text:question>
+              </f:facet>
+              <answer:smallOpenOption id="question1" maxlength="3" size="5" var="#{v841}"/>
+              <answer:smallOpenOption id="question2" maxlength="3" size="5" var="#{v842}"/>
+              <answer:smallOpenOption id="question3" maxlength="3" size="5" var="#{v843}"/>
+              <answer:smallOpenOption id="question4" maxlength="3" size="5" var="#{v844}"/>
+              <answer:smallOpenOption id="question5" maxlength="3" size="5" var="#{v845}"/>
+              <answer:smallOpenOption id="question6" maxlength="3" size="5" var="#{v846}"/>
+              <answer:smallOpenOption id="question7" maxlength="3" size="5" var="#{v847}"/>
+            </matrix:openMatrixItem>
+          </matrix:openMatrixResponseDomainUnit>
+          <matrix:openMatrixResponseDomainUnit id="u2">
+            <f:facet name="header">
+              <text:text id="t1">#{msgs['page8.body.openMatrix.response.u2.t1_0']}</text:text>
+            </f:facet>
+            <matrix:openMatrixItem id="item2">
+              <f:facet name="header">
+                <text:question id="question1text">#{msgs['page8.body.openMatrix.response.u2.item2.question1text_0']}</text:question>
+              </f:facet>
+              <answer:smallOpenOption id="question1" maxlength="3" size="5" var="#{v848}"/>
+              <answer:smallOpenOption id="question2" maxlength="3" size="5" var="#{v849}"/>
+              <answer:smallOpenOption id="question3" maxlength="3" size="5" var="#{v850}"/>
+              <answer:smallOpenOption id="question4" maxlength="3" size="5" var="#{v851}"/>
+              <answer:smallOpenOption id="question5" maxlength="3" size="5" var="#{v852}"/>
+              <answer:smallOpenOption id="question6" maxlength="3" size="5" var="#{v853}"/>
+              <answer:smallOpenOption id="question7" maxlength="3" size="5" var="#{v854}"/>
+            </matrix:openMatrixItem>
+          </matrix:openMatrixResponseDomainUnit>
+          <matrix:openMatrixResponseDomainUnit id="u3">
+            <f:facet name="header">
+              <text:text id="t1">#{msgs['page8.body.openMatrix.response.u3.t1_0']}</text:text>
+            </f:facet>
+            <matrix:openMatrixItem id="item3">
+              <f:facet name="header">
+                <text:question id="question1text">#{msgs['page8.body.openMatrix.response.u3.item3.question1text_0']}</text:question>
+              </f:facet>
+              <answer:smallOpenOption id="question1" maxlength="3" size="5" var="#{v855}"/>
+              <answer:smallOpenOption id="question2" maxlength="3" size="5" var="#{v856}"/>
+              <answer:smallOpenOption id="question3" maxlength="3" size="5" var="#{v857}"/>
+              <answer:smallOpenOption id="question4" maxlength="3" size="5" var="#{v858}"/>
+              <answer:smallOpenOption id="question5" maxlength="3" size="5" var="#{v859}"/>
+              <answer:smallOpenOption id="question6" maxlength="3" size="5" var="#{v860}"/>
+              <answer:smallOpenOption id="question7" maxlength="3" size="5" var="#{v861}"/>
+            </matrix:openMatrixItem>
+          </matrix:openMatrixResponseDomainUnit>
+        </matrix:openMatrixResponseDomain>
+      </matrix:openMatrix>
+      <container:section id="section">
+        <f:facet name="header">
+          <text:text id="text" block="true">#{msgs['page8.body.section.text_0']}</text:text>
+        </f:facet>
+      </container:section>
+    </container:section>
+  </ui:define>
+</ui:composition>

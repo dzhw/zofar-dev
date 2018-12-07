@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Variables (Value Types) Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{variables.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<h1>Modify current Possible Value</h1>
+
+		<p>#{possibleValue.current}</p>
+
+		<h:panelGrid id="grid" columns="2">
+			<h:outputLabel value="Missing:" for="missing" />
+			<h:selectBooleanCheckbox id="missing"
+				value="#{possibleValue.current.isMissing}" />
+
+			<h:outputLabel value="Value:" for="valueString"
+				rendered="#{possibleValue.isString()}" />
+			<h:inputText id="valueString" value="#{possibleValue.current.value}"
+				rendered="#{possibleValue.isString()}" />
+
+			<h:outputLabel value="Value:" for="valueBoolean"
+				rendered="#{possibleValue.isBoolean()}" />
+			<h:selectBooleanCheckbox id="valueBoolean"
+				value="#{possibleValue.current.value}"
+				rendered="#{possibleValue.isBoolean()}" />
+
+			<h:outputLabel value="Value:" for="valueNumber"
+				rendered="#{possibleValue.isNumber()}" />
+			<rich:inputNumberSlider id="valueNumber"
+				value="#{possibleValue.current.value}" width="500"
+				minValue="#{valueType.currentMinimum}"
+				maxValue="#{valueType.currentMaximum}" showArrows="true"
+				showTooltip="false" rendered="#{possibleValue.isNumber()}" />
+		</h:panelGrid>
+
+		<rich:dataTable width="700" var="record"
+			value="#{uiPossibleValueLabelListController.labels}">
+			<f:facet name="header">
+				<rich:columnGroup>
+					<rich:column>
+						<h:outputText value="Label" />
+					</rich:column>
+					<rich:column>
+					</rich:column>
+				</rich:columnGroup>
+			</f:facet>
+
+			<rich:column>
+				<rich:inplaceInput value="#{record.label}" saveOnBlur="true" />
+			</rich:column>
+
+
+			<rich:column>
+				<h:commandButton action="save" value="Remove"
+					actionListener="#{possibleValue.removeLabel}">
+					<f:attribute name="ref" value="#{record.ref}" />
+					<f:attribute name="label" value="#{record.label}" />
+				</h:commandButton>
+			</rich:column>
+		</rich:dataTable>
+
+		<h:panelGrid id="grid1" columns="3">
+			<h:outputLabel value="New Label:" for="label" />
+			<h:inputText id="label" value="#{possibleValue.label}" />
+			<h:commandButton action="save" value="Create new Value"
+				actionListener="#{possibleValue.addLabel}">		
+			</h:commandButton>
+		</h:panelGrid>
+
+		<h:commandButton value="Save" actionListener="#{possibleValue.save}"
+			action="save" />
+		<h:commandButton value="Back to Value Type" action="save" />
+	</h:form>
+</h:body>
+</html>

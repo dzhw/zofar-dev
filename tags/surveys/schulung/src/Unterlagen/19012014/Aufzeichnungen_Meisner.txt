@@ -1,0 +1,193 @@
+1. Start
+========
+
+PLANUNGSPHASE
+
+
+2. initiale Eckdatenerhebung der Befragung (in Ticketsystem*, Wiki/eigene Befragungsverwaltung im Management Projekt)
+====================================================================================================================
+
+- Zeitplanung (Pretest,Lasttests,Feldphase). Zeiten für Umsetzung, Einarbeitung von Pretest-Änderungen ergeben sich daraus
+- Ansprechpartner Projekt/Zofar (inkl. Vetretungen)
+- Befragungsnamen festlegen
+- Datenschutz (Klärungsbedarf Inhaltlich, Persistierungs- und Betriebsort der Anwendung)
+- In der Befragung wählbare Sprachen (Übersetzungen müssen in der Zeitplanung berücksichtigt werden)
+- Stichprobengröße
+- Einladungen / Reminder (**)
+  * wer läd ein (Zofar,Projekt,Externe)
+  * wie wird eingeladen (Per Post oder Mail)
+  * Einladungszeiträume/-intervalle
+  * wer soll einen Reminder bekommen (alle, nur angefangen aber nicht abgeschlossen, noch garnicht angefangen)
+- wird ein externer Präsentationsserver benötigt?
+- Login Methoden (Anonym,Benutzername/Passwort,Token,DirectLink)
+- (vorläufiger) inhaltlicher Fragebogen
+- existieren bereits CI-Layouts, Bilder, usw. zum Projekt/ zur Befragung
+
+==> Resultat: vollständige initiale Eckdatenerhebung
+
+(Anmerkung : * Accounts aus MitarbeiterSpider, oder durch Anbindung an DZHW-Domänen-Authentifizierungssystem (wie in HISZILLA))
+
+3. interne Planung (evtl. Kickoff-Metting mit Vertretern des Projektes, des inhaltlichen Teams und des technischen Teams)
+==================
+
+- Zeitplanung
+- personelle Resourcenplanung
+- technische Resourcenplanung (InHouse,Rechenzentrum, Benutze URLs)
+- Aufgabenverteilung
+- Zertifikat (evtl. Beschaffung)
+- Systemerweiterungen (neue Fragentypen, Zofar Funktionen, neue Layouts)
+
+==> Resultat 1 : vollständige interne Planung
+==> Resultat 2 : Ende, da keine personellen, zeitlichen, oder technischen Resourcen zur Durchführung vorhanden
+
+4. Kostenplanung
+================
+
+==> Resultat 1 : Kostenvoranschlag dür das Projekt
+==> Resultat 2 : Ende, da dem Projekt zu teuer
+
+5. Verbindliche Zusage unter den initialen Bedingungen aus (2)
+==============================================================
+
+==> Resultat : Projekt schickt alle notwendigen Materialien (Fragebogen, Filterführung, entgültige Variablenliste, Preloads)
+
+
+UMSETZUNGSPHASE
+
+6. Initiale Umsetzung
+=====================
+
+- Umsetzungsverantwortlicher
+  * nimmt Auftragsticket an
+  * sorgt für Bekanntmachung von Änderungswünschen durch das Ticketsystem
+- technisches Teams
+  * Projekt in SVN anlegen (initiale Mitarbeitertokens in QML)
+  * initiale Konfiguration der Befragung (Datenbank, overrideNavigation, cluster, Login-Methode)
+  * Projekt im Buildsystem anlegen
+  * Projektdatenbank anlegen
+- inhaltliches Team
+  * initiale Fragebogenerstellung
+  * Vollzugmeldung inkl. Link zur versionierten QML-Datei im Ticketsystem
+  
+==> Resultat: erster Entwurf der Befragung
+
+7. Änderungen (iterativ)
+========================
+
+- Änderungsticket (Inhalt)
+  * Bezug auf letzte Version der QML-DAtei
+  * Anderungswünsche 
+- falls Änderungswünsche inhaltlicher Natur
+  * Änderungen in die QML-Datei einpflegen
+  * Vollzugmeldung mit Link zur neuen QML-Datei im Ticketsystem
+- falls Anderungswünsche technischer Natur
+  * Änderungen einpflegen bzw. Fehler beheben
+  * Vollzugmeldung im Ticketsystem
+  
+==> Resultat : vorläufige Endversion des Fragebogens und alle aufgetretenen Fehler behoben
+
+8. Qualitätskontrolle (intern)
+==============================
+
+- inhaltlich
+  * Fragebogen Endabnahme
+    --alle Änderungen eingepflegt
+    --Filterführung Funktioniert
+    --alle Daten Kotrrekt in Datenbank
+- technisch
+  * System proberties
+    --override Navigation=false
+    --cluster Konfiguration
+    --Login Mode stimmt mit Initialdaten überein
+    --Preload Vollständig
+    --DB leeren / auf Produktivserver umkonfigurieren
+    --externe URL zugänglich?
+    --Zertikikate OK?
+  
+==> Resultat : Build und Deployment
+
+
+TESTPHASE
+
+
+9. Pretest
+==========
+
+==> Resultat : Evtl. Tickets mit Änderungswünschen 
+
+10. Änderungen aus Pretest einpflegen (gemäß (7. Änderungen))
+=============================================================
+
+==> Resultat : Build und Deployment
+
+11. Endabnahme durch Projekt (in Kooperation mit Zofar-Qualitätsbeauftragtem)
+=============================================================================
+
+- Textuelle Prüfung
+- Kodebuch checken (Variablenname, mögliche Ausprägungen, Variablentyp)
+- Kantenbedingungen
+- Fragebogen durchklicken/ Filterführung (Transitions/visible)
+
+==> Resultat : Projektleiter zeichnet korrekte Umsetzung der Befragung ab
+
+
+==================
+POINT OF NO RETURN (ab hier Fragebogen und Eckdaten fix)
+==================
+
+12. Lasttest
+============
+
+- Volllasttest (alle, möglichst schnell)
+- Langzeittest (alle, moderates Klickverhalten)
+
+==> Resultat 1 : Ergebnisse (durchschnittliche Antwortzeiten und gesamte Testdauer) zwecks Doku als Ticket ins BugzillaS
+==> wenn erfolgreich (Antwortzeiten unter definierter Grenze, keine technischen Systemfehler) ==> Feldphase
+
+
+FELDPHASE
+
+13. Produktivbetrieb
+====================
+
+- Rücklaufkontrolle
+  * Häufigkeit mit Projekt klären
+  * (TODO) Webfrontend für Standalone Client
+  * Zunächst vorkonfiguriertes Rücklaufkontrollprojekt  ins SVN
+  * evtl. automatisierte Erstellung einer Excel-Tabelle, welche Tokens bereit teilweise/vollständig an der Befragung teilgenommen haben
+- Zwischenstände exportieren (incl. Offene Angaben)
+  * (TODO) Zwischenberichte
+- Reminder Versand gemäß Punkt 2(**)
+- Bei Ausfall: Ticket an Zofar (wir entscheiden ob durch IT-Support oder Zofar erledigt wird)
+
+==> Resultat : Persitierte Erhebungsdaten in der DB, Log-Dateien zur Protokollierung des Serverbetriebs
+
+
+ENDPHASE
+
+14. Expired-Projekt schalten
+============================
+
+==> Resultat : Befragung ist nicht mehr von aussen erreichbar. Stattdessen eine Information, daß die
+	       Feldphase beendet ist
+
+15. Datenbankarchivierung
+=========================
+  
+- Datenbank vom produktiven DB-System auf ein Backend DB-System verschieben
+
+==> Resultat: Erhobene Daten befinden sich auf einem DB-System, daß nicht am Produktivsystem angeschlossen ist
+
+16. Endexport
+=============
+
+==> ZIP-Archiv inkl. OpenSSL-verschlüsselter CSV-Datei, Codebook, QML-Datei und Scripte für Stata, R (TODO), usw.
+
+17. interne Archivierung
+========================
+
+- SVN Projekte (Befragung, Rücklaufkontrolle) in Archiv-Zweig verschieben
+- Buildsystem Projekte (Befragung, Rücklaufkontrolle) ins Archiv verschieben
+- Ticketfolge des gesamten Prozesses archivieren
+
+

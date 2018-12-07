@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:trigger="http://java.sun.com/jsf/composite/trigger" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:display="http://java.sun.com/jsf/composite/display">
+  <ui:param name="progress" value="0"/>
+  <ui:define name="template-content">
+    <trigger:variable var="#{url}" value="zofar.baseUrl()" navigator="#{navigatorBean}"/>
+    <container:section id="index">
+      <f:facet name="header">
+        <text:title id="tit1" rendered="#{false}" block="true">#{msgs['index.tit1_0']}</text:title>
+      </f:facet>
+      <display:container id="dis1">
+        <display:text id="text1" block="true">#{msgs['index.body.dis1.text1_0']}</display:text>
+      </display:container>
+    </container:section>
+  </ui:define>
+</ui:composition>

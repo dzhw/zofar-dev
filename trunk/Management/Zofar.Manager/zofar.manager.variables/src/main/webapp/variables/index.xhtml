@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Variables Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{variables.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<h:commandButton value="Create Panel Variable" action="module_create1" />
+		<br />
+		<h:commandButton value="Create Survey Variable" action="module_create2" />
+		<br />
+		<h:commandButton value="Import Panel Variable" action="module_import1" />
+		<br />
+		<h:commandButton value="Import Survey Variable"	action="module_import2" />
+		<br />
+		<h:commandButton value="Show all Variables" action="overview" />
+		<br />
+		<h:commandButton value="To Value Types" action="sub1_index" />
+		<br />
+		<h:commandButton value="Back to Main Index" action="root_index" />
+	</h:form>
+</h:body>
+</html>

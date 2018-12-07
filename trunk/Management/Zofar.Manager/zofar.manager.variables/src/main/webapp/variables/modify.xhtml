@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:buttons="http://java.sun.com/jsf/composite/buttons"
+	xmlns:dialogs="http://java.sun.com/jsf/composite/dialogs"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Variables Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{variables.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<h1>Modify current Variable</h1>
+
+		<h:panelGrid id="grid" columns="2">
+			<h:outputLabel value="UUID:" for="uuid" />
+			<h:inputText id="uuid" value="#{variables.current.uuid}" />
+			<h:outputLabel value="Name:" for="name" />
+			<h:inputText id="name" value="#{variables.current.name}" />
+			<h:outputLabel value="Label" for="label" />
+			<h:inputText id="label" value="#{variables.current.label}" />
+
+			<h:outputLabel value="Value Type:" for="valueType" />
+
+			<buttons:loadValueType uid="valueType" chooserId="vtype"
+				valueType="#{variables.current.valueType}" />
+			<h:outputLabel value="Question:" for="question"
+				rendered="#{variables.isSurvey()}" />
+			<buttons:loadQuestion uid="question" chooserId="questionChooser"
+				valueType="#{variables.current.question}"
+				visible="#{variables.isSurvey()}" />
+		</h:panelGrid>
+		<h:commandButton value="Save" actionListener="#{variables.save}"
+			action="save" />
+		<h:commandButton value="Back to Variable Index" action="module_index" />
+	</h:form>
+
+	<dialogs:chooseValueType update="valuetype" uid="vtype"
+		popuplabel="Choose a Value Type" loader="#{variables.modifyValueType}" />
+	<dialogs:chooseQuestion update="question" uid="questionChooser"
+		popuplabel="Choose a Question" loader="#{variables.modifyQuestion}" />
+</h:body>
+</html>

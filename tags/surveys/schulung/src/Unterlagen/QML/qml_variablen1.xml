@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:variables>
+		<!-- Definition der Variablen -->
+	  
+		<!-- Variablen für offene Angaben -->
+		<zofar:variable name="var1" type="string"></zofar:variable>
+		<zofar:variable name="var3" type="number"></zofar:variable>
+		
+		<!-- Variable für Mehrfachnennungen -->
+		<zofar:variable name="var2" type="boolean"></zofar:variable>
+		
+		<!-- Variable für Einfachnennungen -->
+		<zofar:variable name="var4" type="singleChoiceAnswerOption"></zofar:variable>
+	</zofar:variables>
+	
+	<!-- Startseite -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<!-- Bereich für Fragen -->
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation-->
+		</zofar:transitions>
+	</zofar:page>
+	
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

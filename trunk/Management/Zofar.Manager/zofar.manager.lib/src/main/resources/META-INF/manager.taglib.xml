@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facelet-taglib version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-facelettaglibrary_2_2.xsd">
+	<namespace>http://zofar.org/dialogs</namespace>
+
+	<!-- chooser -->
+	<tag>
+		<tag-name>chooseValueType</tag-name>
+		<component>
+			<resource-id>dialogs/chooseValueType.xhtml</resource-id>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>chooseQuestion</tag-name>
+		<component>
+			<resource-id>dialogs/chooseQuestion.xhtml</resource-id>
+		</component>
+	</tag>
+
+	<!-- buttons -->
+
+	<tag>
+		<tag-name>loadValueType</tag-name>
+		<component>
+			<resource-id>buttons/loadValueType.xhtml</resource-id>
+		</component>
+	</tag>
+
+	<tag>
+		<tag-name>loadQuestion</tag-name>
+		<component>
+			<resource-id>buttons/loadQuestion.xhtml</resource-id>
+		</component>
+	</tag>
+
+</facelet-taglib>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:trigger="http://java.sun.com/jsf/composite/trigger" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:matrix="http://java.sun.com/jsf/composite/matrix" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:answer="http://java.sun.com/jsf/composite/answer" xmlns:question="http://java.sun.com/jsf/composite/question">
+  <ui:param name="progress" value="94"/>
+  <ui:define name="template-content">
+    <trigger:variable var="#{language}" value="de" direction="forward" onExit="true" navigator="#{navigatorBean}"/>
+    <trigger:variable var="#{language}" value="de" direction="backward" onExit="true" navigator="#{navigatorBean}"/>
+    <container:section id="page16">
+      <matrix:singleChoiceMatrix id="msc">
+        <f:facet name="header">
+          <text:question id="q1">#{msgs['page16.body.msc.q1_0']}</text:question>
+          <text:instruction id="ins">#{msgs['page16.body.msc.ins_0']}</text:instruction>
+        </f:facet>
+        <matrix:singleChoiceMatrixResponseDomain id="rd" noResponseOptions="5" itemClasses="zo-odd zo-even">
+          <f:facet name="header">
+            <text:text id="t1">#{msgs['page16.body.msc.rd.t1_0']}</text:text>
+            <text:text id="t2"/>
+            <text:text id="t3"/>
+            <text:text id="t4"/>
+            <text:text id="t5">#{msgs['page16.body.msc.rd.t5_0']}</text:text>
+          </f:facet>
+          <matrix:singleChoiceMatrixItem id="i1">
+            <f:facet name="header">
+              <text:question id="q1">#{msgs['page16.body.msc.rd.i1.q1_0']}</text:question>
+            </f:facet>
+            <matrix:singleChoiceMatrixItemResponseDomain id="rd" value="#{v768.valueId}">
+              <answer:singleOption id="a01" itemValue="1"/>
+              <answer:singleOption id="a02" itemValue="2"/>
+              <answer:singleOption id="a03" itemValue="3"/>
+              <answer:singleOption id="a04" itemValue="4"/>
+              <answer:singleOption id="a05" itemValue="5"/>
+            </matrix:singleChoiceMatrixItemResponseDomain>
+          </matrix:singleChoiceMatrixItem>
+          <matrix:singleChoiceMatrixItem id="i2">
+            <f:facet name="header">
+              <text:question id="q1">#{msgs['page16.body.msc.rd.i2.q1_0']}</text:question>
+            </f:facet>
+            <matrix:singleChoiceMatrixItemResponseDomain id="rd" value="#{v769.valueId}">
+              <answer:singleOption id="a01" itemValue="1"/>
+              <answer:singleOption id="a02" itemValue="2"/>
+              <answer:singleOption id="a03" itemValue="3"/>
+              <answer:singleOption id="a04" itemValue="4"/>
+              <answer:singleOption id="a05" itemValue="5"/>
+            </matrix:singleChoiceMatrixItemResponseDomain>
+          </matrix:singleChoiceMatrixItem>
+          <matrix:singleChoiceMatrixItem id="i3">
+            <f:facet name="header">
+              <text:question id="q1">#{msgs['page16.body.msc.rd.i3.q1_0']}</text:question>
+            </f:facet>
+            <matrix:singleChoiceMatrixItemResponseDomain id="rd" value="#{v770.valueId}">
+              <answer:singleOption id="a01" itemValue="1"/>
+              <answer:singleOption id="a02" itemValue="2"/>
+              <answer:singleOption id="a03" itemValue="3"/>
+              <answer:singleOption id="a04" itemValue="4"/>
+              <answer:singleOption id="a05" itemValue="5"/>
+            </matrix:singleChoiceMatrixItemResponseDomain>
+          </matrix:singleChoiceMatrixItem>
+          <matrix:singleChoiceMatrixItem id="i4">
+            <f:facet name="header">
+              <text:question id="q1">#{msgs['page16.body.msc.rd.i4.q1_0']}</text:question>
+            </f:facet>
+            <matrix:singleChoiceMatrixItemResponseDomain id="rd" value="#{v771.valueId}">
+              <answer:singleOption id="a01" itemValue="1"/>
+              <answer:singleOption id="a02" itemValue="2"/>
+              <answer:singleOption id="a03" itemValue="3"/>
+              <answer:singleOption id="a04" itemValue="4"/>
+              <answer:singleOption id="a05" itemValue="5"/>
+            </matrix:singleChoiceMatrixItemResponseDomain>
+          </matrix:singleChoiceMatrixItem>
+          <matrix:singleChoiceMatrixItem id="i5">
+            <f:facet name="header">
+              <text:question id="q1">#{msgs['page16.body.msc.rd.i5.q1_0']}</text:question>
+            </f:facet>
+            <matrix:singleChoiceMatrixItemResponseDomain id="rd" value="#{v772.valueId}">
+              <answer:singleOption id="a01" itemValue="1"/>
+              <answer:singleOption id="a02" itemValue="2"/>
+              <answer:singleOption id="a03" itemValue="3"/>
+              <answer:singleOption id="a04" itemValue="4"/>
+              <answer:singleOption id="a05" itemValue="5"/>
+            </matrix:singleChoiceMatrixItemResponseDomain>
+          </matrix:singleChoiceMatrixItem>
+        </matrix:singleChoiceMatrixResponseDomain>
+      </matrix:singleChoiceMatrix>
+      <question:singleChoice id="sc">
+        <f:facet name="header">
+          <text:question id="q1">#{msgs['page16.body.sc.q1_0']}</text:question>
+        </f:facet>
+        <answer:radioButtonSingleChoiceResponseDomain direction="horizontal" labelPosition="right" value="#{v767.valueId}" var="#{v767}" id="rd" showValues="false" missingSeparated="true">
+          <answer:singleOption itemValue="1" id="a01" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="l1">#{msgs['page16.body.sc.rd.a01.l1']}</text:responseOption>
+            </f:facet>
+          </answer:singleOption>
+          <answer:singleOption itemValue="2" id="a02" missing="false"/>
+          <answer:singleOption itemValue="3" id="a03" missing="false"/>
+          <answer:singleOption itemValue="4" id="a04" missing="false"/>
+          <answer:singleOption itemValue="5" id="a05" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="l1">#{msgs['page16.body.sc.rd.a05.l1']}</text:responseOption>
+            </f:facet>
+          </answer:singleOption>
+        </answer:radioButtonSingleChoiceResponseDomain>
+      </question:singleChoice>
+      <container:section id="section">
+        <f:facet name="header">
+          <text:text id="text" block="true">#{msgs['page16.body.section.text_0']}</text:text>
+        </f:facet>
+      </container:section>
+    </container:section>
+  </ui:define>
+</ui:composition>

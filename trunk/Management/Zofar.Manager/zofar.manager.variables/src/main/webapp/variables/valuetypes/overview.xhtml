@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Variables (Value Types) Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{variables.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<p>
+			<h:panelGrid id="grid" columns="3">
+				<h:outputLabel value="Value Type Classes:" for="possibleValueTypes" />
+				<h:selectOneMenu id="possibleValueTypes"
+					value="#{valueType.currentPossibleType}">
+					<f:selectItems value="#{valueType.possibleTypes}" />
+				</h:selectOneMenu>
+				<h:commandButton value="Reload"
+					actionListener="#{valueType.loadByType}" />
+			</h:panelGrid>
+		</p>
+
+		<rich:dataTable width="700" var="record"
+			value="#{valueType.loadedPossibleTypes}">
+			<f:facet name="header">
+				<rich:columnGroup>
+					<rich:column>
+						<h:outputText value="Possible Value Types" />
+					</rich:column>
+					<rich:column>
+					</rich:column>
+				</rich:columnGroup>
+			</f:facet>
+
+			<rich:column>
+				<h:outputText value="#{record.identifier}" />
+			</rich:column>
+
+
+			<rich:column>
+				<h:commandButton action="save" value="Load"
+					actionListener="#{valueType.loadTableItem}">
+					<f:attribute name="ref" value="#{record}" />
+				</h:commandButton>
+				<h:commandButton action="save" value="Copy"
+					actionListener="#{valueType.copyTableItem}">
+					<f:attribute name="ref" value="#{record}" />
+				</h:commandButton>
+				<h:commandButton action="overview" value="Remove"
+					actionListener="#{valueType.removeTableItem}">
+					<f:attribute name="ref" value="#{record}" />
+				</h:commandButton>
+			</rich:column>
+		</rich:dataTable>
+		<h:commandButton value="Back to Value Type Index" action="sub1_index" />
+	</h:form>
+</h:body>
+</html>

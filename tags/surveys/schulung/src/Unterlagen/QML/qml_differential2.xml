@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+
+	</zofar:preloads>
+	<zofar:variables>
+		<!-- Variablen für Einfachnennung MatrixItems -->
+		<zofar:variable name="sc1" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc2" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc3" type="singleChoiceAnswerOption"></zofar:variable>
+	</zofar:variables>
+
+	<!-- Startseite -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+		  <!-- Differential-->
+			<zofar:matrixQuestionSingleChoice uid="question">
+				<zofar:header>
+					<zofar:question uid="question1">Welche
+						allgemeinen
+						Einschätzungen
+						verbinden Sie mit
+						zeitweiligen
+						Auslandsaufenthalten während des
+						Studiums?
+					</zofar:question>
+					<zofar:instruction uid="instruction1">Klicken Sie für
+						jedes
+						Merkmalspaar den Ihrer Einschätzung nach
+						zutreffenden Skalenwert
+						an.
+					</zofar:instruction>
+				</zofar:header>
+				<zofar:responseDomain isDifferential="true" itemClasses="true" noResponseOptions="5" uid="response" isShowValues="true">
+					<zofar:header>
+						<!-- Spaltenüberschriften der Antwortoptionen -->
+						<zofar:title uid="title0"/>
+						<zofar:title uid="title1"/>
+						<zofar:title uid="title2"/>
+						<zofar:title uid="title3"/>
+						<zofar:title uid="title4"/>
+					</zofar:header>
+					<zofar:item uid="item1">
+						<zofar:responseDomain type="radio" uid="option1" variable="sc1">
+							<zofar:answerOption label="entbehrlich" uid="answer1" value="-2"/>
+							<zofar:answerOption uid="answer2" value="-1"/>
+							<zofar:answerOption uid="answer3" value="0"/>
+							<zofar:answerOption uid="answer4" value="1"/>
+							<zofar:answerOption label="unverzichtbar" uid="answer5" value="2"/>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="item2">
+						<zofar:responseDomain type="radio" uid="option1" variable="sc2">
+							<zofar:answerOption label="schwer finanzierbar" uid="answer1" value="-2"/>
+							<zofar:answerOption uid="answer2" value="-1"/>
+							<zofar:answerOption uid="answer3" value="0"/>
+							<zofar:answerOption uid="answer4" value="1"/>
+							<zofar:answerOption label="leicht finanzierbar" uid="answer5" value="2"/>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="item3">
+						<zofar:responseDomain type="radio" uid="option1" variable="sc3">
+							<zofar:answerOption label="wenig berufsqualifizierend" uid="answer1" value="-2"/>
+							<zofar:answerOption uid="answer2" value="-1"/>
+							<zofar:answerOption uid="answer3" value="0"/>
+							<zofar:answerOption uid="answer4" value="1"/>
+							<zofar:answerOption label="stark berufsqualifizierend" uid="answer5" value="2"/>
+						</zofar:responseDomain>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixQuestionSingleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="end" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

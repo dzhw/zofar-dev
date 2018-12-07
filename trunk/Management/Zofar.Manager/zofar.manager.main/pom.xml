@@ -1,0 +1,191 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>zofar.manager.main</artifactId>
+	<packaging>war</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>zofar.manager</groupId>
+			<artifactId>zofar.manager.lib</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>el-api</artifactId>
+			<version>2.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<artifactId>zofar.manager.admin</artifactId>
+			<groupId>zofar.manager</groupId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<artifactId>zofar.manager.admin</artifactId>
+			<groupId>zofar.manager</groupId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+			<classifier>classes</classifier>
+		</dependency>
+
+		<!-- <dependency> <artifactId>zofar.manager.variables</artifactId> <groupId>zofar.manager</groupId> 
+			<version>0.0.1-SNAPSHOT</version> <type>war</type> <scope>runtime</scope> 
+			</dependency> <dependency> <artifactId>zofar.manager.variables</artifactId> 
+			<groupId>zofar.manager</groupId> <version>0.0.1-SNAPSHOT</version> <type>jar</type> 
+			<classifier>classes</classifier> </dependency> -->
+
+		<dependency>
+			<artifactId>zofar.manager.participant</artifactId>
+			<groupId>zofar.manager</groupId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<artifactId>zofar.manager.participant</artifactId>
+			<groupId>zofar.manager</groupId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+			<classifier>classes</classifier>
+		</dependency>
+
+		<dependency>
+			<artifactId>zofar.manager.questionnaire</artifactId>
+			<groupId>zofar.manager</groupId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<artifactId>zofar.manager.questionnaire</artifactId>
+			<groupId>zofar.manager</groupId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+			<classifier>classes</classifier>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>Manager</finalName>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<includes>
+						<include>**/*</include>
+					</includes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<overlays>
+						<overlay>
+							<artifactId>zofar.manager.admin</artifactId>
+							<groupId>zofar.manager</groupId>
+							<targetPath>modules</targetPath>
+							<excludes>
+								<exclude>META-INF/**</exclude>
+								<exclude>WEB-INF/web.xml</exclude>
+								<exclude>WEB-INF/faces-config.xml</exclude>
+								<exclude>WEB-INF/lib/**</exclude>
+								<exclude>WEB-INF/classes/**</exclude>
+							</excludes>
+						</overlay>
+						<overlay>
+							<artifactId>zofar.manager.admin</artifactId>
+							<groupId>zofar.manager</groupId>
+							<includes>
+								<include>WEB-INF/lib/**</include>
+								<include>WEB-INF/classes/**</include>
+							</includes>
+						</overlay>
+
+						<!-- <overlay> <artifactId>zofar.manager.variables</artifactId> <groupId>zofar.manager</groupId> 
+							<targetPath>modules</targetPath> <excludes> <exclude>META-INF/**</exclude> 
+							<exclude>WEB-INF/web.xml</exclude> <exclude>WEB-INF/faces-config.xml</exclude> 
+							<exclude>WEB-INF/lib/**</exclude> <exclude>WEB-INF/classes/**</exclude> </excludes> 
+							</overlay> <overlay> <artifactId>zofar.manager.variables</artifactId> <groupId>zofar.manager</groupId> 
+							<includes> <include>WEB-INF/lib/**</include> <include>WEB-INF/classes/**</include> 
+							</includes> </overlay> -->
+
+						<overlay>
+							<artifactId>zofar.manager.participant</artifactId>
+							<groupId>zofar.manager</groupId>
+							<targetPath>modules</targetPath>
+							<excludes>
+								<exclude>META-INF/**</exclude>
+								<exclude>WEB-INF/web.xml</exclude>
+								<exclude>WEB-INF/faces-config.xml</exclude>
+								<exclude>WEB-INF/lib/**</exclude>
+								<exclude>WEB-INF/classes/**</exclude>
+							</excludes>
+						</overlay>
+						<overlay>
+							<artifactId>zofar.manager.participant</artifactId>
+							<groupId>zofar.manager</groupId>
+							<includes>
+								<include>WEB-INF/lib/**</include>
+								<include>WEB-INF/classes/**</include>
+							</includes>
+						</overlay>
+
+						<overlay>
+							<artifactId>zofar.manager.questionnaire</artifactId>
+							<groupId>zofar.manager</groupId>
+							<targetPath>modules</targetPath>
+							<excludes>
+								<exclude>META-INF/**</exclude>
+								<exclude>WEB-INF/web.xml</exclude>
+								<exclude>WEB-INF/faces-config.xml</exclude>
+								<exclude>WEB-INF/lib/**</exclude>
+								<exclude>WEB-INF/classes/**</exclude>
+							</excludes>
+						</overlay>
+						<overlay>
+							<artifactId>zofar.manager.questionnaire</artifactId>
+							<groupId>zofar.manager</groupId>
+							<includes>
+								<include>WEB-INF/lib/**</include>
+								<include>WEB-INF/classes/**</include>
+							</includes>
+						</overlay>
+
+					</overlays>
+				</configuration>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/webapp/WEB-INF</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+	<parent>
+		<groupId>zofar.manager</groupId>
+		<artifactId>zofar.manager.project</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../zofar.manager.project</relativePath>
+	</parent>
+</project>

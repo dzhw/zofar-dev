@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+	
+	</zofar:preloads>
+
+	<!-- Startseite -->
+	<!-- Erste Variante: Text/einführende Seite innerhalb des Headers -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+			<zofar:title uid="t" block="true">#{layout.BREAK}Zwischen
+				Etablierung, Stabilisierung#{layout.BREAK}#{layout.BREAK} und
+				Aufstieg?
+			</zofar:title>
+			<zofar:text uid="t1" block="true">#{layout.BREAK}#{layout.BREAK}
+				#{layout.BOLD_START}
+				Zweite Befragung der Hochschulabsolventinnen
+				#{layout.BREAK}#{layout.BREAK}
+				und Hochschulabsolventen des Jahrgangs
+				2008/2009#{layout.BOLD_END}
+				#{layout.BREAK}#{layout.BREAK}#{layout.BREAK}
+			</zofar:text>
+			<zofar:text uid="t2" block="true">
+				Sehr geehrte Absolventin, sehr geehrter Absolvent, 
+				#{layout.BREAK}#{layout.BREAK}
+				vielen Dank, dass Sie an der zweiten Befragung des Absolventenjahrgangs 2008/2009 teilnehmen. Für ein repräsentatives Ergebnis kommt es dabei auf jeden ausgefüllten Fragebogen an – daher ist auch Ihr ausgefüllter Fragebogen wichtig.
+				#{layout.BREAK}#{layout.BREAK}
+				Der Fragebogen gliedert sich in verschiedene thematische Abschnitte zu Ihrem Werdegang nach Ihrem Studium. Bitte beantworten Sie nach Möglichkeit jede Frage. Ihre Antwort geben Sie durch Auswählen des jeweiligen Kästchens. Bei Besonderheiten zur Beantwortung einer Frage oder mehreren möglichen Antworten werden Sie jeweils  darauf hingewiesen. Die Beantwortung des Fragebogens nimmt ungefähr [Zeit nach Pretest eintragen] in Anspruch.
+				#{layout.BREAK}#{layout.BREAK}
+				Sie können jederzeit im Fragebogen pausieren und die Beantwortung zu einem späteren Zeitpunkt fortsetzen. Wenn Sie bis zum 28.02.2015 den Fragebogen abgeschlossen und an uns gesendet haben, nehmen Sie automatisch am Gewinnspiel eines MacBook Pro, mehrerer iPods, Reisegutscheine und USB-Sticks im Gesamtwert von 4.000 Euro teil. 
+				#{layout.BREAK}#{layout.BREAK}
+				Selbstverständlich werden Ihre Angaben aus dem Fragebogen anonymisiert und vertraulich behandelt. Sollten Sie Fragen zum Datenschutz haben, können Sie sich an unseren Datenschutzbeauftragten, Herrn Martin Fuchs, wenden. [+49 (0)511 1220-191; (E-Mail:#{layout.mail('fuchs@dzhw.eu','fuchs@dzhw.eu')})]. Weitere Informationen zum Datenschutz finden Sie auch unter [link]. 
+			</zofar:text>			
+		</zofar:header>
+		<zofar:body uid="body">			
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="page1"/>
+		</zofar:transitions>
+	</zofar:page>
+	
+	<!-- Zweite Variante: Text/einführende Seite innerhalb einer Section auf einer Page -->
+	<zofar:page uid="page1">
+		<zofar:body uid="body">
+			<!-- Section/Themenbereich -->
+			<!-- In diesem Fall als einführenden Seite zur Befragung. 
+				 Kann aber auch als Gruppirungselement für die Markierung von Themenbereichen eingesetzt werden -->
+			<zofar:section uid="section">
+				<zofar:header>
+					<!-- Überschrift -->
+					<zofar:title uid="title">						
+						Zwischen Etablierung, Stabilisierung und Aufstieg?
+					</zofar:title>
+					<!-- Textblock -->
+					<zofar:text uid="text1" block="true">
+						Sehr geehrte Absolventin, sehr geehrter Absolvent, 
+						#{layout.BREAK}#{layout.BREAK}
+						vielen Dank, dass Sie an der zweiten Befragung des Absolventenjahrgangs 2008/2009 teilnehmen. Für ein repräsentatives Ergebnis kommt es dabei auf jeden ausgefüllten Fragebogen an – daher ist auch Ihr ausgefüllter Fragebogen wichtig.
+						#{layout.BREAK}#{layout.BREAK}
+						Der Fragebogen gliedert sich in verschiedene thematische Abschnitte zu Ihrem Werdegang nach Ihrem Studium. Bitte beantworten Sie nach Möglichkeit jede Frage. Ihre Antwort geben Sie durch Auswählen des jeweiligen Kästchens. Bei Besonderheiten zur Beantwortung einer Frage oder mehreren möglichen Antworten werden Sie jeweils  darauf hingewiesen. Die Beantwortung des Fragebogens nimmt ungefähr [Zeit nach Pretest eintragen] in Anspruch.
+						#{layout.BREAK}#{layout.BREAK}
+						Sie können jederzeit im Fragebogen pausieren und die Beantwortung zu einem späteren Zeitpunkt fortsetzen. Wenn Sie bis zum 28.02.2015 den Fragebogen abgeschlossen und an uns gesendet haben, nehmen Sie automatisch am Gewinnspiel eines MacBook Pro, mehrerer iPods, Reisegutscheine und USB-Sticks im Gesamtwert von 4.000 Euro teil. 
+						#{layout.BREAK}#{layout.BREAK}
+						Selbstverständlich werden Ihre Angaben aus dem Fragebogen anonymisiert und vertraulich behandelt. Sollten Sie Fragen zum Datenschutz haben, können Sie sich an unseren Datenschutzbeauftragten, Herrn Martin Fuchs, wenden. [+49 (0)511 1220-191; (E-Mail:#{layout.mail('fuchs@dzhw.eu','fuchs@dzhw.eu')})]. Weitere Informationen zum Datenschutz finden Sie auch unter [link]. 
+					</zofar:text>			
+				</zofar:header>
+			</zofar:section>
+		</zofar:body>
+		<!-- Definition der Seitennavigation -->
+		<zofar:transitions>
+			<zofar:transition target="end"/>
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

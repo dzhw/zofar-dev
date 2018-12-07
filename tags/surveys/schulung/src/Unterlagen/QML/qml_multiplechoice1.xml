@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+
+	</zofar:preloads>
+	<zofar:variables>
+		<!-- Variablen für Mehrfachnennungen -->
+		<zofar:variable name="mc1" type="boolean"></zofar:variable>
+		<zofar:variable name="mc2" type="boolean"></zofar:variable>
+		<zofar:variable name="mc3" type="boolean"></zofar:variable>
+		<zofar:variable name="mc4" type="boolean"></zofar:variable>
+		<zofar:variable name="mc5" type="boolean"></zofar:variable>
+		<zofar:variable name="mc6" type="boolean"></zofar:variable>
+	</zofar:variables>
+
+	<!-- Startseite -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<!-- Einfache vertikale Mehrfachnennung mit Zebra-Muster-->
+			<zofar:multipleChoice uid="mc1">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+
+				<zofar:responseDomain uid="rd" itemClasses="true">
+					<zofar:answerOption label="(1) Erste Möglichkeit" uid="ao1" variable="mc1"/>
+					<zofar:answerOption label="(2) Zweite Möglichkeit" uid="ao2" variable="mc2"/>
+					<zofar:answerOption label="(3) Dritte Möglichkeit" uid="ao3" variable="mc3"/>
+				</zofar:responseDomain>
+			</zofar:multipleChoice>
+			
+			<!-- Einfache horizontale Mehrfachnennung -->
+			<zofar:multipleChoice uid="mc2">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+
+				<zofar:responseDomain uid="rd" direction="horizontal">
+					<zofar:answerOption label="(1) Erste Möglichkeit" uid="ao1" variable="mc4"/>
+					<zofar:answerOption label="(2) Zweite Möglichkeit" uid="ao2" variable="mc5"/>
+					<zofar:answerOption label="(3) Dritte Möglichkeit" uid="ao3" variable="mc6"/>
+				</zofar:responseDomain>
+			</zofar:multipleChoice>
+
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="end" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

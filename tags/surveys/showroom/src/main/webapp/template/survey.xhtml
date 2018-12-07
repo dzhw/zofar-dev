@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:common="http://java.sun.com/jsf/composite/common"
+	xmlns:rich="http://richfaces.org/rich" xmlns:zo="http://zofar.org/ui">
+
+<h:head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<title>Survey004 Befragung</title>
+	<h:outputStylesheet library="css" name="general.css" />
+	<h:outputStylesheet library="css" name="side-nav.css" />
+	<h:outputScript library="js" name="zofarBanane.js" />
+	<script type="text/javascript">
+	
+	window.onload = function() {
+		
+		var currentSite='#{view.viewId.substring(1, view.viewId.length()-6)}';
+
+		if (currentSite!=""){
+			var myCurrent=mySideNav().get(currentSite);
+			localStorage.setItem("showCurrentElement",myCurrent);
+		} 
+
+		
+		          
+
+		
+		var id='';
+		try{
+		id = localStorage.getItem("showCurrentElement");
+		}catch(e) {
+		id = 'willkommen';
+		localStorage.setItem("showCurrentElement",id);
+		}
+		manageAccordion(id);
+		}
+		   function openSideNav() {
+	           document.getElementById("sidenav").style.display = "block";
+	       }
+	       function closeSideNav() {
+	           document.getElementById("sidenav").style.display = "none";
+	       }
+	       function manageAccordion(id) {
+	       document.getElementById("sidenav").className.replace(" w3-show", "");
+	       localStorage.setItem("showCurrentElement",id);
+	           var x = document.getElementById(localStorage.getItem("showCurrentElement"));
+	            x.className += " w3-show";
+	            x.previousElementSibling.className += " w3-blue";
+	       }
+
+	       
+	       function mySideNav(){
+	    	var sideMap = new Map();
+	   		sideMap.set("index", "willkommen");
+	   		sideMap.set("index_hintergrundinformationen", "willkommen");
+	   		sideMap.set("index_logik", "willkommen");
+	   		sideMap.set("index_fehlerquellen", "willkommen");
+
+	   		sideMap.set("pretest_start", "pretest");
+
+	   		sideMap.set("zugang_start", "zugang_start");
+	   		sideMap.set("zugang_einladung", "zugang_start");
+	   		sideMap.set("zugang_login", "zugang_start");
+	   		
+	   		sideMap.set("aufbau_start", "aufbau_start");
+	   		sideMap.set("aufbau_befragungsinformation", "aufbau_start");
+	   		sideMap.set("aufbau_anleitung", "aufbau_start");
+	   		sideMap.set("aufbau_themenkomplexe", "aufbau_start");
+	   		sideMap.set("aufbau_danksagung", "aufbau_start");
+	   		
+	   		sideMap.set("textsorten_start", "textsorten_start");
+	   		sideMap.set("textsorten_ueberschrift", "textsorten_start");
+	   		sideMap.set("textsorten_einleitung", "textsorten_start");
+	   		sideMap.set("textsorten_frage", "textsorten_start");
+	   		sideMap.set("textsorten_instruktion", "textsorten_start");
+	   		sideMap.set("textsorten_text", "textsorten_start");
+	   		sideMap.set("textsorten_antwortkategorie", "textsorten_start");
+	   		sideMap.set("textsorten_item", "textsorten_start");
+
+	   		sideMap.set("fragetypen_start", "fragetypen_start");
+	   		sideMap.set("fragetypen_offene_frage", "fragetypen_start");
+	   		sideMap.set("fragetypen_einfachauswahl", "fragetypen_start");
+	   		sideMap.set("fragetypen_mehrfachauswahl", "fragetypen_start");
+	   		sideMap.set("fragetypen_matrix", "fragetypen_start");
+	   		sideMap.set("fragetypen_doppelmatrix", "fragetypen_start");
+	   		sideMap.set("fragetypen_differenzial", "fragetypen_start");
+	   		sideMap.set("fragetypen_kalendarium", "fragetypen_start");
+	   		sideMap.set("fragetypen_kommentarfeld", "fragetypen_start");
+	   		
+	   		sideMap.set("antwortgruppierung_start", "antwortgruppierung_start");
+	   		sideMap.set("antwortgruppierung_dynamik", "antwortgruppierung_start");
+	   		
+	   		sideMap.set("fragebogensteuerung_start", "fragebogensteuerung_start");
+	   		sideMap.set("fragebogensteuerung_filterfuehrung", "fragebogensteuerung_start");
+	   		sideMap.set("fragebogensteuerung_bedingte_anzeige", "fragebogensteuerung_start");
+	   		sideMap.set("fragebogensteuerung_antwortreferenzierung", "fragebogensteuerung_start");
+	   		
+	   		sideMap.set("abgeleitete_variablen_start", "abgeleitete_variablen_start");
+	   		
+	   		sideMap.set("randomisierung_start", "randomisierung_start");
+	   		sideMap.set("randomisierung_zufallsfunktion_spel", "randomisierung_start");
+	   		
+	   		sideMap.set("antwortvalidierung_start", "antwortvalidierung_start");
+	   		
+	   		sideMap.set("navigation_start", "navigation_start");
+	   		
+	   		sideMap.set("anzeige_befragungslaenge_start", "anzeige_befragungslaenge_start");
+	   		sideMap.set("anzeige_befragungslaenge_fortschrittsbalken", "anzeige_befragungslaenge_start");
+	   		sideMap.set("anzeige_befragungslaenge_kapitelueberschrift", "anzeige_befragungslaenge_start");
+	   		
+	   		sideMap.set("barrierefreiheit_start", "barrierefreiheit_start");
+	   		sideMap.set("barrierefreiheit_internationalisierung", "barrierefreiheit_start");
+	   		sideMap.set("barrierefreiheit_mobilgeraete", "barrierefreiheit_start");
+	   		sideMap.set("barrierefreiheit_sehbehinderungen", "barrierefreiheit_start");
+	   		sideMap.set("barrierefreiheit_kognition", "barrierefreiheit_start");
+	   		
+	   		sideMap.set("layout_start", "layout_start");
+	   		
+	   		sideMap.set("prozessdaten_start", "prozessdaten_start");
+	   		
+	   		sideMap.set("literaturverzeichnis_start", "literaturverzeichnis_start");
+	   		
+
+	   		
+	   		return sideMap;
+
+			}
+	</script>
+</h:head>
+<h:body>
+    #{navigatorBean.registerViewID(view.viewId.substring(1, view.viewId.length()-6))}	
+    <f:view locale="#{sessionController.currentLocale}">
+			<nav
+				class="w3-sidenav w3-collapse w3-white w3-card-4 side-nav-container w3-leftbar w3-border-blue" id="sidenav">
+				<a href="javascript:void(0)" onclick="closeSideNav()" class="w3-closenav w3-large w3-hide-large w3-container w3-blue">Schließen X</a>
+				<div class="w3-accordion">
+				    <a data-title="willkommen" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./index.html">Willkommen</a>
+				    <div id="willkommen" class="w3-accordion-content w3-white w3-card-4">
+				       <a data-title="willkommen" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./index_hintergrundinformationen.html">Hintergrundinformationen</a>
+				       <a data-title="willkommen" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./index_logik.html">Logik der Onlinebefragung</a>
+				       <a data-title="willkommen" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./index_fehlerquellen.html">Fehlerquellen</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="pretest" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./pretest_start.html">Pretest</a>
+				    <div id="pretest" class="w3-accordion-content w3-white w3-card-4">
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="zugang_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./zugang_start.html">Zugang zur Befragung</a>
+				    <div id="zugang_start" class="w3-accordion-content w3-white w3-card-4">
+				       <a data-title="zugang_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./zugang_einladung.html">Einladung zur Befragung</a>
+				       <a data-title="zugang_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./zugang_login.html">Login-Methoden</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="aufbau_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./aufbau_start.html">Aufbau des Fragebogens</a>
+				    <div id="aufbau_start" class="w3-accordion-content w3-white w3-card-4">
+				       <a data-title="aufbau_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./aufbau_befragungsinformation.html">Informationen zur Befragung</a>
+				       <a data-title="aufbau_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./aufbau_anleitung.html">Anleitung zur Beantwortung</a>
+				       <a data-title="aufbau_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./aufbau_themenkomplexe.html">Themenkomplexe und Fragen</a>
+				       <a data-title="aufbau_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./aufbau_danksagung.html">Danksagung und Informationen</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="textsorten_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./textsorten_start.html">Textsorten</a>
+				    <div id="textsorten_start" class="w3-accordion-content w3-white w3-card-4">
+				       <a data-title="textsorten_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./textsorten_ueberschrift.html">Überschrift</a>
+				       <a data-title="textsorten_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./textsorten_einleitung.html">Einleitung bzw. Überleitung</a>
+				       <a data-title="textsorten_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./textsorten_frage.html">Frage</a>
+				       <a data-title="textsorten_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./textsorten_instruktion.html">Instruktion</a>
+				       <a data-title="textsorten_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./textsorten_text.html">Zusätzlicher Text</a>
+				       <a data-title="textsorten_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./textsorten_antwortkategorie.html">Antwortkategorie</a>
+				       <a data-title="textsorten_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./textsorten_item.html">Item</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="fragetypen_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragetypen_start.html">Fragetypen und Formatoptionen</a>
+				    <div id="fragetypen_start" class="w3-accordion-content w3-white w3-card-4">
+				       <a data-title="fragetypen_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragetypen_offene_frage.html">Offene Frage</a>
+				       <a data-title="fragetypen_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragetypen_einfachauswahl.html">Einfachauswahl</a>
+				       <a data-title="fragetypen_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragetypen_mehrfachauswahl.html">Mehrfachauswahl</a>
+				       <a data-title="fragetypen_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragetypen_matrix.html">Matrix</a>
+				       <a data-title="fragetypen_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragetypen_doppelmatrix.html">Doppelmatrix</a>
+				       <a data-title="fragetypen_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragetypen_differenzial.html">Semantisches Differenzial</a>
+				       <a data-title="fragetypen_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragetypen_kalendarium.html">Kalendarium</a>
+				       <a data-title="fragetypen_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragetypen_kommentarfeld.html">Kommentarfeld</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="antwortgruppierung_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./antwortgruppierung_start.html">Antwortgruppierung</a>
+				    <div id="antwortgruppierung_start" class="w3-accordion-content w3-white w3-card-4">
+				        <a data-title="antwortgruppierung_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./antwortgruppierung_dynamik.html">Übersicht und Verweise Dynamik</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="fragebogensteuerung_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragebogensteuerung_start.html">Fragebogensteuerung</a>
+				    <div id="fragebogensteuerung_start" class="w3-accordion-content w3-white w3-card-4">
+				       <a data-title="fragebogensteuerung_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragebogensteuerung_filterfuehrung.html">Filterführung</a>
+				       <a data-title="fragebogensteuerung_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragebogensteuerung_bedingte_anzeige.html">Bedingte Anzeige von Fragebogenteilen</a>
+				       <a data-title="fragebogensteuerung_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./fragebogensteuerung_antwortreferenzierung.html">Antwortreferenzierung</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="abgeleitete_variablen_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./abgeleitete_variablen_start.html">Abgeleitete Variablen</a>
+				    <div id="abgeleitete_variablen_start" class="w3-accordion-content w3-white w3-card-4">
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="randomisierung_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./randomisierung_start.html">Randomisierung</a>
+				    <div id="randomisierung_start" class="w3-accordion-content w3-white w3-card-4">
+				        <a data-title="randomisierung_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./randomisierung_zufallsfunktion_spel.html">Zufallsfunktion in SpEL</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="antwortvalidierung_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./antwortvalidierung_start.html">Antwortvalidierung</a>
+				    <div id="antwortvalidierung_start" class="w3-accordion-content w3-white w3-card-4">
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="navigation_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./navigation_start.html">Navigation</a>
+				    <div id="navigation_start" class="w3-accordion-content w3-white w3-card-4">
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="anzeige_befragungslaenge_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./anzeige_befragungslaenge_start.html">Anzeige der Befragungslänge</a>
+				    <div id="anzeige_befragungslaenge_start" class="w3-accordion-content w3-white w3-card-4">
+				       <a data-title="anzeige_befragungslaenge_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./anzeige_befragungslaenge_fortschrittsbalken.html">Fortschrittsbalken</a>
+				       <a data-title="anzeige_befragungslaenge_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./anzeige_befragungslaenge_kapitelueberschrift.html">Kapitelüberschrift</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="barrierefreiheit_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./barrierefreiheit_start.html">Barrierefreiheit</a>
+				    <div id="barrierefreiheit_start" class="w3-accordion-content w3-white w3-card-4">
+				       <a data-title="barrierefreiheit_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./barrierefreiheit_internationalisierung.html">Internationalisierung</a>
+				       <a data-title="barrierefreiheit_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./barrierefreiheit_mobilgeraete.html">Mobile Endgeräte</a>
+				       <a data-title="barrierefreiheit_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./barrierefreiheit_sehbehinderungen.html">Sehbehinderungen</a>
+				       <a data-title="barrierefreiheit_start" class="w3-small w3-rightbar w3-border-white w3-hover-border-orange" onclick="manageAccordion(this.getAttribute('data-title'))" href="./barrierefreiheit_kognition.html">Kognitive Einschräkungen</a>
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="layout_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./layout_start.html">Layout</a>
+				    <div id="layout_start" class="w3-accordion-content w3-white w3-card-4">
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="prozessdaten_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./prozessdaten_start.html">Prozessdaten</a>
+				    <div id="prozessdaten_start" class="w3-accordion-content w3-white w3-card-4">
+				    </div>
+				</div>
+				<div class="w3-accordion">
+				    <a data-title="literaturverzeichnis_start" class="w3-medium w3-border-bottom" onclick="manageAccordion(this.getAttribute('data-title'))" href="./literaturverzeichnis_start.html">Literaturverzeichnis</a>
+				    <div id="literaturverzeichnis_start" class="w3-accordion-content w3-white w3-card-4">
+				    </div>
+				</div>
+			 </nav>
+			 <h:form>
+			<div class="w3-main">
+				<header class="w3-container"> <span
+					class="w3-opennav w3-xlarge w3-hide-large" onclick="openSideNav()">&#9776;</span>
+				<section style="margin:10px 0;">
+				<div class="w3-left"><h:graphicImage
+					library="images" name="dzhw.jpg" width="130px" />
+				</div>
+				<div class="w3-right">
+					<zo:progressbar value="#{progress}"/>
+				</div>
+				</section>
+				<hr class="zo-spacer"/>
+				</header>
+				<div class="w3-container">
+					<h:panelGroup layout="block"
+						class="zofar-page custom-#{view.viewId.substring(1, view.viewId.length()-6)}">
+						<!-- <h:panelGroup layout="block" -->
+						<!-- class="zo-template-content zo-template-nav-top"> -->
+						<!-- <ui:insert name="template-top-navigation" /> -->
+						<!-- </h:panelGroup> -->
+						<h:panelGroup layout="block" class="zo-template-content">
+							<ui:insert name="template-content" />
+						</h:panelGroup>
+						<div class="zo-template-footer" style="padding-top: 10px">
+							<hr class="zo-spacer" />
+							<h:panelGroup layout="block" class="zo-buttons"
+								style="padding-top:15px">
+								<ui:insert name="template-buttons">
+									<!-- <zo:panel isLastPage="#{lastPage}" /> -->
+									<zo:backward value="Zurück"></zo:backward>
+									<zo:forward value="Weiter"></zo:forward>
+									<!-- <zo:logout value="Logout"></zo:logout> -->
+								</ui:insert>
+							</h:panelGroup>
+							<ui:insert name="template-footer">
+								<!-- <h:graphicImage library="images" name="his_dzhw_Logo.jpg" style="position:relative;top:-34px" height="40px"/> -->
+								<h:outputLabel name="Plalzhalter"></h:outputLabel>
+							</ui:insert>
+						</div>
+					</h:panelGroup>
+				</div>
+			</div>
+		</h:form>
+	</f:view>
+</h:body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="survey004">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/webapp/WEB-INF"/>
+        <dependent-module archiveName="zofar.presentation.surveyEngine-desync-nodozer-noselect-experimental0-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zofar.presentation.surveyEngine-desync-nodozer-noselect-experimental0/zofar.presentation.surveyEngine-desync-nodozer-noselect-experimental0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zofar.service.surveyEngine.interface-nodozer-noselect-experimental0-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zofar.service.surveyEngine.interface-nodozer-noselect-experimental0/zofar.service.surveyEngine.interface-nodozer-noselect-experimental0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zofar.persistence.surveyEngine-noselect-experimental0-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zofar.persistence.surveyEngine-noselect-experimental0/zofar.persistence.surveyEngine-noselect-experimental0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zofar.persistence.common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zofar.persistence.common/zofar.persistence.common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zofar.service.common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zofar.service.common/zofar.service.common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zofar.service.surveyEngine.impl-nodozer-noselect-experimental0-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zofar.service.surveyEngine.impl-nodozer-noselect-experimental0/zofar.service.surveyEngine.impl-nodozer-noselect-experimental0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zofar.presentation.surveyEngine.ui-desync-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zofar.presentation.surveyEngine.ui-desync/zofar.presentation.surveyEngine.ui-desync">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="zofar.presentation.common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zofar.presentation.common/zofar.presentation.common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/survey004/target/classes"/>
+        <property name="context-root" value="showroom"/>
+    </wb-module>
+</project-modules>

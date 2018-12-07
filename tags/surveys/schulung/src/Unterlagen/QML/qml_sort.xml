@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+	
+	</zofar:preloads>
+	<zofar:variables>
+		<!-- Definition der Variablen -->
+		<!-- Variable für Einfachnennungen -->
+		<zofar:variable name="sc1" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="mc1" type="boolean"></zofar:variable>
+		<zofar:variable name="mc2" type="boolean"></zofar:variable>
+		<zofar:variable name="mc3" type="boolean"></zofar:variable>
+		<zofar:variable name="mc4" type="boolean"></zofar:variable>
+		<zofar:variable name="sc2" type="singleChoiceAnswerOption" />
+		<zofar:variable name="sc3" type="singleChoiceAnswerOption" />
+		<zofar:variable name="sc4" type="singleChoiceAnswerOption" />
+		<zofar:variable name="sc5" type="singleChoiceAnswerOption" />
+	</zofar:variables>
+	
+	<!-- Startseite -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+		
+			<!-- Einfachnennung als einfache vertikale Auswahlliste (Values werden angezeigt)-->
+			<zofar:questionSingleChoice uid="SingleChoice1">
+				<zofar:header>
+					<!-- Fragenkopf -->
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung</zofar:instruction>
+				</zofar:header>
+				<zofar:responseDomain variable="sc1" uid="rdc" direction="vertical" type="radio">
+					<!-- Antwortcontainer -->
+					<!-- Gruppierung von Antwortoptionen, um diese zufällig zu sortieren-->
+					<zofar:unit uid="unit1" sortMode="random">										
+						<!-- Antwortoption 1 -->
+						<zofar:answerOption uid="ao1" value="1"
+							label="Label1" />
+						<!-- Antwortoption 2 -->	
+						<zofar:answerOption uid="ao2" value="2"
+							label="Label2" />
+						<!-- Missingoption 1 -->	
+						<zofar:answerOption uid="ao3" value="3"
+							label="Label3"/>
+						<zofar:answerOption uid="ao4" value="4"
+							label="Label4"/>
+					</zofar:unit>
+				</zofar:responseDomain>
+			</zofar:questionSingleChoice>			
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="page1"/>
+		</zofar:transitions>
+	</zofar:page>
+	<!-- Startseite -->
+	<zofar:page uid="page1">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<!-- Einfache vertikale Mehrfachnennung mit Zebra-Muster-->
+			<zofar:multipleChoice uid="mc1">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:responseDomain uid="rd" itemClasses="true">
+					<!-- Gruppierung von Antwortoptionen, um diese zufällig zu sortieren wenn eine Bedingung erfüllt ist-->
+					<zofar:unit uid="unit1" sortMode="random" sortCondition="sc1.value==1">
+						<zofar:answerOption label="(1) Erste Möglichkeit" uid="ao1" variable="mc1"/>
+						<zofar:answerOption label="(2) Zweite Möglichkeit" uid="ao2" variable="mc2"/>
+						<zofar:answerOption label="(3) Dritte Möglichkeit" uid="ao3" variable="mc3"/>
+						<zofar:answerOption label="(4) Vierte Möglichkeit" uid="ao4" variable="mc4"/>
+					</zofar:unit>
+				</zofar:responseDomain>
+			</zofar:multipleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="page2" />
+		</zofar:transitions>
+	</zofar:page>
+	<zofar:page uid="page2">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+		  <!-- Matrix Einfachnennung-->
+			<zofar:matrixQuestionSingleChoice
+				uid="msc">
+				<zofar:header>
+					<!-- Fragenkopf -->
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:responseDomain itemClasses="true"
+					noResponseOptions="6" uid="rsd">
+
+					<zofar:header>
+						<!-- Spaltenüberschriften der normalen Antwortoptionen -->
+						<zofar:title uid="t1">stimme ganz zu</zofar:title>
+						<zofar:title uid="t3">teils/teils</zofar:title>
+						<zofar:title uid="t5">lehne ganz ab
+						</zofar:title>
+					</zofar:header>
+					<zofar:missingHeader>
+						<!-- Spaltenüberschriften der Missing Antwortoptionen -->
+						<zofar:title uid="t6">sag ich nicht</zofar:title>
+					</zofar:missingHeader>
+					<!-- Gruppierung von Items einer Matrix, um diese zufällig zu sortieren -->
+					<zofar:unit uid="unit1" sortMode="random">
+						<zofar:item uid="i1">
+							<zofar:header>
+								<!-- Fragetext erstes Item -->
+								<zofar:question uid="q1">(1) Erste Aussage
+								</zofar:question>
+							</zofar:header>
+							<zofar:responseDomain uid="rd" variable="sc2">
+								<zofar:answerOption uid="a01" value="1" />
+								<zofar:answerOption uid="a02" value="2" />
+								<zofar:answerOption uid="a03" value="3" />
+								<zofar:answerOption missing="true" uid="a06"
+									value="-97" />
+							</zofar:responseDomain>
+						</zofar:item>
+						<zofar:item uid="i2">
+							<zofar:header>
+								<zofar:question uid="q1">(2) Zweite Aussage
+								</zofar:question>
+							</zofar:header>
+							<zofar:responseDomain uid="rd" variable="sc3">
+								<zofar:answerOption uid="a01" value="1" />
+								<zofar:answerOption uid="a02" value="2" />
+								<zofar:answerOption uid="a03" value="3" />
+								<zofar:answerOption missing="true" uid="a06" value="-97" />
+							</zofar:responseDomain>
+						</zofar:item>
+					
+					<zofar:item uid="i3">
+						<zofar:header>
+							<zofar:question uid="q1">(3) Dritte Aussage
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd" variable="sc4">
+							<zofar:answerOption uid="a01" value="1" />
+							<zofar:answerOption uid="a02" value="2" />
+							<zofar:answerOption uid="a03" value="3" />
+							<zofar:answerOption missing="true" uid="a06"
+								value="-97" />
+						</zofar:responseDomain>
+					</zofar:item>
+					</zofar:unit>
+					<zofar:item uid="i4">
+						<zofar:header>
+							<zofar:question uid="q1">(4) Viert Aussage
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd" variable="sc5">
+							<zofar:answerOption uid="a01" value="1" />
+							<zofar:answerOption uid="a02" value="2" />
+							<zofar:answerOption uid="a03" value="3" />
+							<zofar:answerOption missing="true" uid="a06"
+								value="-97" />
+						</zofar:responseDomain>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixQuestionSingleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="end" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

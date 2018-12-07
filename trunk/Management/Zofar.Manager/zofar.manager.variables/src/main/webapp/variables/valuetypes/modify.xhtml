@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Variables (Value Types) Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{variables.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<h1>Modify current Type</h1>
+		<p>
+			<h:panelGrid id="grid" columns="2">
+				<h:outputLabel value="Identifier:" for="identifier" />
+				<h:inputText id="identifier" value="#{valueType.current.identifier}" />
+				<h:outputLabel value="Description:" for="description" />
+				<h:inputText id="description"
+					value="#{valueType.current.description}" />
+				<h:outputLabel value="Measurement Level:" for="measurementLevel" />
+				<h:selectOneMenu id="measurementLevel"
+					value="#{valueType.currentMeasurementLevel}">
+					<f:selectItems value="#{valueType.measurementLevels}" />
+				</h:selectOneMenu>
+
+				<h:outputLabel value="Length:" for="length"
+					rendered="#{valueType.isString()}" />
+				<h:inputText id="length" value="#{valueType.current.length}"
+					rendered="#{valueType.isString()}" />
+				<h:outputLabel value="Empty:" for="empty"
+					rendered="#{valueType.isString()}" />
+				<h:selectBooleanCheckbox id="empty"
+					value="#{valueType.current.canBeEmpty}"
+					rendered="#{valueType.isString()}" />
+
+
+				<h:outputLabel value="DecimalPlaces:" for="decimalplaces"
+					rendered="#{valueType.isNumber()}" />
+				<h:inputText id="decimalplaces"
+					value="#{valueType.current.decimalPlaces}"
+					rendered="#{valueType.isNumber()}" />
+				<h:outputLabel value="Minimum:" for="minimum"
+					rendered="#{valueType.isNumber()}" />
+				<h:inputText id="minimum" value="#{valueType.current.minimum}"
+					rendered="#{valueType.isNumber()}" />
+				<h:outputLabel value="Maximum:" for="maximum"
+					rendered="#{valueType.isNumber()}" />
+				<h:inputText id="maximum" value="#{valueType.current.maximum}"
+					rendered="#{valueType.isNumber()}" />
+			</h:panelGrid>
+		</p>
+		<rich:dataTable width="700" var="record"
+			value="#{uiPossibleValueTableController.values}">
+			<f:facet name="header">
+				<rich:columnGroup>
+					<rich:column>
+						<h:outputText value="Description" />
+					</rich:column>
+					<rich:column>
+						<h:outputText value="Value" />
+					</rich:column>
+					<rich:column>
+						<h:outputText value="Missing" />
+					</rich:column>
+					<rich:column>
+						<h:commandButton action="save" value="Create new Value"
+							actionListener="#{possibleValue.create}">
+						</h:commandButton>
+						<h:commandButton action="import_pv" value="Import Values">
+						</h:commandButton>
+					</rich:column>
+				</rich:columnGroup>
+			</f:facet>
+			<rich:column>
+				<h:outputText value="#{record.description}" />
+			</rich:column>
+			<rich:column>
+				<h:outputText value="#{record.value}" />
+			</rich:column>
+			<rich:column>
+				<h:outputText value="#{record.missing}" />
+			</rich:column>
+
+			<rich:column>
+				<h:commandButton action="modify_pv" value="Edit..."
+					actionListener="#{possibleValue.modify}">
+					<f:attribute name="ref" value="#{record.ref}" />
+				</h:commandButton>
+				<h:commandButton action="save" value="Remove"
+					actionListener="#{possibleValue.remove}">
+					<f:attribute name="ref" value="#{record.ref}" />
+					<f:attribute name="key" value="#{record.key}" />
+				</h:commandButton>
+			</rich:column>
+		</rich:dataTable>
+
+
+		<h:commandButton value="Save" actionListener="#{valueType.save}"
+			action="save" />
+		<h:commandButton value="Back to Value Type Index" action="sub1_index" />
+	</h:form>
+</h:body>
+</html>

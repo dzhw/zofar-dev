@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+
+	</zofar:preloads>
+	<zofar:variables>
+		<!-- Definition der Variablen -->
+		<zofar:variable name="sc1" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc2" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc3" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc4" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc5" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc6" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc7" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc8" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc9" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc10" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc11" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc12" type="singleChoiceAnswerOption"></zofar:variable>
+	</zofar:variables>
+
+	<!-- Startseite -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<!-- Doppelte Matrix Einfachnennung Frage -->
+
+			<zofar:matrixDouble uid="matrix">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain itemClasses="true"
+					noResponseOptions="3" uid="rd">
+					<zofar:leftScaleHeader>
+						<zofar:title uid="ls">Linke Überschrift
+						</zofar:title>
+					</zofar:leftScaleHeader>
+					<zofar:rightScaleHeader>
+						<zofar:title uid="rs">Rechte Überschrift
+						</zofar:title>
+					</zofar:rightScaleHeader>
+					<zofar:leftHeader>
+						<zofar:title uid="lh1">ja
+						</zofar:title>
+						<zofar:title uid="lh2">vielleicht
+						</zofar:title>
+						<zofar:title uid="lh3">nein</zofar:title>
+					</zofar:leftHeader>
+					<zofar:rightHeader>
+						<zofar:title uid="rh1">ganz
+						</zofar:title>
+						<zofar:title uid="rh2">halb
+						</zofar:title>
+						<zofar:title uid="rh3">garnicht</zofar:title>
+					</zofar:rightHeader>
+					<zofar:item uid="i1">
+						<zofar:question>
+							<zofar:question uid="q">Spezielles Fachwissen
+							</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="sc1">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:left>
+						<zofar:right uid="r" variable="sc2">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:right>
+					</zofar:item>
+					<zofar:item uid="i2">
+						<zofar:question>
+							<zofar:question uid="q">Breites Grundlagenwissen
+							</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="sc3">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:left>
+						<zofar:right uid="r" variable="sc4">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:right>
+					</zofar:item>
+					<zofar:item uid="i3">
+						<zofar:question>
+							<zofar:question uid="q">Kenntnis wissenschaftlicher
+								Methoden
+							</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="sc5">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:left>
+						<zofar:right uid="r" variable="sc6">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:right>
+					</zofar:item>
+					<zofar:item uid="i4">
+						<zofar:question>
+							<zofar:question uid="q">Fremdsprachen</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="sc7">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:left>
+						<zofar:right uid="r" variable="sc8">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:right>
+					</zofar:item>
+					<zofar:item uid="i5">
+						<zofar:question>
+							<zofar:question uid="q">Kommunkationsfähigkeit
+							</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="sc9">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:left>
+						<zofar:right uid="r" variable="sc10">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:right>
+					</zofar:item>
+					<zofar:item uid="i6">
+						<zofar:question>
+							<zofar:question uid="q">Verhandlungsgeschick
+							</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="sc11">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:left>
+						<zofar:right uid="r" variable="sc12">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+						</zofar:right>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixDouble>
+
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="end" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

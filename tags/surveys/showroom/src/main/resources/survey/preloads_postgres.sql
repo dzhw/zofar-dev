@@ -1,0 +1,11 @@
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'588a73f4f35de2854100635ea9416645dd477a9c','part1');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'6a299af6155ffb450fe041caa79f1e22d6640dc4','tester8');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'23be27d4d47157ccf2feab3978cc48c48790bb69','tester7');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'0d30d7b377665ee9b742f12687127c2ad201db9f','tester9');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'755d171d7bbd3969b7d1dc179e1673ddb5e5d0c8','tester4');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'97898ea0f2dea62149cdae4f073b442ff123aaf6','tester3');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'c9fb537a79f8b6c5fc548183dab53b735b24d8a3','tester6');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'437091f31bf59809bd34cd0cc5e4c7da6820fe77','tester5');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'2242d37da7621d8c10df377a22a4996a220178b0','tester10');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'5e86e8cdc7188d53916fcd1d7294cee4611c7c49','tester2');
+INSERT INTO participant(id, version, password, token) VALUES (nextval('seq_participant_id'),0,'4d7547a1d2787c72f0e985d8b5194295e4aa6141','tester1');

@@ -1,0 +1,50 @@
+Grundaufbau einer Frage
+-----------------------
+Header
+  - Question Text
+  - Introduction
+  - Instruction
+ResponseDomain
+  - AnswerOption
+  - Matrix Item
+  - Unit
+
+Fragekategorien
+---------------
+
+Atomare Fragen
+  - OpenQuestion (qml_open1)
+  - SingleChoice Question (qml_singlechoice1)
+
+Einfach zusammengesetze Fragen
+  - Multiple Choice Frage (jede Antwort eine Ja/Nein SingleChoice Frage) (qml_multiplechoice1)
+  - SingleChoice Matrix (Jede Zeile eine SingleChoice Frage) (qml_singlechoice_matrix1)
+  
+Composite Fragen
+  - Multiple Choice Matrix (jede Zeile eine MC Frage ==> Jede Zelle eine Ja/Nein SC Frage) (qml_multiplechoice_matrix1)
+  - Open Matrix (Jede Zelle eine Offene Frage) (qml_open_matrix1)
+  - ComparsionQuestion (Jede Spalte eine SingleChoice oder Multiple Choice Frage) (qml_comparison1)
+  - Mixed Matrix (Jede Zelle eine Atomare, oder einfach zusammengesetzte Frage) (TODO)
+  
+schachtelbare Gruppierungsstrukturen   
+----------------------
+  - Sections auf Seiten-Ebene (qml_text)
+  - Units auf Fragen-Ebene (singlechoice, multiplechoice,matrixSC=>qml-sort)
+  - Sort (singlechoice, multiplechoice,matrixSC=>qml-sort)
+  
+  
+  
+  dropdown matrix (qml_singlechoice_matrix2)
+  große open question (qml_open1)
+  doppelmatrix (qml_double_matrix1)
+  attached open in singlechoice matrix ? 
+  differntial (qml_differential)
+  
+  
+  transitions (qml_transitions1)
+  trigger (qml_trigger1)
+  display elemente(wird erstmal nicht als Beispiel dargestellt)
+  freie Texte auf einer seite(qml_text)
+  EL-Ausdrücke (qml_el_zofarfuncs1)
+  zofar-Functions (qml_el_zofarfuncs1)
+  visible(V)

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:question="http://java.sun.com/jsf/composite/question" xmlns:answer="http://java.sun.com/jsf/composite/answer">
+  <ui:param name="progress" value="5"/>
+  <ui:define name="template-content">
+    <container:section id="page1">
+      <f:facet name="header">
+        <text:title id="t1" block="true">#{msgs['page1.t1_0']}</text:title>
+        <text:intro id="intro1">#{msgs['page1.intro1_0']}</text:intro>
+      </f:facet>
+      <question:open id="oq1">
+        <f:facet name="header">
+          <text:question id="q">#{msgs['page1.b.oq1.q_0']}</text:question>
+          <text:instruction id="ins">#{msgs['page1.b.oq1.ins_0']}</text:instruction>
+        </f:facet>
+        <answer:openResponseDomain id="responsedomain">
+          <answer:openNumberOption minValue="14.0" maxValue="120.0" validationMessage="#{msgs['page1.b.oq1']}" var="#{offen}" id="response" size="1">
+            <f:facet name="prefix">
+              <text:responseOption id="l1">#{msgs['page1.b.oq1.l1_0']}</text:responseOption>
+            </f:facet>
+            <f:facet name="postfix">
+              <text:responseOption id="l2">#{msgs['page1.b.oq1.l2_0']}</text:responseOption>
+            </f:facet>
+          </answer:openNumberOption>
+        </answer:openResponseDomain>
+      </question:open>
+      <container:section id="sw" rendered="#{navigatorBean.isSame()}">
+        <f:facet name="header">
+          <text:text id="t" block="true">#{msgs['page1.b.sw.t_0']}</text:text>
+        </f:facet>
+        <question:multipleChoice id="mc">
+          <f:facet name="header">
+            <text:question id="qm"/>
+          </f:facet>
+          <answer:multipleChoiceResponseDomain id="rd" missingSeparated="true">
+            <answer:multipleOption value="#{filter1.value}" id="ao1" missing="false">
+              <f:facet name="labels">
+                <text:responseOption id="label">#{msgs['page1.b.sw.bb.mc.rd.ao1.label']}</text:responseOption>
+              </f:facet>
+            </answer:multipleOption>
+          </answer:multipleChoiceResponseDomain>
+        </question:multipleChoice>
+      </container:section>
+      <container:section id="section">
+        <f:facet name="header">
+          <text:text id="text" block="true">#{msgs['page1.b.section.text_0']}</text:text>
+        </f:facet>
+      </container:section>
+    </container:section>
+  </ui:define>
+</ui:composition>

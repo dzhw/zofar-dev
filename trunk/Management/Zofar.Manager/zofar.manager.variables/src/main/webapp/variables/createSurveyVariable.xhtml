@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:buttons="http://java.sun.com/jsf/composite/buttons"
+	xmlns:dialogs="http://java.sun.com/jsf/composite/dialogs"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Variables Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{variables.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<h1>Create Survey Variable</h1>
+
+		<p>
+			<h:panelGrid id="grid" columns="2">
+				<h:outputLabel value="UUID:" for="uuid" />
+				<h:inputText id="uuid" value="#{variables.uuid}" />
+				<h:outputLabel value="Name:" for="name" />
+				<h:inputText id="name" value="#{variables.name}" />
+				<h:outputLabel value="Label" for="label" />
+				<h:inputText id="label" value="#{variables.label}" />
+				<h:outputLabel value="ValueType:" for="valuetype" />
+				<buttons:loadValueType uid="valuetype" chooserId="vtype"
+					valueType="#{variables.valueTypeElement}" />
+				<h:outputLabel value="Question:" for="question" />
+				<buttons:loadQuestion uid="question" chooserId="questionChooser"
+					valueType="#{variables.question}" />
+			</h:panelGrid>
+		</p>
+		<h:commandButton value="Save"
+			actionListener="#{variables.createSurveyVariable}" action="save" />
+		<h:commandButton value="Back to Variable Index" action="module_index" />
+	</h:form>
+
+	<dialogs:chooseValueType update="valuetype" uid="vtype"
+		popuplabel="Choose a Value Type" loader="#{variables.loadValueType}" />
+	<dialogs:chooseQuestion update="question" uid="questionChooser"
+		popuplabel="Choose a Question" loader="#{variables.loadQuestion}" />
+</h:body>
+</html>

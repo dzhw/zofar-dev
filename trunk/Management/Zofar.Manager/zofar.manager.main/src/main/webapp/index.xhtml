@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"      
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Zofar Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{moduleScanner.loginUser()}
+
+	#{moduleScanner.updateLinks()}
+	<h:form>
+		<ui:repeat value="#{moduleScanner.links}" var="link"
+			varStatus="status">
+			<h:outputLink value="#{link.url}">
+				<h:outputLabel value="#{link.name}" />
+			</h:outputLink>
+			<br />
+		</ui:repeat>
+		<h:outputLink value="#{request.contextPath}/spring_security_login">Login</h:outputLink><br/>
+		<h:outputLink value="#{request.contextPath}/j_spring_security_logout">Logout</h:outputLink>
+	</h:form>
+</h:body>
+</html>

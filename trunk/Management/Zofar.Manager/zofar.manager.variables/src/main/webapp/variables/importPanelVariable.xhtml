@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:editors="http://java.sun.com/jsf/composite/editors"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Variables Management</title>
+</h:head>
+<h:body bgcolor="white">
+	#{variables.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<h1>Import Panel Variable</h1>
+
+		<p>
+			<editors:xml value="#{variables.importCode}" variableType="de.his.zofar.service.valuetype.model.PanelVariable"/>
+		</p>
+		<h:commandButton value="Save"
+			actionListener="#{variables.importPanelVariable}" action="save" />
+		<h:commandButton value="Back to Variable Index" action="module_index" />
+	</h:form>
+</h:body>
+</html>

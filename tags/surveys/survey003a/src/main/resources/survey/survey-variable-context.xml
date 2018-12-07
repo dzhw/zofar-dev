@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd" default-autowire="byName" xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <bean name="sessionController" class="de.his.zofar.presentation.surveyengine.controller.SessionController" scope="session"/>
+  <bean name="vsc_1_1" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_1_1"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_1_2" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_1_2"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao2" value="2"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_2_1" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_2_1"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_2_2" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_2_2"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_2_3" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_2_3"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_2_4" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_2_4"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_3_1" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_3_1"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_3_2" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_3_2"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_1" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_1"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_2" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_2"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_3" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_3"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_4" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_4"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_5" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_5"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_6" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_6"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_7" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_7"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_8" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_8"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_9" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_9"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_10" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_10"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_11" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_11"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_12" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_12"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_4_13" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_4_13"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_1" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_1"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_2" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_2"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_3" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_3"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_4" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_4"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_5" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_5"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_6" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_6"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_7" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_7"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_8" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_8"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_9" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_9"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_10" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_10"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_5_11" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_5_11"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_1" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_1"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_2" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_2"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_3" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_3"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_4" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_4"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_5" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_5"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_6" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_6"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_7" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_7"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_8" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_8"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_9" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_9"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_10" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_10"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_11" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_11"/>
+    <property name="optionValues">
+      <map>
+        <entry key="a01" value="1"/>
+        <entry key="a02" value="2"/>
+        <entry key="a03" value="3"/>
+        <entry key="a04" value="4"/>
+        <entry key="a05" value="5"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vsc_6_12" class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vsc_6_12"/>
+    <property name="optionValues">
+      <map>
+        <entry key="ao1" value="1"/>
+        <entry key="ao3" value="3"/>
+        <entry key="ao2" value="2"/>
+        <entry key="ao5" value="5"/>
+        <entry key="ao4" value="4"/>
+      </map>
+    </property>
+    <property name="missingValues">
+      <map/>
+    </property>
+  </bean>
+  <bean name="vas_2_1" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vas_2_1"/>
+    <constructor-arg value=""/>
+  </bean>
+  <bean name="vas_2_2" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vas_2_2"/>
+    <constructor-arg value=""/>
+  </bean>
+  <bean name="vas_2_3" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vas_2_3"/>
+    <constructor-arg value=""/>
+  </bean>
+  <bean name="vas_2_4" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vas_2_4"/>
+    <constructor-arg value=""/>
+  </bean>
+  <bean name="vas_2_5" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vas_2_5"/>
+    <constructor-arg value=""/>
+  </bean>
+  <bean name="vas_2_6" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vas_2_6"/>
+    <constructor-arg value=""/>
+  </bean>
+  <bean name="vao_2_1" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_2_1"/>
+    <constructor-arg value="i1"/>
+  </bean>
+  <bean name="vao_2_2" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_2_2"/>
+    <constructor-arg value="i2"/>
+  </bean>
+  <bean name="vao_2_3" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_2_3"/>
+    <constructor-arg value="i3"/>
+  </bean>
+  <bean name="vao_2_4" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_2_4"/>
+    <constructor-arg value="i4"/>
+  </bean>
+  <bean name="vao_2_5" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_2_5"/>
+    <constructor-arg value="i5"/>
+  </bean>
+  <bean name="vao_2_6" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_2_6"/>
+    <constructor-arg value="i10"/>
+  </bean>
+  <bean name="vao_3_1" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_3_1"/>
+    <constructor-arg value="i1"/>
+  </bean>
+  <bean name="vao_3_2" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_3_2"/>
+    <constructor-arg value="i2"/>
+  </bean>
+  <bean name="vao_3_3" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_3_3"/>
+    <constructor-arg value="i10"/>
+  </bean>
+  <bean name="vao_3_4" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_3_4"/>
+    <constructor-arg value="i4"/>
+  </bean>
+  <bean name="vao_3_5" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_3_5"/>
+    <constructor-arg value=""/>
+  </bean>
+  <bean name="vao_3_6" class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vao_3_6"/>
+    <constructor-arg value=""/>
+  </bean>
+  <bean name="vqo_2_1" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vqo_2_1"/>
+  </bean>
+  <bean name="vqo_2_2" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vqo_2_2"/>
+  </bean>
+  <bean name="vqo_3_1" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vqo_3_1"/>
+  </bean>
+  <bean name="vqo_5_1" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean" scope="request">
+    <constructor-arg ref="sessionController"/>
+    <constructor-arg value="vqo_5_1"/>
+  </bean>
+</beans>

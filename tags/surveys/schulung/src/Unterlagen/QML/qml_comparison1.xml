@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+
+	</zofar:preloads>
+	<zofar:variables>
+		<!-- Variablen für Einfachnennung MatrixItems -->
+		<zofar:variable name="sc1" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc2" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="open1" type="string"></zofar:variable>
+		<zofar:variable name="open2" type="string"></zofar:variable>
+		<zofar:variable name="open3" type="string"></zofar:variable>
+		<zofar:variable name="mc1" type="boolean"></zofar:variable>
+		<zofar:variable name="mc2" type="boolean"></zofar:variable>
+		<zofar:variable name="mc3" type="boolean"></zofar:variable>
+	</zofar:variables>
+
+	<!-- Startseite -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<!-- Vergleichsfrage Einfachnennung -->
+			<zofar:comparison uid="comp">
+				<zofar:header>
+					<!-- Fragenkopf -->
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:responseDomain noResponseOptions="2"
+					itemClasses="true" uid="rd">
+					<zofar:header>
+						<zofar:title uid="t1">Fall1</zofar:title>
+						<zofar:title uid="t2">Fall2</zofar:title>
+					</zofar:header>
+					<zofar:item uid="item1">
+						<zofar:questionSingleChoice uid="sc">
+							<zofar:header>
+								<zofar:question uid="q">Mutter</zofar:question>
+							</zofar:header>
+							<zofar:responseDomain variable="sc1" uid="rd">
+								<zofar:answerOption uid="ao1" value="1" />
+								<zofar:answerOption uid="ao2" value="2">
+									<zofar:questionOpen variable="open1" uid="qo"></zofar:questionOpen>
+								</zofar:answerOption>
+							</zofar:responseDomain>
+						</zofar:questionSingleChoice>
+					</zofar:item>
+					<zofar:item uid="item2">
+						<zofar:questionSingleChoice uid="sc">
+							<zofar:header>
+								<zofar:question uid="q">Vater</zofar:question>
+							</zofar:header>
+							<zofar:responseDomain variable="sc2" uid="rd">
+								<zofar:answerOption uid="ao1" value="1" />
+								<zofar:answerOption uid="ao2" value="2">
+									<zofar:questionOpen variable="open2" uid="qo"></zofar:questionOpen>
+								</zofar:answerOption>
+							</zofar:responseDomain>
+						</zofar:questionSingleChoice>
+					</zofar:item>
+					<zofar:item uid="item3">
+						<zofar:multipleChoice uid="mc1">
+							<zofar:header>
+								<zofar:question uid="q">Kind</zofar:question>
+							</zofar:header>
+							<zofar:responseDomain uid="rd">
+								<zofar:answerOption uid="ao1" variable="mc1" />
+								<zofar:answerOption uid="ao2" variable="mc2" />
+								<zofar:answerOption uid="ao3" variable="mc3">
+									<zofar:questionOpen variable="open3" uid="qo"></zofar:questionOpen>
+								</zofar:answerOption>
+							</zofar:responseDomain>
+						</zofar:multipleChoice>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:comparison>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="end" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>zofar.cockpit</groupId>
+		<artifactId>Main</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../Main</relativePath>
+	</parent>
+	<artifactId>Master-Web</artifactId>
+	<packaging>war</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>3.2.0.RELEASE</spring.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jvnet.jax-ws-commons.spring</groupId>
+			<artifactId>jaxws-spring</artifactId>
+			<version>1.9</version>
+			<exclusions>
+				<!-- <exclusion> <groupId>org.springframework</groupId> <artifactId>spring-core</artifactId> 
+					</exclusion> -->
+				<!-- <exclusion> <groupId>org.springframework</groupId> <artifactId>spring-context</artifactId> 
+					</exclusion> -->
+				<!-- <exclusion> <groupId>com.sun.xml.stream.buffer</groupId> <artifactId>streambuffer</artifactId> 
+					</exclusion> -->
+				<!-- <exclusion> <groupId>org.jvnet.staxex</groupId> <artifactId>stax-ex</artifactId> 
+					</exclusion> -->
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>zofar.cockpit</groupId>
+			<artifactId>Service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>5.0</version>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<finalName>Master-Web</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

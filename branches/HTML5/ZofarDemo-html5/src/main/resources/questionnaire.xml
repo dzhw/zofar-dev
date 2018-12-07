@@ -1,0 +1,3621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:display="http://www.dzhw.eu/zofar/xml/display"
+	language="de">
+	<zofar:name>Zofar HTML5</zofar:name>
+	<zofar:description></zofar:description>
+	<zofar:preloads>
+		<zofar:preload password="viktor1" name="viktor1"></zofar:preload>
+		<zofar:preload password="viktor2" name="viktor2"></zofar:preload>
+		<zofar:preload password="viktor3" name="viktor3"></zofar:preload>
+		<zofar:preload password="viktor4" name="viktor4"></zofar:preload>
+		<zofar:preload password="viktor5" name="viktor5"></zofar:preload>
+		<zofar:preload password="viktor6" name="viktor6"></zofar:preload>
+		<zofar:preload password="viktor7" name="viktor7"></zofar:preload>
+		<zofar:preload password="viktor8" name="viktor8"></zofar:preload>
+		<zofar:preload password="viktor9" name="viktor9"></zofar:preload>
+		<zofar:preload password="viktor10" name="viktor10"></zofar:preload>
+
+		<zofar:preload password="christian1" name="christian1"></zofar:preload>
+		<zofar:preload password="christian2" name="christian2"></zofar:preload>
+		<zofar:preload password="christian3" name="christian3"></zofar:preload>
+		<zofar:preload password="christian4" name="christian4"></zofar:preload>
+		<zofar:preload password="christian5" name="christian5"></zofar:preload>
+		<zofar:preload password="christian6" name="christian6"></zofar:preload>
+		<zofar:preload password="christian7" name="christian7"></zofar:preload>
+		<zofar:preload password="christian8" name="christian8"></zofar:preload>
+		<zofar:preload password="christian9" name="christian9"></zofar:preload>
+		<zofar:preload password="christian10" name="christian10"></zofar:preload>
+
+		<zofar:preload password="andrea1" name="andrea1"></zofar:preload>
+		<zofar:preload password="andrea2" name="andrea2"></zofar:preload>
+		<zofar:preload password="andrea3" name="andrea3"></zofar:preload>
+		<zofar:preload password="andrea4" name="andrea4"></zofar:preload>
+		<zofar:preload password="andrea5" name="andrea5"></zofar:preload>
+		<zofar:preload password="andrea6" name="andrea6"></zofar:preload>
+		<zofar:preload password="andrea7" name="andrea7"></zofar:preload>
+		<zofar:preload password="andrea8" name="andrea8"></zofar:preload>
+		<zofar:preload password="andrea9" name="andrea9"></zofar:preload>
+		<zofar:preload password="andrea10" name="andrea10"></zofar:preload>
+
+		<zofar:preload password="nadin1" name="nadin1"></zofar:preload>
+		<zofar:preload password="nadin2" name="nadin2"></zofar:preload>
+		<zofar:preload password="nadin3" name="nadin3"></zofar:preload>
+		<zofar:preload password="nadin4" name="nadin4"></zofar:preload>
+		<zofar:preload password="nadin5" name="nadin5"></zofar:preload>
+		<zofar:preload password="nadin6" name="nadin6"></zofar:preload>
+		<zofar:preload password="nadin7" name="nadin7"></zofar:preload>
+		<zofar:preload password="nadin8" name="nadin8"></zofar:preload>
+		<zofar:preload password="nadin9" name="nadin9"></zofar:preload>
+		<zofar:preload password="nadin10" name="nadin10"></zofar:preload>
+
+		<zofar:preload password="kim1" name="kim1"></zofar:preload>
+		<zofar:preload password="kim2" name="kim2"></zofar:preload>
+		<zofar:preload password="kim3" name="kim3"></zofar:preload>
+		<zofar:preload password="kim4" name="kim4"></zofar:preload>
+		<zofar:preload password="kim5" name="kim5"></zofar:preload>
+		<zofar:preload password="kim6" name="kim6"></zofar:preload>
+		<zofar:preload password="kim7" name="kim7"></zofar:preload>
+		<zofar:preload password="kim8" name="kim8"></zofar:preload>
+		<zofar:preload password="kim9" name="kim9"></zofar:preload>
+		<zofar:preload password="kim10" name="kim10"></zofar:preload>
+
+		<zofar:preload password="integration1" name="integration1"></zofar:preload>
+		<zofar:preload password="integration2" name="integration2"></zofar:preload>
+		<zofar:preload password="integration3" name="integration3"></zofar:preload>
+		<zofar:preload password="integration4" name="integration4"></zofar:preload>
+		<zofar:preload password="integration5" name="integration5"></zofar:preload>
+		<zofar:preload password="integration6" name="integration6"></zofar:preload>
+		<zofar:preload password="integration7" name="integration7"></zofar:preload>
+		<zofar:preload password="integration8" name="integration8"></zofar:preload>
+		<zofar:preload password="integration9" name="integration9"></zofar:preload>
+		<zofar:preload password="integration10" name="integration10"></zofar:preload>
+
+		<zofar:preload password="guest1" name="guest1"></zofar:preload>
+		<zofar:preload password="guest2" name="guest2"></zofar:preload>
+		<zofar:preload password="guest3" name="guest3"></zofar:preload>
+		<zofar:preload password="guest4" name="guest4"></zofar:preload>
+		<zofar:preload password="guest5" name="guest5"></zofar:preload>
+		<zofar:preload password="guest6" name="guest6"></zofar:preload>
+		<zofar:preload password="guest7" name="guest7"></zofar:preload>
+		<zofar:preload password="guest8" name="guest8"></zofar:preload>
+		<zofar:preload password="guest9" name="guest9"></zofar:preload>
+		<zofar:preload password="guest10" name="guest10"></zofar:preload>
+
+
+	</zofar:preloads>
+
+
+	<zofar:variables>
+		<zofar:variable name="url" type="string" />
+
+		<zofar:variable name="calendarData" type="string" />
+		<zofar:variable name="displayCalendarData" type="string" />
+
+
+
+		<zofar:variable name="sc0" type="singleChoiceAnswerOption" />
+		<zofar:variable name="open1" type="string" />
+
+		<zofar:variable name="dd1" type="singleChoiceAnswerOption"/>
+		<zofar:variable name="dd2" type="singleChoiceAnswerOption"/>
+		<zofar:variable name="dd3" type="singleChoiceAnswerOption"/>
+
+		<zofar:variable name="sc1" type="singleChoiceAnswerOption" />
+		<zofar:variable name="open2" type="string" />
+
+		<zofar:variable name="sc2" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="msc1" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc2" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc3" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="msc4" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc5" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc6" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc7" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc8" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc9" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc10" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc11" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc12" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc13" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc14" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc15" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc16" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc17" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc18" type="singleChoiceAnswerOption" />
+		<zofar:variable name="msc19" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="dm1" type="singleChoiceAnswerOption" />
+		<zofar:variable name="dm2" type="singleChoiceAnswerOption" />
+		<zofar:variable name="dm3" type="singleChoiceAnswerOption" />
+		<zofar:variable name="dm4" type="singleChoiceAnswerOption" />
+		<zofar:variable name="dm5" type="singleChoiceAnswerOption" />
+		<zofar:variable name="dm6" type="singleChoiceAnswerOption" />
+		<zofar:variable name="dm7" type="singleChoiceAnswerOption" />
+		<zofar:variable name="dm8" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="sc3" type="singleChoiceAnswerOption" />
+		<zofar:variable name="sc4" type="singleChoiceAnswerOption" />
+		<zofar:variable name="sc5" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="mc1" type="boolean" />
+		<zofar:variable name="mc2" type="boolean" />
+		<zofar:variable name="mc3" type="boolean" />
+		<zofar:variable name="mc4" type="boolean" />
+		<zofar:variable name="mc5" type="boolean" />
+		<zofar:variable name="mc5_open" type="string" />
+
+		<zofar:variable name="mcx1" type="boolean" />
+		<zofar:variable name="mcx2" type="boolean" />
+		<zofar:variable name="mcx3" type="boolean" />
+		<zofar:variable name="mcx4" type="boolean" />
+		<zofar:variable name="mcx5" type="boolean" />
+		<zofar:variable name="mcx6" type="boolean" />
+		<zofar:variable name="mcx7" type="boolean" />
+		<zofar:variable name="mcx8" type="boolean" />
+		<zofar:variable name="mcx9" type="boolean" />
+		<zofar:variable name="mcx10" type="boolean" />
+		<zofar:variable name="mcx11" type="boolean" />
+		<zofar:variable name="mcx12" type="boolean" />
+		<zofar:variable name="mcx13" type="boolean" />
+		<zofar:variable name="mcx14" type="boolean" />
+		<zofar:variable name="mcx15" type="boolean" />
+		<zofar:variable name="mcx16" type="boolean" />
+		<zofar:variable name="mcx17" type="boolean" />
+		<zofar:variable name="mcx18" type="boolean" />
+		<zofar:variable name="mcx19" type="boolean" />
+		<zofar:variable name="mcx20" type="boolean" />
+		<zofar:variable name="mcx21" type="boolean" />
+		<zofar:variable name="mcx22" type="boolean" />
+		<zofar:variable name="mcx23" type="boolean" />
+		<zofar:variable name="mcx24" type="boolean" />
+		<zofar:variable name="mcx25" type="boolean" />
+		<zofar:variable name="mcx26" type="boolean" />
+		<zofar:variable name="mcx27" type="boolean" />
+		<zofar:variable name="mcx28" type="boolean" />
+		<zofar:variable name="mcx29" type="boolean" />
+		<zofar:variable name="mcx30" type="boolean" />
+		<zofar:variable name="mcx31" type="boolean" />
+		<zofar:variable name="mcx32" type="boolean" />
+		<zofar:variable name="mcx33" type="boolean" />
+		<zofar:variable name="mcx34" type="boolean" />
+
+		<zofar:variable name="open3" type="string" />
+		<zofar:variable name="open4" type="string" />
+		<zofar:variable name="open5" type="string" />
+		<zofar:variable name="open6" type="string" />
+
+		<zofar:variable name="open_area" type="string" />
+
+		<zofar:variable name="amatrixopen1" type="string" />
+		<zofar:variable name="amatrixopen2" type="string" />
+
+		<zofar:variable name="acc_sc3" type="singleChoiceAnswerOption" />
+		<zofar:variable name="acc_sc4" type="singleChoiceAnswerOption" />
+		<zofar:variable name="acc_sc5" type="singleChoiceAnswerOption" />
+		<zofar:variable name="acc_open" type="string" />
+		<zofar:variable name="acc_single" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="anmerkung" type="string" />
+
+		<zofar:variable name="width" type="number" />
+		<zofar:variable name="height" type="number" />
+		<zofar:variable name="isMobile" type="boolean" />
+		<zofar:variable name="jsCheck" type="boolean" />
+
+		<zofar:variable name="mo01stud" type="boolean" />
+		<zofar:variable name="mo01dustud" type="boolean" />
+		<zofar:variable name="mo01ausbil" type="boolean" />
+		<zofar:variable name="mo01erwerb" type="boolean" />
+		<zofar:variable name="mo01arblos" type="boolean" />
+		<zofar:variable name="mo01sonst" type="boolean" />
+		<zofar:variable name="mo02stud" type="boolean" />
+		<zofar:variable name="mo02dustud" type="boolean" />
+		<zofar:variable name="mo02ausbil" type="boolean" />
+		<zofar:variable name="mo02erwerb" type="boolean" />
+		<zofar:variable name="mo02arblos" type="boolean" />
+		<zofar:variable name="mo02sonst" type="boolean" />
+		<zofar:variable name="mo03stud" type="boolean" />
+		<zofar:variable name="mo03dustud" type="boolean" />
+		<zofar:variable name="mo03ausbil" type="boolean" />
+		<zofar:variable name="mo03erwerb" type="boolean" />
+		<zofar:variable name="mo03arblos" type="boolean" />
+		<zofar:variable name="mo03sonst" type="boolean" />
+		<zofar:variable name="mo04stud" type="boolean" />
+		<zofar:variable name="mo04dustud" type="boolean" />
+		<zofar:variable name="mo04ausbil" type="boolean" />
+		<zofar:variable name="mo04erwerb" type="boolean" />
+		<zofar:variable name="mo04arblos" type="boolean" />
+		<zofar:variable name="mo04sonst" type="boolean" />
+		<zofar:variable name="mo05stud" type="boolean" />
+		<zofar:variable name="mo05dustud" type="boolean" />
+		<zofar:variable name="mo05ausbil" type="boolean" />
+		<zofar:variable name="mo05erwerb" type="boolean" />
+		<zofar:variable name="mo05arblos" type="boolean" />
+		<zofar:variable name="mo05sonst" type="boolean" />
+		<zofar:variable name="mo06stud" type="boolean" />
+		<zofar:variable name="mo06dustud" type="boolean" />
+		<zofar:variable name="mo06ausbil" type="boolean" />
+		<zofar:variable name="mo06erwerb" type="boolean" />
+		<zofar:variable name="mo06arblos" type="boolean" />
+		<zofar:variable name="mo06sonst" type="boolean" />
+		<zofar:variable name="mo07stud" type="boolean" />
+		<zofar:variable name="mo07dustud" type="boolean" />
+		<zofar:variable name="mo07ausbil" type="boolean" />
+		<zofar:variable name="mo07erwerb" type="boolean" />
+		<zofar:variable name="mo07arblos" type="boolean" />
+		<zofar:variable name="mo07sonst" type="boolean" />
+		<zofar:variable name="mo08stud" type="boolean" />
+		<zofar:variable name="mo08dustud" type="boolean" />
+		<zofar:variable name="mo08ausbil" type="boolean" />
+		<zofar:variable name="mo08erwerb" type="boolean" />
+		<zofar:variable name="mo08arblos" type="boolean" />
+		<zofar:variable name="mo08sonst" type="boolean" />
+		<zofar:variable name="mo09stud" type="boolean" />
+		<zofar:variable name="mo09dustud" type="boolean" />
+		<zofar:variable name="mo09ausbil" type="boolean" />
+		<zofar:variable name="mo09erwerb" type="boolean" />
+		<zofar:variable name="mo09arblos" type="boolean" />
+		<zofar:variable name="mo09sonst" type="boolean" />
+		<zofar:variable name="mo10stud" type="boolean" />
+		<zofar:variable name="mo10dustud" type="boolean" />
+		<zofar:variable name="mo10ausbil" type="boolean" />
+		<zofar:variable name="mo10erwerb" type="boolean" />
+		<zofar:variable name="mo10arblos" type="boolean" />
+		<zofar:variable name="mo10sonst" type="boolean" />
+		<zofar:variable name="mo11stud" type="boolean" />
+		<zofar:variable name="mo11dustud" type="boolean" />
+		<zofar:variable name="mo11ausbil" type="boolean" />
+		<zofar:variable name="mo11erwerb" type="boolean" />
+		<zofar:variable name="mo11arblos" type="boolean" />
+		<zofar:variable name="mo11sonst" type="boolean" />
+		<zofar:variable name="mo12stud" type="boolean" />
+		<zofar:variable name="mo12dustud" type="boolean" />
+		<zofar:variable name="mo12ausbil" type="boolean" />
+		<zofar:variable name="mo12erwerb" type="boolean" />
+		<zofar:variable name="mo12arblos" type="boolean" />
+		<zofar:variable name="mo12sonst" type="boolean" />
+		<zofar:variable name="mo13stud" type="boolean" />
+		<zofar:variable name="mo13dustud" type="boolean" />
+		<zofar:variable name="mo13ausbil" type="boolean" />
+		<zofar:variable name="mo13erwerb" type="boolean" />
+		<zofar:variable name="mo13arblos" type="boolean" />
+		<zofar:variable name="mo13sonst" type="boolean" />
+		<zofar:variable name="mo14stud" type="boolean" />
+		<zofar:variable name="mo14dustud" type="boolean" />
+		<zofar:variable name="mo14ausbil" type="boolean" />
+		<zofar:variable name="mo14erwerb" type="boolean" />
+		<zofar:variable name="mo14arblos" type="boolean" />
+		<zofar:variable name="mo14sonst" type="boolean" />
+		<zofar:variable name="mo15stud" type="boolean" />
+		<zofar:variable name="mo15dustud" type="boolean" />
+		<zofar:variable name="mo15ausbil" type="boolean" />
+		<zofar:variable name="mo15erwerb" type="boolean" />
+		<zofar:variable name="mo15arblos" type="boolean" />
+		<zofar:variable name="mo15sonst" type="boolean" />
+		<zofar:variable name="mo16stud" type="boolean" />
+		<zofar:variable name="mo16dustud" type="boolean" />
+		<zofar:variable name="mo16ausbil" type="boolean" />
+		<zofar:variable name="mo16erwerb" type="boolean" />
+		<zofar:variable name="mo16arblos" type="boolean" />
+		<zofar:variable name="mo16sonst" type="boolean" />
+		<zofar:variable name="mo17stud" type="boolean" />
+		<zofar:variable name="mo17dustud" type="boolean" />
+		<zofar:variable name="mo17ausbil" type="boolean" />
+		<zofar:variable name="mo17erwerb" type="boolean" />
+		<zofar:variable name="mo17arblos" type="boolean" />
+		<zofar:variable name="mo17sonst" type="boolean" />
+		<zofar:variable name="mo18stud" type="boolean" />
+		<zofar:variable name="mo18dustud" type="boolean" />
+		<zofar:variable name="mo18ausbil" type="boolean" />
+		<zofar:variable name="mo18erwerb" type="boolean" />
+		<zofar:variable name="mo18arblos" type="boolean" />
+		<zofar:variable name="mo18sonst" type="boolean" />
+		<zofar:variable name="mo19stud" type="boolean" />
+		<zofar:variable name="mo19dustud" type="boolean" />
+		<zofar:variable name="mo19ausbil" type="boolean" />
+		<zofar:variable name="mo19erwerb" type="boolean" />
+		<zofar:variable name="mo19arblos" type="boolean" />
+		<zofar:variable name="mo19sonst" type="boolean" />
+		<zofar:variable name="mo20stud" type="boolean" />
+		<zofar:variable name="mo20dustud" type="boolean" />
+		<zofar:variable name="mo20ausbil" type="boolean" />
+		<zofar:variable name="mo20erwerb" type="boolean" />
+		<zofar:variable name="mo20arblos" type="boolean" />
+		<zofar:variable name="mo20sonst" type="boolean" />
+		<zofar:variable name="mo21stud" type="boolean" />
+		<zofar:variable name="mo21dustud" type="boolean" />
+		<zofar:variable name="mo21ausbil" type="boolean" />
+		<zofar:variable name="mo21erwerb" type="boolean" />
+		<zofar:variable name="mo21arblos" type="boolean" />
+		<zofar:variable name="mo21sonst" type="boolean" />
+		<zofar:variable name="mo22stud" type="boolean" />
+		<zofar:variable name="mo22dustud" type="boolean" />
+		<zofar:variable name="mo22ausbil" type="boolean" />
+		<zofar:variable name="mo22erwerb" type="boolean" />
+		<zofar:variable name="mo22arblos" type="boolean" />
+		<zofar:variable name="mo22sonst" type="boolean" />
+		<zofar:variable name="mo23stud" type="boolean" />
+		<zofar:variable name="mo23dustud" type="boolean" />
+		<zofar:variable name="mo23ausbil" type="boolean" />
+		<zofar:variable name="mo23erwerb" type="boolean" />
+		<zofar:variable name="mo23arblos" type="boolean" />
+		<zofar:variable name="mo23sonst" type="boolean" />
+		<zofar:variable name="mo24stud" type="boolean" />
+		<zofar:variable name="mo24dustud" type="boolean" />
+		<zofar:variable name="mo24ausbil" type="boolean" />
+		<zofar:variable name="mo24erwerb" type="boolean" />
+		<zofar:variable name="mo24arblos" type="boolean" />
+		<zofar:variable name="mo24sonst" type="boolean" />
+		<zofar:variable name="mo25stud" type="boolean" />
+		<zofar:variable name="mo25dustud" type="boolean" />
+		<zofar:variable name="mo25ausbil" type="boolean" />
+		<zofar:variable name="mo25erwerb" type="boolean" />
+		<zofar:variable name="mo25arblos" type="boolean" />
+		<zofar:variable name="mo25sonst" type="boolean" />
+		<zofar:variable name="mo26stud" type="boolean" />
+		<zofar:variable name="mo26dustud" type="boolean" />
+		<zofar:variable name="mo26ausbil" type="boolean" />
+		<zofar:variable name="mo26erwerb" type="boolean" />
+		<zofar:variable name="mo26arblos" type="boolean" />
+		<zofar:variable name="mo26sonst" type="boolean" />
+		<zofar:variable name="mo27stud" type="boolean" />
+		<zofar:variable name="mo27dustud" type="boolean" />
+		<zofar:variable name="mo27ausbil" type="boolean" />
+		<zofar:variable name="mo27erwerb" type="boolean" />
+		<zofar:variable name="mo27arblos" type="boolean" />
+		<zofar:variable name="mo27sonst" type="boolean" />
+		<zofar:variable name="mo28stud" type="boolean" />
+		<zofar:variable name="mo28dustud" type="boolean" />
+		<zofar:variable name="mo28ausbil" type="boolean" />
+		<zofar:variable name="mo28erwerb" type="boolean" />
+		<zofar:variable name="mo28arblos" type="boolean" />
+		<zofar:variable name="mo28sonst" type="boolean" />
+		<zofar:variable name="mo29stud" type="boolean" />
+		<zofar:variable name="mo29dustud" type="boolean" />
+		<zofar:variable name="mo29ausbil" type="boolean" />
+		<zofar:variable name="mo29erwerb" type="boolean" />
+		<zofar:variable name="mo29arblos" type="boolean" />
+		<zofar:variable name="mo29sonst" type="boolean" />
+		<zofar:variable name="mo30stud" type="boolean" />
+		<zofar:variable name="mo30dustud" type="boolean" />
+		<zofar:variable name="mo30ausbil" type="boolean" />
+		<zofar:variable name="mo30erwerb" type="boolean" />
+		<zofar:variable name="mo30arblos" type="boolean" />
+		<zofar:variable name="mo30sonst" type="boolean" />
+		<zofar:variable name="mo31stud" type="boolean" />
+		<zofar:variable name="mo31dustud" type="boolean" />
+		<zofar:variable name="mo31ausbil" type="boolean" />
+		<zofar:variable name="mo31erwerb" type="boolean" />
+		<zofar:variable name="mo31arblos" type="boolean" />
+		<zofar:variable name="mo31sonst" type="boolean" />
+		<zofar:variable name="mo32stud" type="boolean" />
+		<zofar:variable name="mo32dustud" type="boolean" />
+		<zofar:variable name="mo32ausbil" type="boolean" />
+		<zofar:variable name="mo32erwerb" type="boolean" />
+		<zofar:variable name="mo32arblos" type="boolean" />
+		<zofar:variable name="mo32sonst" type="boolean" />
+		<zofar:variable name="mo33stud" type="boolean" />
+		<zofar:variable name="mo33dustud" type="boolean" />
+		<zofar:variable name="mo33ausbil" type="boolean" />
+		<zofar:variable name="mo33erwerb" type="boolean" />
+		<zofar:variable name="mo33arblos" type="boolean" />
+		<zofar:variable name="mo33sonst" type="boolean" />
+		<zofar:variable name="mo34stud" type="boolean" />
+		<zofar:variable name="mo34dustud" type="boolean" />
+		<zofar:variable name="mo34ausbil" type="boolean" />
+		<zofar:variable name="mo34erwerb" type="boolean" />
+		<zofar:variable name="mo34arblos" type="boolean" />
+		<zofar:variable name="mo34sonst" type="boolean" />
+		<zofar:variable name="mo35stud" type="boolean" />
+		<zofar:variable name="mo35dustud" type="boolean" />
+		<zofar:variable name="mo35ausbil" type="boolean" />
+		<zofar:variable name="mo35erwerb" type="boolean" />
+		<zofar:variable name="mo35arblos" type="boolean" />
+		<zofar:variable name="mo35sonst" type="boolean" />
+		<zofar:variable name="mo36stud" type="boolean" />
+		<zofar:variable name="mo36dustud" type="boolean" />
+		<zofar:variable name="mo36ausbil" type="boolean" />
+		<zofar:variable name="mo36erwerb" type="boolean" />
+		<zofar:variable name="mo36arblos" type="boolean" />
+		<zofar:variable name="mo36sonst" type="boolean" />
+		<zofar:variable name="mo37stud" type="boolean" />
+		<zofar:variable name="mo37dustud" type="boolean" />
+		<zofar:variable name="mo37ausbil" type="boolean" />
+		<zofar:variable name="mo37erwerb" type="boolean" />
+		<zofar:variable name="mo37arblos" type="boolean" />
+		<zofar:variable name="mo37sonst" type="boolean" />
+		<zofar:variable name="mo38stud" type="boolean" />
+		<zofar:variable name="mo38dustud" type="boolean" />
+		<zofar:variable name="mo38ausbil" type="boolean" />
+		<zofar:variable name="mo38erwerb" type="boolean" />
+		<zofar:variable name="mo38arblos" type="boolean" />
+		<zofar:variable name="mo38sonst" type="boolean" />
+		<zofar:variable name="mo39stud" type="boolean" />
+		<zofar:variable name="mo39dustud" type="boolean" />
+		<zofar:variable name="mo39ausbil" type="boolean" />
+		<zofar:variable name="mo39erwerb" type="boolean" />
+		<zofar:variable name="mo39arblos" type="boolean" />
+		<zofar:variable name="mo39sonst" type="boolean" />
+		<zofar:variable name="mo40stud" type="boolean" />
+		<zofar:variable name="mo40dustud" type="boolean" />
+		<zofar:variable name="mo40ausbil" type="boolean" />
+		<zofar:variable name="mo40erwerb" type="boolean" />
+		<zofar:variable name="mo40arblos" type="boolean" />
+		<zofar:variable name="mo40sonst" type="boolean" />
+		<zofar:variable name="mo41stud" type="boolean" />
+		<zofar:variable name="mo41dustud" type="boolean" />
+		<zofar:variable name="mo41ausbil" type="boolean" />
+		<zofar:variable name="mo41erwerb" type="boolean" />
+		<zofar:variable name="mo41arblos" type="boolean" />
+		<zofar:variable name="mo41sonst" type="boolean" />
+		<zofar:variable name="mo42stud" type="boolean" />
+		<zofar:variable name="mo42dustud" type="boolean" />
+		<zofar:variable name="mo42ausbil" type="boolean" />
+		<zofar:variable name="mo42erwerb" type="boolean" />
+		<zofar:variable name="mo42arblos" type="boolean" />
+		<zofar:variable name="mo42sonst" type="boolean" />
+		<zofar:variable name="mo43stud" type="boolean" />
+		<zofar:variable name="mo43dustud" type="boolean" />
+		<zofar:variable name="mo43ausbil" type="boolean" />
+		<zofar:variable name="mo43erwerb" type="boolean" />
+		<zofar:variable name="mo43arblos" type="boolean" />
+		<zofar:variable name="mo43sonst" type="boolean" />
+		<zofar:variable name="mo44stud" type="boolean" />
+		<zofar:variable name="mo44dustud" type="boolean" />
+		<zofar:variable name="mo44ausbil" type="boolean" />
+		<zofar:variable name="mo44erwerb" type="boolean" />
+		<zofar:variable name="mo44arblos" type="boolean" />
+		<zofar:variable name="mo44sonst" type="boolean" />
+		<zofar:variable name="mo45stud" type="boolean" />
+		<zofar:variable name="mo45dustud" type="boolean" />
+		<zofar:variable name="mo45ausbil" type="boolean" />
+		<zofar:variable name="mo45erwerb" type="boolean" />
+		<zofar:variable name="mo45arblos" type="boolean" />
+		<zofar:variable name="mo45sonst" type="boolean" />
+		<zofar:variable name="mo46stud" type="boolean" />
+		<zofar:variable name="mo46dustud" type="boolean" />
+		<zofar:variable name="mo46ausbil" type="boolean" />
+		<zofar:variable name="mo46erwerb" type="boolean" />
+		<zofar:variable name="mo46arblos" type="boolean" />
+		<zofar:variable name="mo46sonst" type="boolean" />
+		<zofar:variable name="mo47stud" type="boolean" />
+		<zofar:variable name="mo47dustud" type="boolean" />
+		<zofar:variable name="mo47ausbil" type="boolean" />
+		<zofar:variable name="mo47erwerb" type="boolean" />
+		<zofar:variable name="mo47arblos" type="boolean" />
+		<zofar:variable name="mo47sonst" type="boolean" />
+		<zofar:variable name="mo48stud" type="boolean" />
+		<zofar:variable name="mo48dustud" type="boolean" />
+		<zofar:variable name="mo48ausbil" type="boolean" />
+		<zofar:variable name="mo48erwerb" type="boolean" />
+		<zofar:variable name="mo48arblos" type="boolean" />
+		<zofar:variable name="mo48sonst" type="boolean" />
+
+		<zofar:variable name="eventsc1" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startmonatsc1" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startjahrsc1" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopmonatsc1" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopjahrsc1" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="eventsc2" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startmonatsc2" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startjahrsc2" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopmonatsc2" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopjahrsc2" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="eventsc3" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startmonatsc3" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startjahrsc3" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopmonatsc3" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopjahrsc3" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="eventsc4" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startmonatsc4" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startjahrsc4" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopmonatsc4" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopjahrsc4" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="eventsc5" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startmonatsc5" type="singleChoiceAnswerOption" />
+		<zofar:variable name="startjahrsc5" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopmonatsc5" type="singleChoiceAnswerOption" />
+		<zofar:variable name="stopjahrsc5" type="singleChoiceAnswerOption" />
+
+		<zofar:variable name="startPoint" type="string"/>
+
+		<zofar:variable name="page18open1" type="string"/>
+		<zofar:variable name="page18mc1" type="boolean"/>
+		
+		<zofar:variable name="page19_1" type="string"/>
+		<zofar:variable name="page19_2" type="string"/>
+		<zofar:variable name="page19_3" type="string"/>
+		<zofar:variable name="page19_4" type="string"/>
+		<zofar:variable name="page19_5" type="string"/>
+		<zofar:variable name="page19_6" type="string"/>
+		<zofar:variable name="page19_7" type="string"/>
+		<zofar:variable name="page19_8" type="string"/>
+		<zofar:variable name="page19_9" type="string"/>
+		<zofar:variable name="page19_10" type="string"/>
+	</zofar:variables>
+
+	<zofar:page uid="index">
+		<zofar:header>
+			<zofar:title uid="tit1" block="true" visible="true">
+				#{layout.BREAK}#{layout.BREAK}
+				Testversion der HTML5 Version von
+				Zofar
+				#{layout.BREAK}#{layout.BREAK}
+			</zofar:title>
+			<zofar:text uid="text" block="true">
+				Herzlich Willkommen
+				zur
+				Testbefragung für das responsive Design von Zofar.
+				#{layout.BREAK}#{layout.BREAK}
+				Mit dieser Befragung stellen wir Euch
+				den aktuellen Stand der
+				Entwicklung vor und laden dazu ein Euch an
+				der Weiterentwicklung des
+				Designs zu beteiligen.#{layout.BREAK}
+				Rückmeldungen könnt Ihr auf der letzten Befragungsseite geben oder
+				auf
+				#{layout.LINK_START}https://github.com/dzhw/zofar#{layout.LINK_CLOSE_HYPER}GitHub#{layout.LINK_END}.
+				#{layout.BREAK}#{layout.BREAK}
+				An dieser Befragung wird gearbeitet,
+				weshalb es zu Fehlern kommen
+				kann.#{layout.BREAK}
+				#{layout.BREAK}#{layout.BREAK}
+				[CM] version Check 1
+			</zofar:text>
+		</zofar:header>
+		<zofar:body uid="body">
+
+		</zofar:body>
+		<zofar:triggers>
+			<zofar:variable variable="url" value="zofar.baseUrl()"></zofar:variable>
+			<zofar:jsCheck variable="jsCheck" xvar="width" yvar="height">
+			</zofar:jsCheck>
+			<zofar:variable variable="isMobile" value="zofar.isMobile()"></zofar:variable>
+			<zofar:variable variable="startPoint" value="zofar.getTimeStamp()"></zofar:variable>
+		</zofar:triggers>
+		<zofar:transitions>
+			<zofar:transition target="offer"
+				condition="jsCheck.value and isMobile.value and width.value lt 400" />
+			<zofar:transition target="page0" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="offer">
+		<zofar:header>
+			<zofar:title uid="t" block="true">
+				#{layout.image('resources/images/rotate_screen.jpg','rotate_screen.jpg')}
+			</zofar:title>
+			<zofar:title uid="t1" block="true">
+				Um ein optimales
+				Befragungserlebnis zu erhalten, sollten Sie für die Beantwortung
+				einiger Fragen das Display drehen.
+			</zofar:title>
+		</zofar:header>
+		<zofar:body uid="b"></zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page0" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page0">
+		<zofar:header>
+			<zofar:title container="true" uid="t1"> SC Vertikal
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+			<zofar:instruction uid="instr" block="true">
+			Start Month: #{zofar.getMonth(startPoint)} #{layout.BREAK}
+			Start Month as Label: #{zofar.getMonthLabel(startPoint)} #{layout.BREAK}
+			Start Year: #{zofar.getYear(startPoint)} #{layout.BREAK}
+			Calculation: #{zofar.getCalcDate(startPoint)} #{layout.BREAK}
+			</zofar:instruction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:questionSingleChoice uid="SingleChoice1">
+				<zofar:header>
+					<zofar:question uid="question1" collapsible="true"> Möchten
+						Sie in Zukunft
+						Kinder
+						haben bzw. ein weiteres Kind/weitere Kinder
+						haben?
+					</zofar:question>
+					<zofar:instruction uid="instruction1"
+						collapsible="true"> Bitte wählen Sie die
+						zutreffende Antwortoption.
+					</zofar:instruction>
+				</zofar:header>
+				<zofar:responseDomain variable="sc0" uid="rdc"
+					direction="vertical" missingSeparated="true" showValues="false"
+					labelPosition="right">
+					<zofar:answerOption uid="ao1" value="Wert 1"
+						label="Ja, in der nächsten Zeit"></zofar:answerOption>
+					<zofar:answerOption uid="ao2" value="Wert 2"
+						label="Ja, später einmal"></zofar:answerOption>
+					<zofar:answerOption uid="ao3" value="Wert 3"
+						label="Ja, aber es gibt Gründe, die dagegen sprechen">
+						<zofar:questionOpen variable="open1" uid="aopen"
+							size="35">
+							<zofar:prefix>
+								<zofar:label uid="label">
+									und zwar:
+								</zofar:label>
+							</zofar:prefix>
+						</zofar:questionOpen>
+					</zofar:answerOption>
+					<zofar:answerOption uid="ao4" value="Wert 4"
+						label="Nein"></zofar:answerOption>
+					<zofar:answerOption uid="ao5" value="Wert 5"
+						label="Das kann ich zurzeit nicht sagen" missing="true"></zofar:answerOption>
+				</zofar:responseDomain>
+			</zofar:questionSingleChoice>
+
+
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page1" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page1">
+		<zofar:header>
+			<zofar:title container="true" uid="t1"> SC DropDown
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:questionSingleChoice uid="SingleChoice1">
+				<zofar:header>
+					<zofar:question uid="question1" collapsible="true"> Welches
+						der folgenden Themen
+						bzw. Fachgebiete ist für Sie am wichtigsten?
+					</zofar:question>
+					<zofar:instruction uid="instruction1"
+						collapsible="false"> Bitte wählen Sie die auf
+						Sie zutreffende
+						Antwortoption.
+					</zofar:instruction>
+				</zofar:header>
+				<zofar:responseDomain variable="sc1" uid="rdc"
+					direction="vertical" type="dropdown" missingSeparated="true"
+					showValues="false" labelPosition="right">
+					<zofar:answerOption uid="ao0" value="0"
+						label="bitte auswählen:" />
+					<zofar:answerOption uid="ao1" value="1"
+						label="Ingenieurwissenschaftliche Themen" />
+					<zofar:answerOption uid="ao2" value="2"
+						label="Naturwissenschaftliche Themen" />
+					<zofar:answerOption uid="ao3" value="3"
+						label="Mathematische Gebiete/Statistik" />
+					<zofar:answerOption uid="ao4" value="4"
+						label="Sozialwissenschaftliche Themen" />
+					<zofar:answerOption uid="ao5" value="5"
+						label="Geisteswissenschtliche Themen" />
+					<zofar:answerOption uid="ao6" value="6"
+						label="Pädagogische/psychologische Themen" />
+					<zofar:answerOption uid="ao7" value="7"
+						label="Medizinische Spezialgebiete" />
+					<zofar:answerOption uid="ao8" value="8"
+						label="Informationstechnisches Spezialwissen" />
+					<zofar:answerOption uid="ao9" value="9"
+						label="Managementwissen" />
+					<zofar:answerOption uid="ao10" value="10"
+						label="Wirtschaftskenntnisse" />
+					<zofar:answerOption uid="ao11" value="11"
+						label="Nationales Recht" />
+					<zofar:answerOption uid="ao12" value="12"
+						label="Internationales Recht" />
+					<zofar:answerOption uid="ao13" value="13"
+						label="Verwaltung, Organisation" />
+					<zofar:answerOption uid="ao14" value="14"
+						label="Vetriebsschulungen" />
+					<zofar:answerOption uid="ao15" value="15"
+						label="EDV-Anwendungen" />
+					<zofar:answerOption uid="ao16" value="16"
+						label="Fremdsprachen" />
+					<zofar:answerOption uid="ao17" value="17"
+						label="Mitarbeiterführung/Personalentwicklung" />
+					<zofar:answerOption uid="ao18" value="18"
+						label="Kommunikations-/Interaktionstraining" />
+					<zofar:answerOption uid="ao19" value="19"
+						label="Internationale Beziehungen, Kulturkenntnisse, Landeskunde" />
+					<zofar:answerOption uid="ao20" value="20"
+						label="Ökologische Themen" />
+					<zofar:answerOption uid="ao21" value="21"
+						label="Berufsethische Themen" />
+					<zofar:answerOption uid="ao22" value="22"
+						label="Existenzgründung" />
+					<zofar:answerOption uid="ao23" value="23"
+						label="Betriebliches Gesundheitswesen, Arbeitssicherheit" />
+
+					<zofar:answerOption uid="ao24" value="24" label="Sonstige"
+						missing="true">
+						<zofar:questionOpen variable="open2" uid="aopen"
+							size="35" type="nonumbers" validationMessage="Keine Zahlen">
+							<zofar:prefix>
+								<zofar:label uid="label">
+									, und zwar (Keine Zahlen)
+								</zofar:label>
+							</zofar:prefix>
+						</zofar:questionOpen>
+					</zofar:answerOption>
+
+					<zofar:answerOption uid="ao25" missing="true"
+						value="25" label="weiß nicht"></zofar:answerOption>
+
+				</zofar:responseDomain>
+			</zofar:questionSingleChoice>
+
+
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page2" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page2">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">SC Horizontal
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:questionSingleChoice uid="sc">
+				<zofar:header>
+					<zofar:question uid="q">Wie beurteilen Sie Ihre
+						gegenwärtige Studiensituation?
+					</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain variable="sc2" uid="rd"
+					direction="horizontal" missingSeparated="true">
+					<zofar:answerOption uid="ao1" value="1"
+						label="sehr schlecht"></zofar:answerOption>
+					<zofar:answerOption uid="ao2" value="2"></zofar:answerOption>
+					<zofar:answerOption uid="ao3" value="3"></zofar:answerOption>
+					<zofar:answerOption uid="ao4" value="4"></zofar:answerOption>
+					<zofar:answerOption uid="ao5" value="5" label="sehr gut"></zofar:answerOption>
+					<zofar:answerOption uid="ao6" value="-12"
+						label="kann ich nicht beurteilen" missing="true"></zofar:answerOption>
+				</zofar:responseDomain>
+			</zofar:questionSingleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page3" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page3">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">SC Matrix normal
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:matrixQuestionSingleChoice
+				uid="msc1">
+				<zofar:header>
+					<zofar:question uid="q2">
+						Die Studiensituation wird von
+						Studierenden unterschiedlich erlebt. Was bereitet Ihnen persönlich
+						Schwierigkeiten?
+					</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain uid="rd">
+					<zofar:header>
+						<zofar:title uid="t1"></zofar:title>
+					</zofar:header>
+					<zofar:item uid="i1">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">die
+								Leistungsanforderungen im Fachstudium
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc1" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="keine Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="große Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i2">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Orientierungsprobleme
+								im Studium
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc2" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="keine Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="große Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i3">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">die Konkurrenz
+								unter Studierenden
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc3" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="keine Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="große Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixQuestionSingleChoice>
+
+			<zofar:matrixQuestionSingleChoice
+				uid="msc2">
+				<zofar:header>
+					<zofar:question uid="q2">
+						Die Studiensituation wird von
+						Studierenden unterschiedlich erlebt. Was bereitet Ihnen persönlich
+						Schwierigkeiten?
+					</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain uid="rd">
+					<zofar:header>
+						<zofar:title uid="t1"></zofar:title>
+					</zofar:header>
+					<zofar:item uid="i1">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">die
+								Leistungsanforderungen im Fachstudium
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc1" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="keine Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="große Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i2">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Orientierungsprobleme
+								im Studium
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc2" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="keine Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="große Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i3">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">die Konkurrenz
+								unter Studierenden
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc3" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="keine Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="große Schwierigkeiten"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixQuestionSingleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page4" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page4">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">SC Matrix with attached
+				Open
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:matrixQuestionSingleChoice
+				uid="msc">
+				<zofar:header>
+					<zofar:question uid="q2">
+						Wie zufrieden sind Sie
+						mit Ihrer
+						Beschäftigung in Bezug auf ... ?
+					</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain uid="rd">
+					<zofar:header>
+						<zofar:title uid="t1"></zofar:title>
+					</zofar:header>
+
+					<zofar:item uid="i1">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Tätigkeitsinhalte
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc4" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i2">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Berufliche
+								Position
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc5" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i3">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Verdienst/Einkommen
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc6" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i4">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Arbeitsbedingungen
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc7" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i5">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Aufstiegsmöglichkeiten
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc8" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i6">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Fort- und
+								Weiterbildungsmöglichkeiten
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc9" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i7">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Raum für
+								Privatleben
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc10" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i8">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Arbeitszeitorganisation
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc11" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i9">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Umfang/Länge der
+								Arbeitszeit
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc12" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i10">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Beschäftigungssicherheit
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc13" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i11">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Qualifikationsangemessenheit
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc14" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i12">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Technische
+								Ausstattung/Arbeitsmittel
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc15" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i13">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Möglichkeit,
+								eigene Ideen einzubringen
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc16" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i14">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Arbeitsklima
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc17" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i15">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Familienfreundlichkeit
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc18" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i16">
+						<zofar:header>
+							<zofar:question uid="qq1" block="true">Sonstige
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="msc19" uid="rd1"
+							type="radio">
+							<zofar:answerOption uid="ao1" value="1"
+								label="sehr zufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao2" value="2" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao3" value="3" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao4" value="4" label=""></zofar:answerOption>
+							<zofar:answerOption uid="ao5" value="5"
+								label="unzufrieden"></zofar:answerOption>
+							<zofar:answerOption uid="ao6" value="6"
+								missing="true" label="weiß nicht"></zofar:answerOption>
+						</zofar:responseDomain>
+						<zofar:attachedOpen variable="amatrixopen1"
+							uid="qo" size="30" type="text">
+							<zofar:prefix>
+								<zofar:label uid="label">
+									und zwar
+								</zofar:label>
+							</zofar:prefix>
+						</zofar:attachedOpen>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixQuestionSingleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page5" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page5">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">
+				SC Doppelmatrix
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:matrixDouble uid="matrix">
+				<zofar:header>
+					<zofar:question uid="q">Wie wichtig sind die folgenden
+						Kenntnisse und Fähigkeiten für Ihre derzeitige (bzw., wenn Sie
+						nicht berufstätg sind, voraussichtliche) berufliche Tätigkeit
+						(linke Spalte)? In welchem Maße verfügten Sie bei Ihrem Abschluss
+						des Studiums über diese Kenntnisse und Fähigkeiten
+						(rechte Spalte)?
+						#{layout.BREAK}#{layout.BREAK}#{layout.BREAK}
+					</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain isShowValues="true"
+					itemClasses="true" noResponseOptions="5" uid="rd">
+					<zofar:leftScaleHeader>
+						<zofar:title uid="ls">Wichtigkeit für die berufliche
+							Tätigkeit
+						</zofar:title>
+					</zofar:leftScaleHeader>
+					<zofar:rightScaleHeader>
+						<zofar:title uid="rs">bei Studienabschluss vorhanden
+						</zofar:title>
+					</zofar:rightScaleHeader>
+					<zofar:leftHeader>
+						<zofar:title uid="lh1">sehr#{layout.BREAK} wichtig
+						</zofar:title>
+						<zofar:title uid="lh2" />
+						<zofar:title uid="lh3" />
+						<zofar:title uid="lh4" />
+						<zofar:title uid="lh5">unwichtig</zofar:title>
+					</zofar:leftHeader>
+					<zofar:rightHeader>
+						<zofar:title uid="rh1">in
+							#{layout.BREAK}hohem#{layout.BREAK} Maße
+						</zofar:title>
+						<zofar:title uid="rh2" />
+						<zofar:title uid="rh3" />
+						<zofar:title uid="rh4" />
+						<zofar:title uid="rh5">in
+							#{layout.BREAK}geringem#{layout.BREAK} Maße
+						</zofar:title>
+					</zofar:rightHeader>
+					<zofar:leftMissingHeader>
+						<zofar:title uid="lm1">weiß#{layout.BREAK} nicht
+						</zofar:title>
+					</zofar:leftMissingHeader>
+					<zofar:rightMissingHeader>
+						<zofar:title uid="rm1">weiß #{layout.BREAK}nicht
+						</zofar:title>
+					</zofar:rightMissingHeader>
+					<zofar:item uid="i1">
+						<zofar:question>
+							<zofar:question uid="q">Spezielles Fachwissen
+							</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="dm1">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption uid="ao5" value="5" />
+							<zofar:answerOption missing="true" uid="ao6"
+								value="-999" />
+						</zofar:left>
+						<zofar:right uid="r" variable="dm2">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption uid="ao5" value="5" />
+							<zofar:answerOption missing="true" uid="ao6"
+								value="-999" />
+						</zofar:right>
+					</zofar:item>
+					<zofar:item uid="i3">
+						<zofar:question>
+							<zofar:question uid="q">Kenntnis wissenschaftlicher
+								Methoden
+							</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="dm3">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption uid="ao5" value="5" />
+							<zofar:answerOption missing="true" uid="ao6"
+								value="-999" />
+						</zofar:left>
+						<zofar:right uid="r" variable="dm4">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption uid="ao5" value="5" />
+							<zofar:answerOption missing="true" uid="ao6"
+								value="-999" />
+						</zofar:right>
+					</zofar:item>
+					<zofar:item uid="i5">
+						<zofar:question>
+							<zofar:question uid="q">Kommunikationsfähigkeit
+							</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="dm5">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption uid="ao5" value="5" />
+							<zofar:answerOption missing="true" uid="ao6"
+								value="-999" />
+						</zofar:left>
+						<zofar:right uid="r" variable="dm6">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption uid="ao5" value="5" />
+							<zofar:answerOption missing="true" uid="ao6"
+								value="-999" />
+						</zofar:right>
+					</zofar:item>
+					<zofar:item uid="i6">
+						<zofar:question>
+							<zofar:question uid="q">Verhandlungsgeschick
+							</zofar:question>
+						</zofar:question>
+						<zofar:left uid="l" variable="dm7">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption uid="ao5" value="5" />
+							<zofar:answerOption missing="true" uid="ao6"
+								value="-999" />
+						</zofar:left>
+						<zofar:right uid="r" variable="dm8">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption uid="ao5" value="5" />
+							<zofar:answerOption missing="true" uid="ao6"
+								value="-999" />
+						</zofar:right>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixDouble>
+
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page6" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page6">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">SC Matrix with values
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:matrixQuestionSingleChoice
+				uid="sc">
+				<zofar:header>
+					<zofar:question uid="q1">Bitte markieren Sie auf der
+						Skala jeweils die Antwort, die am ehesten Ihrer Einschätzung
+						entspricht.
+					</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain isShowValues="true"
+					itemClasses="true" noResponseOptions="5" uid="rd">
+					<zofar:header>
+						<zofar:title uid="t1">trifft gar #{layout.BREAK}nicht zu
+						</zofar:title>
+						<zofar:title uid="t2">trifft eher#{layout.BREAK} nicht zu
+						</zofar:title>
+						<zofar:title uid="t3">trifft eher zu</zofar:title>
+						<zofar:title uid="t4">trifft völlig #{layout.BREAK}zu
+						</zofar:title>
+					</zofar:header>
+					<zofar:missingHeader>
+						<zofar:title uid="m1">missing</zofar:title>
+					</zofar:missingHeader>
+					<zofar:item uid="i1">
+						<zofar:header>
+							<zofar:question uid="q1">Ich fühle mich mit den
+								Menschen aus
+								diesem Land eng verbunden
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd" variable="sc3">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption missing="true" uid="ao5"
+								value="-9" label="weiß nicht" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i2">
+						<zofar:header>
+							<zofar:question uid="q1">Es ist mir unangenehm zu den
+								Menschen
+								aus diesem Land zu gehören
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd" variable="sc4">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption missing="true" uid="ao5"
+								value="-9" label="weiß nicht" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i3">
+						<zofar:header>
+							<zofar:question uid="q1">Ich fühle mich sehr wohl, wenn
+								ich mit
+								Menschen aus diesem Land zusammen bin.
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd" variable="sc5">
+							<zofar:answerOption uid="ao1" value="1" />
+							<zofar:answerOption uid="ao2" value="2" />
+							<zofar:answerOption uid="ao3" value="3" />
+							<zofar:answerOption uid="ao4" value="4" />
+							<zofar:answerOption missing="true" uid="ao5"
+								value="-9" label="weiß nicht" />
+						</zofar:responseDomain>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixQuestionSingleChoice>
+
+
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page7" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page7">
+		<zofar:header>
+			<zofar:title container="true" uid="t1"> MC with attached Open
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="body">
+			<zofar:multipleChoice uid="mC1">
+				<zofar:header>
+					<zofar:question uid="que1" block="true">
+						Aus welchem Grund
+						haben Sie keine Kinder?
+					</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain uid="rd1">
+					<zofar:answerOption variable="mc1" uid="ao1"
+						label="Ich möchte keine Kinder haben" />
+					<zofar:answerOption variable="mc2" uid="ao2"
+						label="Ich habe/hatte den Wunsch, konnte ihn jedoch (bisher) nicht realisieren" />
+					<zofar:answerOption variable="mc3" uid="ao3"
+						label="Ich bin mir noch unsicher, ob ich Kinder haben möchte" />
+					<zofar:answerOption variable="mc4" uid="ao4"
+						label="Es war/ist mir nicht möglich, Kinder zu haben (z. B. aus medizinischen Gründen)" />
+					<zofar:answerOption variable="mc5" uid="ao5"
+						label="Sonstiges: ">
+						<zofar:questionOpen variable="mc5_open" uid="ao6"
+							minValue="0" maxLength="76" size="76">
+							<zofar:prefix>
+								<zofar:label uid="label">
+									und zwar:
+								</zofar:label>
+							</zofar:prefix>
+
+						</zofar:questionOpen>
+					</zofar:answerOption>
+				</zofar:responseDomain>
+			</zofar:multipleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page8" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page8">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">MatrixMultipleChoice
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:matrixMultipleChoice uid="mc1">
+				<zofar:header>
+					<zofar:question uid="q1" block="true">Welche der folgenden
+						Tätigkeiten üben Sie derzeit aus und welche wollen Sie in Zukunft
+						ausüben?
+					</zofar:question>
+					<zofar:instruction uid="ins" block="true">(Mehrfachnennung
+						möglich, bitte Zutreffendes ankreuzen.)
+					</zofar:instruction>
+				</zofar:header>
+				<zofar:responseDomain noResponseOptions="3"
+					uid="rd">
+					<zofar:header>
+						<zofar:title uid="t1">Title1</zofar:title>
+						<zofar:title uid="t2">Title2</zofar:title>
+					</zofar:header>
+					<zofar:item uid="i1">
+						<zofar:header>
+							<zofar:question uid="qq1">erwerbstätig</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx1" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx2" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i2">
+						<zofar:header>
+							<zofar:question uid="qq2">in kurzfristiger Beschäftigung
+								(Jobben)
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx3" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx4" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i3">
+						<zofar:header>
+							<zofar:question uid="qq3">in einem Volontariat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx5" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx6" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i4">
+						<zofar:header>
+							<zofar:question uid="qq4">Referendar(in),
+								Inspektorenanwärter(in) (inklusive Anerkennungspraktikum u. Ä.)
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx7" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx8" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<!-- <zofar:item uid="i5"> -->
+					<!-- <zofar:header> -->
+					<!-- <zofar:question uid="qq5">in einem Praktikum</zofar:question> -->
+					<!-- </zofar:header> -->
+					<!-- <zofar:responseDomain uid="rd1"> -->
+					<!-- <zofar:answerOption variable="mcx9" uid="ao1" -->
+					<!-- label="aktuelle Tätigkeit" /> -->
+					<!-- <zofar:answerOption variable="mcx10" uid="ao2" -->
+					<!-- label="in Zukunft angestrebt" /> -->
+					<!-- </zofar:responseDomain> -->
+					<!-- </zofar:item> -->
+					<!-- <zofar:item uid="i6"> -->
+					<!-- <zofar:header> -->
+					<!-- <zofar:question uid="qq6">in Berufsausbildung</zofar:question> -->
+					<!-- </zofar:header> -->
+					<!-- <zofar:responseDomain uid="rd1"> -->
+					<!-- <zofar:answerOption variable="mcx11" uid="ao1" -->
+					<!-- label="aktuelle Tätigkeit" /> -->
+					<!-- <zofar:answerOption variable="mcx12" uid="ao2" -->
+					<!-- label="in Zukunft angestrebt" /> -->
+					<!-- </zofar:responseDomain> -->
+					<!-- </zofar:item> -->
+					<zofar:item uid="i7">
+						<zofar:header>
+							<zofar:question uid="qq7">im Studium</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx13" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx14" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i8">
+						<zofar:header>
+							<zofar:question uid="qq8">Doktorand(in)</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx15" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx16" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i9">
+						<zofar:header>
+							<zofar:question uid="qq9">Juniorprofessor(in),
+								Habilitand(in)
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx17" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx18" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i10">
+						<zofar:header>
+							<zofar:question uid="qq10">in akademischer Weiterbildung
+								nach der Promotion („Post-Doc“)
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx19" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx20" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<!-- <zofar:item uid="i11"> -->
+					<!-- <zofar:header> -->
+					<!-- <zofar:question uid="qq11">auf der Suche nach einer (neuen) Erwerbstätigkeit</zofar:question> -->
+					<!-- </zofar:header> -->
+					<!-- <zofar:responseDomain uid="rd1"> -->
+					<!-- <zofar:answerOption variable="mcx21" uid="ao1" -->
+					<!-- label="aktuelle Tätigkeit" /> -->
+					<!-- <zofar:answerOption variable="mcx22" uid="ao2" -->
+					<!-- label="in Zukunft angestrebt" /> -->
+					<!-- </zofar:responseDomain> -->
+					<!-- </zofar:item> -->
+					<!-- <zofar:item uid="i12"> -->
+					<!-- <zofar:header> -->
+					<!-- <zofar:question uid="qq12">Hausfrau/Hausmann</zofar:question> -->
+					<!-- </zofar:header> -->
+					<!-- <zofar:responseDomain uid="rd1"> -->
+					<!-- <zofar:answerOption variable="mcx23" uid="ao1" -->
+					<!-- label="aktuelle Tätigkeit" /> -->
+					<!-- <zofar:answerOption variable="mcx24" uid="ao2" -->
+					<!-- label="in Zukunft angestrebt" /> -->
+					<!-- </zofar:responseDomain> -->
+					<!-- </zofar:item> -->
+					<!-- <zofar:item uid="i13"> -->
+					<!-- <zofar:header> -->
+					<!-- <zofar:question uid="qq13">in einer Umschulung</zofar:question> -->
+					<!-- </zofar:header> -->
+					<!-- <zofar:responseDomain uid="rd1"> -->
+					<!-- <zofar:answerOption variable="mcx25" uid="ao1" -->
+					<!-- label="aktuelle Tätigkeit" /> -->
+					<!-- <zofar:answerOption variable="mcx26" uid="ao2" -->
+					<!-- label="in Zukunft angestrebt" /> -->
+					<!-- </zofar:responseDomain> -->
+					<!-- </zofar:item> -->
+					<!-- <zofar:item uid="i14"> -->
+					<!-- <zofar:header> -->
+					<!-- <zofar:question uid="qq14">in einer Fort- bzw. Weiterbildung</zofar:question> -->
+					<!-- </zofar:header> -->
+					<!-- <zofar:responseDomain uid="rd1"> -->
+					<!-- <zofar:answerOption variable="mcx27" uid="ao1" -->
+					<!-- label="aktuelle Tätigkeit" /> -->
+					<!-- <zofar:answerOption variable="mcx28" uid="ao2" -->
+					<!-- label="in Zukunft angestrebt" /> -->
+					<!-- </zofar:responseDomain> -->
+					<!-- </zofar:item> -->
+					<zofar:item uid="i15">
+						<zofar:header>
+							<zofar:question uid="qq15">arbeitslos</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx29" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx30" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i16">
+						<zofar:header>
+							<zofar:question uid="qq16">anderweitig nicht erwerbstätig
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx31" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx32" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i17">
+						<zofar:header>
+							<zofar:question uid="qq17">Sonstiges</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain uid="rd1">
+							<zofar:answerOption variable="mcx33" uid="ao1"
+								label="aktuelle Tätigkeit" />
+							<zofar:answerOption variable="mcx34" uid="ao2"
+								label="in Zukunft angestrebt" />
+						</zofar:responseDomain>
+						<zofar:attachedOpen variable="amatrixopen2"
+							uid="qo" size="30" type="nonumbers" validationMessage="No Numbers allowed">
+							<zofar:prefix>
+								<zofar:label uid="label">
+									und zwar
+								</zofar:label>
+							</zofar:prefix>
+						</zofar:attachedOpen>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixMultipleChoice>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page10" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page9">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page10" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page10">
+		<zofar:header>
+			<zofar:title container="true" uid="t1" block="true">
+				Accordion#{layout.BREAK}#{layout.BREAK}
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:section uid="s1" isaccordion="true">
+				<zofar:header>
+					<zofar:title uid="t1">Erste Frage</zofar:title>
+				</zofar:header>
+				<zofar:body uid="b">
+					<zofar:questionSingleChoice uid="sc1">
+						<zofar:header>
+							<zofar:question uid="q1">Eine SingleChoice
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="acc_single"
+							uid="rd">
+							<zofar:answerOption uid="ao1" value="1" label="erste" />
+							<zofar:answerOption uid="ao2" value="2" label="zweite" />
+							<zofar:answerOption uid="ao3" value="3" label="dritte" />
+							<zofar:answerOption uid="ao4" value="4" label="vierte" />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+				</zofar:body>
+			</zofar:section>
+			<zofar:section uid="s2" isaccordion="true">
+				<zofar:header>
+					<zofar:text uid="t2">Zweite Frage</zofar:text>
+				</zofar:header>
+				<zofar:body uid="b">
+					<zofar:questionOpen variable="acc_open" uid="qo"
+						smallOption="false" columns="110" rows="5">
+						<zofar:header>
+							<zofar:question uid="q">Eine offene Frage
+							</zofar:question>
+						</zofar:header>
+					</zofar:questionOpen>
+				</zofar:body>
+			</zofar:section>
+			<zofar:section uid="s3" isaccordion="true">
+				<zofar:header>
+					<zofar:title uid="t3">Dritte Frage</zofar:title>
+				</zofar:header>
+				<zofar:body uid="b">
+					<zofar:matrixQuestionSingleChoice
+						uid="sc">
+						<zofar:header>
+							<zofar:question uid="q1">Bitte markieren Sie auf der
+								Skala jeweils die Antwort, die am ehesten Ihrer Einschätzung
+								entspricht.
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain isShowValues="true"
+							itemClasses="true" noResponseOptions="5" uid="rd">
+							<zofar:header>
+								<zofar:title uid="t1">trifft gar #{layout.BREAK}nicht zu
+								</zofar:title>
+								<zofar:title uid="t2">trifft eher#{layout.BREAK} nicht zu
+								</zofar:title>
+								<zofar:title uid="t3">trifft eher zu</zofar:title>
+								<zofar:title uid="t4">trifft völlig #{layout.BREAK}zu
+								</zofar:title>
+							</zofar:header>
+							<zofar:missingHeader>
+								<zofar:title uid="m1">missing</zofar:title>
+							</zofar:missingHeader>
+							<zofar:item uid="i1">
+								<zofar:header>
+									<zofar:question uid="q1">Ich fühle mich mit den
+										Menschen aus
+										diesem Land eng verbunden
+									</zofar:question>
+								</zofar:header>
+								<zofar:responseDomain uid="rd" variable="acc_sc3">
+									<zofar:answerOption uid="ao1" value="1" />
+									<zofar:answerOption uid="ao2" value="2" />
+									<zofar:answerOption uid="ao3" value="3" />
+									<zofar:answerOption uid="ao4" value="4" />
+									<zofar:answerOption missing="true" uid="ao5"
+										value="-9" label="weiß nicht" />
+								</zofar:responseDomain>
+							</zofar:item>
+							<zofar:item uid="i2">
+								<zofar:header>
+									<zofar:question uid="q1">Es ist mir unangenehm zu den
+										Menschen
+										aus diesem Land zu gehören
+									</zofar:question>
+								</zofar:header>
+								<zofar:responseDomain uid="rd" variable="acc_sc4">
+									<zofar:answerOption uid="ao1" value="1" />
+									<zofar:answerOption uid="ao2" value="2" />
+									<zofar:answerOption uid="ao3" value="3" />
+									<zofar:answerOption uid="ao4" value="4" />
+									<zofar:answerOption missing="true" uid="ao5"
+										value="-9" label="weiß nicht" />
+								</zofar:responseDomain>
+							</zofar:item>
+							<zofar:item uid="i3">
+								<zofar:header>
+									<zofar:question uid="q1">Ich fühle mich sehr wohl,
+										wenn
+										ich mit
+										Menschen aus diesem Land zusammen bin.
+									</zofar:question>
+								</zofar:header>
+								<zofar:responseDomain uid="rd" variable="acc_sc5">
+									<zofar:answerOption uid="ao1" value="1" />
+									<zofar:answerOption uid="ao2" value="2" />
+									<zofar:answerOption uid="ao3" value="3" />
+									<zofar:answerOption uid="ao4" value="4" />
+									<zofar:answerOption missing="true" uid="ao5"
+										value="-9" label="weiß nicht" />
+								</zofar:responseDomain>
+							</zofar:item>
+						</zofar:responseDomain>
+					</zofar:matrixQuestionSingleChoice>
+				</zofar:body>
+			</zofar:section>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page11" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page11">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">Open Question with
+				pre-/postfix
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:questionOpen variable="open3" uid="oq1"
+				maxValue="5" size="2" type="number" validationMessage="geht nicht!">
+				<zofar:header>
+					<zofar:question uid="q">Im wievielten Hochschulsemester
+						befinden Sie sich derzeit?
+					</zofar:question>
+					<zofar:instruction uid="ins">Hochschulsemester sind
+						alle Semester, die Sie bisher insgesamt an Hochschulen,
+						Fachhochschulen
+						etc. studiert haben, einschließlich Urlaubs-,
+						Auslands- und
+						Praxissemester. #{layout.BREAK} #{layout.BREAK}
+					</zofar:instruction>
+				</zofar:header>
+				<zofar:prefix>
+					<zofar:label uid="l1">Ich befinde mich im</zofar:label>
+				</zofar:prefix>
+				<zofar:postfix>
+					<zofar:label uid="l2">. Hochschulsemester.</zofar:label>
+				</zofar:postfix>
+			</zofar:questionOpen>
+
+			<zofar:questionOpen variable="open4" uid="oq2"
+				type="grade">
+				<zofar:header>
+					<zofar:question uid="q">Mit welcher Note haben Sie Ihr
+						Studium abgeschlossen?
+					</zofar:question>
+				</zofar:header>
+				<zofar:prefix>
+					<zofar:label uid="l1">Note:</zofar:label>
+				</zofar:prefix>
+			</zofar:questionOpen>
+
+			<zofar:questionOpen variable="open5" uid="oq3"
+				type="mail">
+				<zofar:header>
+					<zofar:question uid="q">Haben Sie eine Email-Adresse?
+					</zofar:question>
+				</zofar:header>
+				<zofar:prefix>
+					<zofar:label uid="l1">Sie lautet:</zofar:label>
+				</zofar:prefix>
+			</zofar:questionOpen>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page12" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page12">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">Question Open large
+			</zofar:title>
+			<!-- <zofar:introduction uid="intro1"> -->
+			<!-- #{layout.BREAK}#{layout.BREAK} -->
+			<!-- Weitere Informationen zum Entwicklungstand finden Sie unter: -->
+			<!-- #{layout.LINK_START}https://github.com/dzhw/zofar/issues#{layout.LINK_CLOSE_HYPER}GitHub 
+				Repository Zofar#{layout.LINK_END} -->
+			<!-- #{layout.BREAK}#{layout.BREAK} -->
+			<!-- </zofar:introduction> -->
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:questionOpen variable="anmerkung" uid="qo1"
+				columns="110" rows="5" smallOption="false">
+				<zofar:header>
+					<zofar:question uid="que1" block="true">
+						Habt Ihr
+						Anregungen, Kritik oder Vorschläge zu unserem Design?
+						#{layout.BREAK}#{layout.BREAK}
+						Wir freuen uns, wenn Ihr uns diese
+						hier mitteilt oder via
+						#{layout.LINK_START}https://github.com/dzhw/zofar/issues#{layout.LINK_CLOSE_HYPER}GitHub
+						Repository#{layout.LINK_END} meldet:
+					</zofar:question>
+					<zofar:instruction uid="instr" block="true">
+						Um die
+						Anmerkungen abzuschicken, klickt bitte auf „weiter".
+					</zofar:instruction>
+				</zofar:header>
+			</zofar:questionOpen>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page14pre" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page13">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:display uid="display1">
+				<display:table uid="table1">
+					<display:header uid="zeile_header">
+						<display:label uid="l1">Zeitraum</display:label>
+						<display:label uid="l2">Art des Arbeitsverhältnisses
+						</display:label>
+						<display:label uid="l3">Arbeitszeit</display:label>
+						<display:label uid="l4">Berufliche Stellung
+						</display:label>
+						<display:label uid="l5">Arbeitsort</display:label>
+						<display:label uid="l6">Firma/Betrieb</display:label>
+					</display:header>
+					<display:body uid="body1">
+						<display:row uid="row1">
+							<display:item uid="item1">
+								<display:text uid="text1">Von </display:text>
+								<display:text uid="text2">xxx / xxx
+									#{layout.BREAK}
+								</display:text>
+								<display:text uid="text3"> bis </display:text>
+								<display:text uid="text4">xxx / xxxx
+								</display:text>
+								<display:text uid="text5">
+								</display:text>
+							</display:item>
+							<display:item uid="item2">
+								<display:text uid="text1">xxx</display:text>
+							</display:item>
+							<display:item uid="item3">
+								<display:text uid="text1">xxx
+									#{layout.BREAK}xxx Std./Woche
+								</display:text>
+							</display:item>
+							<display:item uid="item4">
+								<display:text uid="text1">xxx</display:text>
+							</display:item>
+							<display:item uid="item5">
+								<display:text uid="text1">Land:
+									xxx#{layout.BREAK}
+								</display:text>
+								<display:text uid="text2">PLZ:
+									xxx#{layout.BREAK}
+								</display:text>
+								<display:text uid="text3">Ort: xxx
+								</display:text>
+							</display:item>
+							<display:item uid="item6">
+								<display:text uid="text1">xxx</display:text>
+							</display:item>
+							<display:item uid="item7">
+								<display:jumper value="Ändern" target="page1" />
+							</display:item>
+						</display:row>
+						<display:row uid="row2">
+							<display:item uid="item1">
+								<display:text uid="text1">Von </display:text>
+								<display:text uid="text2">bcvbcv / dfgdfg
+									#{layout.BREAK}
+								</display:text>
+								<display:text uid="text3"> bis </display:text>
+								<display:text uid="text4">dfgdfg / dfgdfg
+								</display:text>
+								<display:text uid="text5">
+								</display:text>
+							</display:item>
+							<display:item uid="item2">
+								<display:text uid="text1">dfg</display:text>
+							</display:item>
+							<display:item uid="item3">
+								<display:text uid="text1">dfgdfg
+									#{layout.BREAK}dfg
+									Std./Woche
+								</display:text>
+							</display:item>
+							<display:item uid="item4">
+								<display:text uid="text1">dfg</display:text>
+							</display:item>
+							<display:item uid="item5">
+								<display:text uid="text1">Land:
+									dfgdfg#{layout.BREAK}
+								</display:text>
+								<display:text uid="text2">PLZ:
+									dfgdf#{layout.BREAK}
+								</display:text>
+								<display:text uid="text3">Ort: dfgdfg
+								</display:text>
+							</display:item>
+							<display:item uid="item6">
+								<display:text uid="text1">dfgdfgdf</display:text>
+							</display:item>
+							<display:item uid="item7">
+								<display:text uid="text1">dfgdfgdfgfffff</display:text>
+							</display:item>
+						</display:row>
+					</display:body>
+				</display:table>
+			</zofar:display>
+
+
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page14pre" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page14pre">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">
+				Dateneingabe für das
+				Display Kalendarium
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+
+			<zofar:section uid="s1">
+				<zofar:header>
+					<zofar:title uid="t1">Aktivität 1</zofar:title>
+				</zofar:header>
+				<zofar:body uid="b">
+					<zofar:questionSingleChoice uid="eventSC1">
+						<zofar:header>
+							<zofar:question uid="question1"> Typ
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="eventsc1"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="1" label='Studium' />
+							<zofar:answerOption uid="ao2" value="2"
+								label='Duales Studium' />
+							<zofar:answerOption uid="ao3" value="3"
+								label='Berufsausbildung/Weiterbildung' />
+							<zofar:answerOption uid="ao4" value="4"
+								label='Erwerbstätigkeit (kein gelegentliches Jobben, kein Minijob)' />
+							<zofar:answerOption uid="ao5" value="5"
+								label='Arbeitslosigkeit' />
+							<zofar:answerOption uid="ao6" value="6"
+								label='Unbezahlte Pause' />
+							<zofar:answerOption uid="ao7" value="7"
+								label='Langes Eisschleckschleck' />
+							<zofar:answerOption uid="ao8" value="8"
+								label='Klosteraufenthalt' />
+							<zofar:answerOption uid="ao9" value="9"
+								label='Die Weltherrschaft an sich reißen' />
+							<zofar:answerOption uid="ao10" value="10"
+								label='Aus Versehen eingepennt' />
+							<zofar:answerOption uid="ao11" value="11"
+								label='Sonstiges (gelegentliches Jobben, Minijob, Praktikum, Familientätigkeiten, Reisen, etc.)' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startMonatSC1">
+						<zofar:header>
+							<zofar:question uid="question1"> Start
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startmonatsc1"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startJahrSC1">
+						<zofar:header>
+							<zofar:question uid="question1"> Start
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startjahrsc1"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+					<zofar:questionSingleChoice uid="stopMonatSC1">
+						<zofar:header>
+							<zofar:question uid="question1" collapsible="true"> Stop
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopmonatsc1"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="stopJahrSC1">
+						<zofar:header>
+							<zofar:question uid="question1"> Stop
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopjahrsc1"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+				</zofar:body>
+			</zofar:section>
+
+
+			<zofar:section uid="s2">
+				<zofar:header>
+					<zofar:title uid="t1">Aktivität 2</zofar:title>
+				</zofar:header>
+				<zofar:body uid="b">
+					<zofar:questionSingleChoice uid="eventSC2">
+						<zofar:header>
+							<zofar:question uid="question1"> Typ
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="eventsc2"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="1" label='Studium' />
+							<zofar:answerOption uid="ao2" value="2"
+								label='Duales Studium' />
+							<zofar:answerOption uid="ao3" value="3"
+								label='Berufsausbildung/Weiterbildung' />
+							<zofar:answerOption uid="ao4" value="4"
+								label='Erwerbstätigkeit (kein gelegentliches Jobben, kein Minijob)' />
+							<zofar:answerOption uid="ao5" value="5"
+								label='Arbeitslosigkeit' />
+							<zofar:answerOption uid="ao6" value="6"
+								label='Unbezahlte Pause' />
+							<zofar:answerOption uid="ao7" value="7"
+								label='Langes Eisschleckschleck' />
+							<zofar:answerOption uid="ao8" value="8"
+								label='Klosteraufenthalt' />
+							<zofar:answerOption uid="ao9" value="9"
+								label='Die Weltherrschaft an sich reißen' />
+							<zofar:answerOption uid="ao10" value="10"
+								label='Aus Versehen eingepennt' />
+							<zofar:answerOption uid="ao11" value="11"
+								label='Sonstiges (gelegentliches Jobben, Minijob, Praktikum, Familientätigkeiten, Reisen, etc.)' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startMonatSC2">
+						<zofar:header>
+							<zofar:question uid="question2"> Start
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startmonatsc2"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startJahrSC2">
+						<zofar:header>
+							<zofar:question uid="question1"> Start
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startjahrsc2"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+					<zofar:questionSingleChoice uid="stopMonatSC2">
+						<zofar:header>
+							<zofar:question uid="question2"> Stop
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopmonatsc2"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="stopJahrSC2">
+						<zofar:header>
+							<zofar:question uid="question1"> Stop
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopjahrsc2"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+				</zofar:body>
+			</zofar:section>
+
+			<zofar:section uid="s3">
+				<zofar:header>
+					<zofar:title uid="t1">Aktivität 3</zofar:title>
+				</zofar:header>
+				<zofar:body uid="b">
+					<zofar:questionSingleChoice uid="eventSC3">
+						<zofar:header>
+							<zofar:question uid="question1"> Typ
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="eventsc3"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="1" label='Studium' />
+							<zofar:answerOption uid="ao2" value="2"
+								label='Duales Studium' />
+							<zofar:answerOption uid="ao3" value="3"
+								label='Berufsausbildung/Weiterbildung' />
+							<zofar:answerOption uid="ao4" value="4"
+								label='Erwerbstätigkeit (kein gelegentliches Jobben, kein Minijob)' />
+							<zofar:answerOption uid="ao5" value="5"
+								label='Arbeitslosigkeit' />
+							<zofar:answerOption uid="ao6" value="6"
+								label='Unbezahlte Pause' />
+							<zofar:answerOption uid="ao7" value="7"
+								label='Langes Eisschleckschleck' />
+							<zofar:answerOption uid="ao8" value="8"
+								label='Klosteraufenthalt' />
+							<zofar:answerOption uid="ao9" value="9"
+								label='Die Weltherrschaft an sich reißen' />
+							<zofar:answerOption uid="ao10" value="10"
+								label='Aus Versehen eingepennt' />
+							<zofar:answerOption uid="ao11" value="11"
+								label='Sonstiges (gelegentliches Jobben, Minijob, Praktikum, Familientätigkeiten, Reisen, etc.)' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startMonatSC3">
+						<zofar:header>
+							<zofar:question uid="question1"> Start
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startmonatsc3"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startJahrSC3">
+						<zofar:header>
+							<zofar:question uid="question1"> Start
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startjahrsc3"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+					<zofar:questionSingleChoice uid="stopMonatSC3">
+						<zofar:header>
+							<zofar:question uid="question1"> Stop
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopmonatsc3"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="stopJahrSC3">
+						<zofar:header>
+							<zofar:question uid="question1"> Stop
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopjahrsc3"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+				</zofar:body>
+			</zofar:section>
+
+			<zofar:section uid="s4">
+				<zofar:header>
+					<zofar:title uid="t1">Aktivität 4</zofar:title>
+				</zofar:header>
+				<zofar:body uid="b">
+					<zofar:questionSingleChoice uid="eventSC4">
+						<zofar:header>
+							<zofar:question uid="question1" collapsible="true"> Typ
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="eventsc4"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="1" label='Studium' />
+							<zofar:answerOption uid="ao2" value="2"
+								label='Duales Studium' />
+							<zofar:answerOption uid="ao3" value="3"
+								label='Berufsausbildung/Weiterbildung' />
+							<zofar:answerOption uid="ao4" value="4"
+								label='Erwerbstätigkeit (kein gelegentliches Jobben, kein Minijob)' />
+							<zofar:answerOption uid="ao5" value="5"
+								label='Arbeitslosigkeit' />
+							<zofar:answerOption uid="ao6" value="6"
+								label='Unbezahlte Pause' />
+							<zofar:answerOption uid="ao7" value="7"
+								label='Langes Eisschleckschleck' />
+							<zofar:answerOption uid="ao8" value="8"
+								label='Klosteraufenthalt' />
+							<zofar:answerOption uid="ao9" value="9"
+								label='Die Weltherrschaft an sich reißen' />
+							<zofar:answerOption uid="ao10" value="10"
+								label='Aus Versehen eingepennt' />
+							<zofar:answerOption uid="ao11" value="11"
+								label='Sonstiges (gelegentliches Jobben, Minijob, Praktikum, Familientätigkeiten, Reisen, etc.)' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startMonatSC4">
+						<zofar:header>
+							<zofar:question uid="question1"> Start
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startmonatsc4"
+							uid="rdc" direction="vertical" type="dropdown">
+							<zofar:answerOption uid="ao0" value="-1" 
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startJahrSC4">
+						<zofar:header>
+							<zofar:question uid="question1"> Start
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startjahrsc4"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+					<zofar:questionSingleChoice uid="stopMonatSC4">
+						<zofar:header>
+							<zofar:question uid="question1"> Stop
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopmonatsc4"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="stopJahrSC4">
+						<zofar:header>
+							<zofar:question uid="question1"> Stop
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopjahrsc4"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+				</zofar:body>
+			</zofar:section>
+
+
+			<zofar:section uid="s5">
+				<zofar:header>
+					<zofar:title uid="t1">Aktivität 5</zofar:title>
+				</zofar:header>
+				<zofar:body uid="b">
+					<zofar:questionSingleChoice uid="eventSC5">
+						<zofar:header>
+							<zofar:question uid="question1"> Typ
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="eventsc5"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="1" label='Studium' />
+							<zofar:answerOption uid="ao2" value="2"
+								label='Duales Studium' />
+							<zofar:answerOption uid="ao3" value="3"
+								label='Berufsausbildung/Weiterbildung' />
+							<zofar:answerOption uid="ao4" value="4"
+								label='Erwerbstätigkeit (kein gelegentliches Jobben, kein Minijob)' />
+							<zofar:answerOption uid="ao5" value="5"
+								label='Arbeitslosigkeit' />
+							<zofar:answerOption uid="ao6" value="6"
+								label='Unbezahlte Pause' />
+							<zofar:answerOption uid="ao7" value="7"
+								label='Langes Eisschleckschleck' />
+							<zofar:answerOption uid="ao8" value="8"
+								label='Klosteraufenthalt' />
+							<zofar:answerOption uid="ao9" value="9"
+								label='Die Weltherrschaft an sich reißen' />
+							<zofar:answerOption uid="ao10" value="10"
+								label='Aus Versehen eingepennt' />
+							<zofar:answerOption uid="ao11" value="11"
+								label='Sonstiges (gelegentliches Jobben, Minijob, Praktikum, Familientätigkeiten, Reisen, etc.)' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startMonatSC5">
+						<zofar:header>
+							<zofar:question uid="question1"> Start
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startmonatsc5"
+							uid="rdc" direction="vertical" type="dropdown" 
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="startJahrSC5">
+						<zofar:header>
+							<zofar:question uid="question1"> Start
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="startjahrsc5"
+							uid="rdc" direction="vertical" type="dropdown" 
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+					<zofar:questionSingleChoice uid="stopMonatSC5">
+						<zofar:header>
+							<zofar:question uid="question1"> Stop
+								Monat
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopmonatsc5"
+							uid="rdc" direction="vertical" type="dropdown" 
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='Januar' />
+							<zofar:answerOption uid="ao2" value="1" label='Februar' />
+							<zofar:answerOption uid="ao3" value="2" label='März' />
+							<zofar:answerOption uid="ao4" value="3" label='April' />
+							<zofar:answerOption uid="ao5" value="4" label='Mai' />
+							<zofar:answerOption uid="ao6" value="5" label='Juni' />
+							<zofar:answerOption uid="ao7" value="6" label='Juli' />
+							<zofar:answerOption uid="ao8" value="7" label='August' />
+							<zofar:answerOption uid="ao9" value="8" label='Sept.' />
+							<zofar:answerOption uid="ao10" value="9"
+								label='Oktober' />
+							<zofar:answerOption uid="ao11" value="10"
+								label='November' />
+							<zofar:answerOption uid="ao12" value="11"
+								label='Dezember' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+
+
+					<zofar:questionSingleChoice uid="stopJahrSC5">
+						<zofar:header>
+							<zofar:question uid="question1"> Stop
+								Jahr
+							</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="stopjahrsc5"
+							uid="rdc" direction="vertical" type="dropdown"
+							showValues="false" labelPosition="right">
+							<zofar:answerOption uid="ao0" value="-1"
+								label="bitte auswählen:" />
+							<zofar:answerOption uid="ao1" value="0" label='2013' />
+							<zofar:answerOption uid="ao2" value="1" label='2014' />
+							<zofar:answerOption uid="ao3" value="2" label='2015' />
+							<zofar:answerOption uid="ao4" value="3" label='2016' />
+							<zofar:answerOption uid="ao5" value="4" label='2017' />
+							<zofar:answerOption uid="ao6" value="5" label='2018' />
+						</zofar:responseDomain>
+					</zofar:questionSingleChoice>
+				</zofar:body>
+			</zofar:section>
+		</zofar:body>
+		<zofar:triggers>
+		</zofar:triggers>
+		<zofar:transitions>
+			<zofar:transition target="page14debug" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page14debug">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:display uid="display0">
+				<display:text uid="text1">
+					getTileIndex(startmonatsc1,startjahrsc1,12,5) - getTileIndex(stopmonatsc1,stopjahrsc1,12,5)
+					#{layout.BREAK}
+					#{zofar.toInteger(zofar.asNumber(eventsc1))} : #{zofar.getTileIndex(startmonatsc1,startjahrsc1,12,5)} - #{zofar.getTileIndex(stopmonatsc1,stopjahrsc1,12,5)}
+					#{layout.BREAK}
+				</display:text>
+				<display:text uid="text2">
+					getTileIndex(startmonatsc2,startjahrsc2,12,5) - getTileIndex(stopmonatsc2,stopjahrsc2,12,5)
+					#{layout.BREAK}
+					#{zofar.toInteger(zofar.asNumber(eventsc2))} : #{zofar.getTileIndex(startmonatsc2,startjahrsc2,12,5)} - #{zofar.getTileIndex(stopmonatsc2,stopjahrsc2,12,5)}
+					#{layout.BREAK}
+				</display:text>
+				<display:text uid="text3">
+					getTileIndex(startmonatsc3,startjahrsc3,12,5) - getTileIndex(stopmonatsc3,stopjahrsc3,12,5)
+					#{layout.BREAK}
+					#{zofar.toInteger(zofar.asNumber(eventsc3))} : #{zofar.getTileIndex(startmonatsc3,startjahrsc3,12,5)} - #{zofar.getTileIndex(stopmonatsc3,stopjahrsc3,12,5)}
+					#{layout.BREAK}
+				</display:text>
+				<display:text uid="text4">
+					getTileIndex(startmonatsc4,startjahrsc4,12,5) - getTileIndex(stopmonatsc4,stopjahrsc4,12,5)
+					#{layout.BREAK}
+					#{zofar.toInteger(zofar.asNumber(eventsc4))} : #{zofar.getTileIndex(startmonatsc4,startjahrsc4,12,5)} - #{zofar.getTileIndex(stopmonatsc4,stopjahrsc4,12,5)}
+					#{layout.BREAK}
+				</display:text>
+				<display:text uid="text5">
+					getTileIndex(startmonatsc5,startjahrsc5,12,5) - getTileIndex(stopmonatsc5,stopjahrsc5,12,5)
+					#{layout.BREAK}
+					#{zofar.toInteger(zofar.asNumber(eventsc5))} : #{zofar.getTileIndex(startmonatsc5,startjahrsc5,12,5)} - #{zofar.getTileIndex(stopmonatsc5,stopjahrsc5,12,5)}
+					#{layout.BREAK}
+				</display:text> 
+
+
+				<display:text uid="text10">
+					decodeEpisodesWithMeta(displayCalendarData)
+					#{layout.BREAK}
+					#{zofar.decodeEpisodesWithMeta(displayCalendarData)}
+					#{layout.BREAK}
+				</display:text>
+			</zofar:display>
+		</zofar:body>
+		<zofar:triggers>
+						<zofar:variable variable="displayCalendarData"
+				value="zofar.getEpisodesFromVariables(
+    zofar.list(
+        zofar.episodeTupel(zofar.toInteger(zofar.asNumber(eventsc1)),zofar.toInteger(zofar.getTileIndex(startmonatsc1,startjahrsc1,12,5)),zofar.toInteger(zofar.getTileIndex(stopmonatsc1,stopjahrsc1,12,5)),zofar.map(zofar.concat('event=',eventsc1,'|start=',startmonatsc1,' ',startjahrsc1,'|stop=',stopmonatsc1,' ',stopjahrsc1),'=','|')),
+        zofar.episodeTupel(zofar.toInteger(zofar.asNumber(eventsc2)),zofar.toInteger(zofar.getTileIndex(startmonatsc2,startjahrsc2,12,5)),zofar.toInteger(zofar.getTileIndex(stopmonatsc2,stopjahrsc2,12,5)),zofar.map(zofar.concat('event=',eventsc2,'|start=',startmonatsc2,' ',startjahrsc2,'|stop=',stopmonatsc2,' ',stopjahrsc2),'=','|')),
+        zofar.episodeTupel(zofar.toInteger(zofar.asNumber(eventsc3)),zofar.toInteger(zofar.getTileIndex(startmonatsc3,startjahrsc3,12,5)),zofar.toInteger(zofar.getTileIndex(stopmonatsc3,stopjahrsc3,12,5)),zofar.map(zofar.concat('event=',eventsc3,'|start=',startmonatsc3,' ',startjahrsc3,'|stop=',stopmonatsc3,' ',stopjahrsc3),'=','|')),
+        zofar.episodeTupel(zofar.toInteger(zofar.asNumber(eventsc4)),zofar.toInteger(zofar.getTileIndex(startmonatsc4,startjahrsc4,12,5)),zofar.toInteger(zofar.getTileIndex(stopmonatsc4,stopjahrsc4,12,5)),zofar.map(zofar.concat('event=',eventsc4,'|start=',startmonatsc4,' ',startjahrsc4,'|stop=',stopmonatsc4,' ',stopjahrsc4),'=','|')),
+        zofar.episodeTupel(zofar.toInteger(zofar.asNumber(eventsc5)),zofar.toInteger(zofar.getTileIndex(startmonatsc5,startjahrsc5,12,5)),zofar.toInteger(zofar.getTileIndex(stopmonatsc5,stopjahrsc5,12,5)),zofar.map(zofar.concat('event=',eventsc5,'|start=',startmonatsc5,' ',startjahrsc5,'|stop=',stopmonatsc5,' ',stopjahrsc5),'=','|'))
+    )
+)"
+				onExit="false"></zofar:variable>
+		</zofar:triggers>
+		
+		
+		<zofar:transitions>
+			<zofar:transition target="page14" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page14">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:display uid="display1">
+				<display:calendar uid="cal1"
+					data="zofar.decodeEpisodesWithMeta(displayCalendarData)"
+					config="&lt;?xml version= '1.0' ?&gt; &lt;config&gt; &lt;events&gt; &lt;event id='1' color='#FF0000' label='Studium'&gt; &lt;/event&gt; &lt;event id='2' color='#00FF00' label='Duales Studium'&gt; &lt;/event&gt; &lt;event id='3' color='#FFFF00' label='Berufsausbildung/Weiterbildung'&gt; &lt;/event&gt; &lt;event id='4' color='#3300CC' label='Erwerbstätigkeit (kein gelegentliches Jobben, kein Minijob)'&gt; &lt;/event&gt; &lt;event id='5' color='#CC00FF' label='Arbeitslosigkeit'&gt; &lt;/event&gt; &lt;event id='6' color='#FF9900' label='Unbezahlte Pause'&gt; &lt;/event&gt; &lt;event id='7' color='#663399' label='Langes Eisschleckschleck'&gt; &lt;/event&gt; &lt;event id='8' color='#00FFFF' label='Klosteraufenthalt'&gt; &lt;/event&gt; &lt;event id='9' color='#FF3399' label='Die Weltherrschaft an sich reißen'&gt; &lt;/event&gt; &lt;event id='10' color='#FF0099' label='Aus Versehen eingepennt'&gt; &lt;/event&gt; &lt;event id='11' color='#006600' label='Sonstiges (gelegentliches Jobben, Minijob, Praktikum, Familientätigkeiten, Reisen, etc.)'&gt; &lt;/event&gt; &lt;/events&gt; &lt;columns&gt; &lt;column title='Januar'&gt; &lt;/column&gt; &lt;column title='Februar'&gt; &lt;/column&gt; &lt;column title='März'&gt; &lt;/column&gt; &lt;column title='April'&gt; &lt;/column&gt; &lt;column title='Mai'&gt; &lt;/column&gt; &lt;column title='Juni'&gt; &lt;/column&gt; &lt;column title='Juli'&gt; &lt;/column&gt; &lt;column title='August'&gt; &lt;/column&gt; &lt;column title='Sept.'&gt; &lt;/column&gt; &lt;column title='Oktober'&gt; &lt;/column&gt; &lt;column title='November'&gt; &lt;/column&gt; &lt;column title='Dezember'&gt; &lt;/column&gt; &lt;/columns&gt; &lt;rows&gt; &lt;row title='2013'&gt; &lt;/row&gt; &lt;row title='2014'&gt; &lt;/row&gt; &lt;row title='2015'&gt; &lt;/row&gt; &lt;row title='2016'&gt; &lt;/row&gt; &lt;row title='2017'&gt; &lt;/row&gt; &lt;row title='2018'&gt; &lt;/row&gt; &lt;/rows&gt; &lt;metas&gt; &lt;/metas&gt; &lt;/config&gt;"
+					visible="true"></display:calendar>
+			</zofar:display>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page15" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page15">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+			<zofar:calendar uid="calendar1" behaviour="move"
+				legendLayout="pageDirection" legendPosition="left" showIndicator="false"
+				showLegendIcon="true" rows="2014,2015,2016,2017"
+				columns="Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember">
+				<zofar:configuration>
+					<zofar:SlotConfiguration slot="Slot1"
+						label="Studium" color="green" pattern="blub" />
+					<zofar:SlotConfiguration slot="Slot2"
+						label="Duales Studium" color="red" pattern="bla" />
+					<zofar:SlotConfiguration slot="Slot3"
+						label="Berufsausbildung/Weiterbildung" color="blue" pattern="blau" />
+					<zofar:SlotConfiguration slot="Slot4"
+						label="Erwerbstätigkeit (kein gelegentliches Jobben, kein Minijob)"
+						color="yellow" pattern="banane" />
+					<zofar:SlotConfiguration slot="Slot5"
+						label="Arbeitslosigkeit" color="grey" pattern="bloed" />
+					<zofar:SlotConfiguration slot="Slot6"
+						label="Sonstiges (gelegentliches Jobben, Minijob,  Praktikum, Familientätigkeiten, Reisen, etc.)"
+						color="brown" pattern="keks" />
+				</zofar:configuration>
+				<zofar:item visible="false">
+					<zofar:SlotItem variable="mo01stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo01dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo01ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo01erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo01arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo01sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="false">
+					<zofar:SlotItem variable="mo02stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo02dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo02ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo02erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo02arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo02sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo03stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo03dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo03ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo03erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo03arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo03sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo04stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo04dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo04ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo04erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo04arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo04sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo05stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo05dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo05ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo05erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo05arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo05sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo06stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo06dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo06ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo06erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo06arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo06sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo07stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo07dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo07ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo07erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo07arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo07sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo08stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo08dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo08ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo08erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo08arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo08sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo09stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo09dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo09ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo09erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo09arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo09sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo10stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo10dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo10ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo10erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo10arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo10sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo11stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo11dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo11ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo11erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo11arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo11sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo12stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo12dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo12ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo12erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo12arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo12sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo13stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo13dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo13ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo13erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo13arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo13sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo14stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo14dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo14ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo14erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo14arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo14sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo15stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo15dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo15ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo15erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo15arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo15sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo16stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo16dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo16ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo16erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo16arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo16sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="false">
+					<zofar:SlotItem variable="mo17stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo17dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo17ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo17erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo17arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo17sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo18stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo18dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo18ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo18erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo18arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo18sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo19stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo19dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo19ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo19erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo19arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo19sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo20stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo20dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo20ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo20erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo20arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo20sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="false">
+					<zofar:SlotItem variable="mo21stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo21dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo21ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo21erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo21arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo21sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo22stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo22dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo22ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo22erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo22arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo22sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo23stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo23dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo23ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo23erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo23arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo23sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo24stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo24dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo24ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo24erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo24arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo24sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo25stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo25dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo25ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo25erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo25arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo25sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo26stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo26dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo26ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo26erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo26arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo26sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo27stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo27dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo27ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo27erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo27arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo27sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo28stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo28dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo28ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo28erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo28arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo28sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo29stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo29dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo29ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo29erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo29arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo29sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo30stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo30dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo30ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo30erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo30arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo30sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo31stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo31dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo31ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo31erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo31arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo31sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo32stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo32dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo32ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo32erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo32arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo32sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo33stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo33dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo33ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo33erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo33arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo33sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo34stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo34dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo34ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo34erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo34arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo34sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo35stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo35dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo35ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo35erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo35arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo35sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo36stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo36dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo36ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo36erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo36arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo36sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo37stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo37dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo37ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo37erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo37arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo37sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo38stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo38dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo38ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo38erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo38arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo38sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo39stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo39dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo39ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo39erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo39arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo39sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo40stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo40dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo40ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo40erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo40arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo40sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo41stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo41dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo41ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo41erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo41arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo41sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo42stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo42dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo42ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo42erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo42arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo42sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo43stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo43dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo43ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo43erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo43arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo43sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo44stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo44dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo44ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo44erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo44arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo44sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo45stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo45dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo45ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo45erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo45arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo45sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo46stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo46dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo46ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo46erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo46arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo46sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo47stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo47dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo47ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo47erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo47arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo47sonst" slot="Slot6" />
+				</zofar:item>
+				<zofar:item visible="true">
+					<zofar:SlotItem variable="mo48stud" slot="Slot1" />
+					<zofar:SlotItem variable="mo48dustud" slot="Slot2" />
+					<zofar:SlotItem variable="mo48ausbil" slot="Slot3" />
+					<zofar:SlotItem variable="mo48erwerb" slot="Slot4" />
+					<zofar:SlotItem variable="mo48arblos" slot="Slot5" />
+					<zofar:SlotItem variable="mo48sonst" slot="Slot6" />
+				</zofar:item>
+			</zofar:calendar>
+		</zofar:body>
+		<zofar:triggers>
+			<zofar:variable variable="calendarData"
+				value="zofar.getEpisodesHTML5(zofar.retrieveElementByID('calendar1'),zofar.explode('Januar,Februar,März,April,Mai,Juni,Juli,August,Sept.,Oktober,November,Dezember',','),zofar.explode('2013,2014,2015,2016,2017',','))"
+				onExit="true"></zofar:variable>
+		</zofar:triggers>
+		<zofar:transitions>
+			<zofar:transition target="page16" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<zofar:page uid="page16">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">
+				Calendar Functions
+			</zofar:title>
+		</zofar:header>
+		<zofar:body uid="body">
+			<zofar:display uid="display1">
+				<display:text uid="text1">
+					decodeEpisodes(calendarData)
+					#{layout.BREAK}
+					#{zofar.decodeEpisodes(calendarData)}
+					#{layout.BREAK}
+				</display:text>
+				<display:text uid="text2">
+					hasEpisodes(decodeEpisodes(calendarData),list(1))
+					#{layout.BREAK}
+					#{zofar.hasEpisodes(zofar.decodeEpisodes(calendarData),zofar.list(1))}
+					#{layout.BREAK}
+				</display:text>
+				<display:text uid="text3">
+					hasEpisodesInRange(decodeEpisodes(calendarData),2,0,12)
+					#{layout.BREAK}
+					#{zofar.hasEpisodesInRange(zofar.decodeEpisodes(calendarData),2,0,12)}
+					#{layout.BREAK}
+				</display:text>
+				<display:text uid="text4">
+					countEpisodesInRange(decodeEpisodes(calendarData),2,0,12)
+					#{layout.BREAK}
+					#{zofar.countEpisodesInRange(zofar.decodeEpisodes(calendarData),2,0,12)}
+					#{layout.BREAK}
+				</display:text>
+			</zofar:display>
+
+		</zofar:body>
+		<zofar:triggers>
+		</zofar:triggers>
+		<zofar:transitions>
+			<zofar:transition target="page17" />
+		</zofar:transitions>
+	</zofar:page>
+	
+	<zofar:page uid="page17">
+		<zofar:header>
+			<zofar:title container="true" uid="t1"> MSC Dropdown
+			</zofar:title>
+			<zofar:introduction uid="intro1">
+			</zofar:introduction>
+		</zofar:header>
+		<zofar:body uid="b">
+
+			<zofar:matrixQuestionSingleChoice uid="msc">
+				<zofar:header>
+					<zofar:question uid="q1">Dies ist ein Fragetext</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain noResponseOptions="1" uid="rd">
+					<zofar:header>
+						<zofar:title uid="t1">title 1</zofar:title>
+					</zofar:header>
+					<zofar:item uid="i1">
+						<zofar:header>
+							<zofar:question uid="qq1">erste Zeile, der Text fällt etwas länger als gewohnt aus: </zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="dd1" uid="rd1" type="dropdown" showValues="false" >
+							<zofar:answerOption uid="ao1" value="1" label="bitte wählen:" />
+							<zofar:answerOption uid="ao2" value="2" label="zweite" />
+							<zofar:answerOption uid="ao3" value="3"  label="dritte"/>
+<!-- 							<zofar:answerOption uid="ao4" value="4"  label="mein Missing" missing="false"/> -->
+<!-- 							<zofar:answerOption uid="ao5" value="5"  label="mein zweiter Missing" missing="false"/> -->
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i2">
+						<zofar:header>
+							<zofar:question uid="qq1">zweite Zeile</zofar:question>
+						</zofar:header>
+						<zofar:responseDomain variable="dd2" uid="rd1" type="dropdown" showValues="false">
+							<zofar:answerOption uid="ao1" value="1" label="bitte wählen:" />
+							<zofar:answerOption uid="ao2" value="2" label="zweite" />
+							<zofar:answerOption uid="ao3" value="3"  label="dritte"/>
+						</zofar:responseDomain>
+					</zofar:item>
+					<zofar:item uid="i3">
+						<zofar:header>
+							<zofar:question uid="qq1">dritte Zeile</zofar:question>
+						</zofar:header> 
+						<zofar:responseDomain variable="dd3" uid="rd1" type="dropdown" showValues="false">
+							<zofar:answerOption uid="ao1" value="1" label="bitte wählen:" />
+							<zofar:answerOption uid="ao2" value="2" label="zweite" />
+							<zofar:answerOption uid="ao3" value="3"  label="dritte"/>
+						</zofar:responseDomain>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixQuestionSingleChoice>
+
+
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page18" />
+		</zofar:transitions>
+	</zofar:page>
+	
+	<zofar:page uid="page18">
+		<zofar:body uid="body">
+			<zofar:section uid="section">
+				<zofar:body uid="b">
+					<zofar:questionOpen variable="page18open1" uid="qopen" size="50" >
+						<zofar:header>
+							<zofar:question uid="que" block="true">
+								Sie haben Ihr Studienfach nicht angegeben. Die Angabe Ihres
+								Studienfachs ist für diese Befragung sehr wichtig. Sollte Ihr
+								Studienfach in der Liste nicht aufgeführt sein, tragen Sie es bitte in
+								dem dafür vorgesehenen Textfeld ein.
+							</zofar:question>
+						</zofar:header>
+						<zofar:prefix>
+							<zofar:label uid="label">
+								anderes Studienfach: 
+							</zofar:label>
+						</zofar:prefix>
+					</zofar:questionOpen>
+					<zofar:multipleChoice uid="mc">
+						<zofar:header></zofar:header>
+						<zofar:responseDomain uid="rd">
+							<zofar:answerOption variable="page18mc1" uid="ao1" label="Ich möchte mein Studienfach nicht angeben."/>
+						</zofar:responseDomain>
+					</zofar:multipleChoice>
+				</zofar:body>
+			</zofar:section>
+		</zofar:body>
+		<zofar:transitions>
+			<zofar:transition target="page19"/>
+		</zofar:transitions>
+	</zofar:page>
+	
+	<zofar:page uid="page19">
+       <zofar:body uid="b">
+             <zofar:matrixQuestionOpen uid="mqo">
+                    <zofar:header>
+                           <zofar:question uid="q1" block="true">
+                           		Nennen Sie bitte Ihre Prüfungsfächer, die wöchentliche Stundenzahl und das Geschlecht der Lehrkraft.
+                           </zofar:question>
+                           <zofar:instruction uid="ins" block="true">
+                           		Beziehen Sie Ihre Angaben bitte auf das Abschlussjahr und verwendn Sie folgende Abkürzungen: m = männlich; w = weiblich.
+                           </zofar:instruction>
+                    </zofar:header>
+                    <zofar:responseDomain noResponseOptions="3" uid="rd">
+                           <zofar:header>
+                                  <zofar:title uid="t1">Prüfungsfächer</zofar:title>
+                                  <zofar:title uid="t2">Stunden #{layout.BREAK}je Woche</zofar:title>
+                           </zofar:header>
+                           <zofar:item uid="i1">
+                                  <zofar:header>
+                                        <zofar:question uid="qi1">1. </zofar:question>
+                                  </zofar:header>
+                                  <zofar:question variable="page19_1" uid="ao1"></zofar:question>
+                                  <zofar:question variable="page19_2" uid="ao2"></zofar:question>
+                           </zofar:item>
+                           <zofar:item uid="i2">
+                                  <zofar:header>
+                                        <zofar:question uid="qi2">2. </zofar:question>
+                                  </zofar:header>
+                                  <zofar:question variable="page19_3" uid="ao1"></zofar:question>
+                                  <zofar:question variable="page19_4" uid="ao2"></zofar:question>
+                           </zofar:item>
+                           <zofar:item uid="i3">
+                                  <zofar:header>
+                                        <zofar:question uid="qi2">3. </zofar:question>
+                                  </zofar:header>
+                                  <zofar:question variable="page19_5" uid="ao1"></zofar:question>
+                                  <zofar:question variable="page19_6" uid="ao2"></zofar:question>
+                           </zofar:item>
+                           <zofar:item uid="i4">
+                                  <zofar:header>
+                                        <zofar:question uid="qi4">4. </zofar:question>
+                                  </zofar:header>
+                                  <zofar:question variable="page19_7" uid="ao1"></zofar:question>
+                                  <zofar:question variable="page19_8" uid="ao2"></zofar:question>
+                           </zofar:item>
+                           <zofar:item uid="i5">
+                                  <zofar:header>
+                                        <zofar:question uid="qi2">5. </zofar:question>
+                                  </zofar:header>
+                                  <zofar:question variable="page19_9" uid="ao1"></zofar:question>
+                                  <zofar:question variable="page19_10" uid="ao2"></zofar:question>
+                           </zofar:item>
+                    </zofar:responseDomain>
+             </zofar:matrixQuestionOpen>
+       </zofar:body>
+       <zofar:transitions>
+             <zofar:transition target="end"/>
+       </zofar:transitions>
+    </zofar:page>
+	
+
+	<zofar:page uid="end">
+		<zofar:header>
+			<zofar:title container="true" uid="t1">
+				To be continued
+			</zofar:title>
+		</zofar:header>
+		<zofar:body uid="body">
+
+		</zofar:body>
+		<zofar:triggers>
+		</zofar:triggers>
+	</zofar:page>
+
+</zofar:questionnaire>

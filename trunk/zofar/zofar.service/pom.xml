@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.his.zofar</groupId>
+    <artifactId>zofar</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>zofar.service</artifactId>
+  <packaging>pom</packaging>
+  
+  <build>
+        <plugins>
+<!--             <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report-unit-testcoverage</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin> -->
+        </plugins>
+    </build>
+
+  <modules>
+      <module>zofar.service.common</module>
+      <!-- <module>zofar.service.question</module> -->
+      <!-- <module>zofar.service.test</module> -->
+      <module>zofar.service.valuetype</module>
+      <!-- <module>zofar.service.survey</module> -->
+      <module>zofar.service.questionnaire</module>
+      <module>zofar.service.surveyEngine</module>
+      
+      <!-- <module>zofar.service.evaluation</module> -->
+  </modules>
+</project>

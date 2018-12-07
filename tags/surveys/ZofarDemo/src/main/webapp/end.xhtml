@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:trigger="http://java.sun.com/jsf/composite/trigger" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:display="http://java.sun.com/jsf/composite/display">
+  <ui:param name="progress" value="100"/>
+  <ui:param name="lastPage" value="true"/>
+  <ui:define name="template-content">
+    <trigger:session timeout="300" navigator="#{navigatorBean}"/>
+    <container:section id="end">
+      <display:container id="end1">
+        <display:text id="ende" block="true">#{msgs['end.body.end1.ende_0']}</display:text>
+      </display:container>
+    </container:section>
+  </ui:define>
+</ui:composition>

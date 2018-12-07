@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j" xml:lang="en" lang="en">
+<h:head>
+</h:head>
+<h:body>
+	<h:form id="form">
+		<rich:tabPanel switchType="client">
+			<rich:tab header="Projekte">
+				<h:selectOneMenu value="#{selectsBean.currentType}"
+					valueChangeListener="#{selectsBean.valueChanged}">
+					<f:selectItems value="#{selectsBean.firstList}" />
+					<a4j:ajax event="valueChange" render="second" execute="@this" />
+				</h:selectOneMenu>
+				<a4j:outputPanel id="second" layout="block">
+					<h:selectOneMenu value="#{selectsBean.currentType}"
+						rendered="#{not empty selectsBean.currentType}">
+						<f:selectItems value="#{selectsBean.secondList}" />
+					</h:selectOneMenu>
+				</a4j:outputPanel>
+			</rich:tab>
+			<rich:tab header="Rücklaufzahlen">
+				<table width="400">
+					<tbody>
+						<tr>
+							<td><span onmouseover="updateName('Kate')"
+								onmouseout="updateName('')">Kate</span></td>
+							<td><span onmouseover="updateName('John')"
+								onmouseout="updateName('')">John</span></td>
+							<td><span onmouseover="updateName('Alex')"
+								onmouseout="updateName('')">Alex</span></td>
+						</tr>
+						<tr>
+							<td colspan="3">Name: <b> <h:outputText id="showname"
+										value="#{selectsBean.test}" />
+							</b></td>
+						</tr>
+					</tbody>
+				</table>
+				<h:form id="forms">
+					<a4j:jsFunction name="updateName" render="showname">
+						<a4j:param name="name" assignTo="#{selectsBean.test}" />
+					</a4j:jsFunction>
+				</h:form>
+
+			</rich:tab>
+			<rich:tab header="Export">
+
+			</rich:tab>
+			<rich:tab header="Statistik">
+
+			</rich:tab>
+			<rich:tab header="Benutzerverwaltung">
+
+			</rich:tab>
+		</rich:tabPanel>
+	</h:form>
+</h:body>
+</html>

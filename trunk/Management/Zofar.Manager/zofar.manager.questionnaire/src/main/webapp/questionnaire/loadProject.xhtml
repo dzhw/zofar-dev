@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Load Questionnaire</title>
+</h:head>
+<h:body bgcolor="white">
+	#{questionnaire.relocate(view.viewId.substring(1, view.viewId.length()-6))}
+	<h:form>
+		<h:dataTable value="#{questionnaireLoader.listProjects()}" var="item">
+			<h:column>
+				<h:outputLabel value="#{item}" />&nbsp;<h:commandButton
+					value="Load Project" type="submit"
+					rendered="#{questionnaireLoader.project != item}"
+					action="#{questionnaireLoader.loadProject(item)}" />
+			</h:column>
+		</h:dataTable>
+		<br />
+		<h:commandButton value="Update Project List" type="submit"
+			action="#{questionnaireLoader.updateProjectList()}" />
+		<br />
+		<h:commandButton value="Back to Module Index" action="module_index" />
+	</h:form>
+</h:body>
+</html>

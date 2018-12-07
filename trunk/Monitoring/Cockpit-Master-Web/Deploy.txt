@@ -1,0 +1,9 @@
+
+http://xxx:8181/Master-Web/register?wsdl
+
+cd /var/lib/tomcat7/webapps
+service tomcat7 stop
+rm Master-Web* -R
+cp xxxx/Master-Web/target/Master-Web.war .
+service tomcat7 start
+tail -f /var/log/tomcat7/catalina.out

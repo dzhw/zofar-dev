@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" targetNamespace="http://www.his.de/export/xml/export"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="export" type="exp:exportType"
+		xmlns:exp="http://www.his.de/export/xml/export" />
+
+	<xs:complexType name="dataType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="variable" use="optional" />
+				<xs:attribute type="xs:string" name="type" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="countingOptionType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="label" />
+				<xs:attribute type="xs:string" name="value" />
+				<xs:attribute type="xs:string" name="count" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="codebookOptionType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="label" />
+				<xs:attribute type="xs:string" name="value" />
+				<xs:attribute type="xs:string" name="uid" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="countingOptionSetType">
+		<xs:choice>
+			<xs:element type="exp:countingOptionType" name="option"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="codebookOptionSetType">
+		<xs:choice>
+			<xs:element type="exp:codebookOptionType" name="option"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="textSetType">
+		<xs:choice>
+			<xs:element type="xs:string" name="item"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="countingItemType">
+		<xs:choice>
+			<xs:element type="exp:countingOptionSetType" name="options"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="unbounded"
+				minOccurs="0" />
+			<xs:element type="exp:textSetType" name="header"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:choice>
+		<xs:attribute type="xs:string" name="variable" />
+		<xs:attribute type="xs:dateTime" name="textSet" />
+	</xs:complexType>
+
+	<xs:complexType name="codebookItemType">
+		<xs:choice>
+			<xs:element type="exp:codebookOptionSetType" name="options"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="unbounded"
+				minOccurs="0" />
+			<xs:element type="exp:textSetType" name="header"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xs:choice>
+		<xs:attribute type="xs:string" name="variable" />
+		<xs:attribute type="xs:dateTime" name="textSet" />
+	</xs:complexType>
+
+	<xs:complexType name="transitionItemType">
+		<xs:attribute type="xs:string" name="condition" />
+		<xs:attribute type="xs:string" name="target" />
+	</xs:complexType>
+
+	<xs:complexType name="countingItemSetType">
+		<xs:choice>
+			<xs:element type="exp:countingItemType" name="question"
+				maxOccurs="unbounded" minOccurs="0"
+				xmlns:exp="http://www.his.de/export/xml/export" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="codebookItemSetType">
+		<xs:choice>
+			<xs:element type="exp:codebookItemType" name="question"
+				maxOccurs="unbounded" minOccurs="0"
+				xmlns:exp="http://www.his.de/export/xml/export" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="transitionSetType">
+		<xs:choice>
+			<xs:element type="exp:transitionItemType" name="transition"
+				maxOccurs="unbounded" minOccurs="0"
+				xmlns:exp="http://www.his.de/export/xml/export" />
+		</xs:choice>
+		<xs:attribute type="xs:string" name="source" />
+	</xs:complexType>
+
+	<xs:complexType name="datasetType">
+		<xs:choice>
+			<xs:element type="exp:dataType" name="data" maxOccurs="unbounded"
+				minOccurs="0" xmlns:exp="http://www.his.de/export/xml/export" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="participantType">
+		<xs:choice>
+			<xs:element type="exp:datasetType" name="dataset"
+				xmlns:exp="http://www.his.de/export/xml/export" />
+		</xs:choice>
+		<xs:attribute type="xs:string" name="id" use="required" />
+		<xs:attribute type="xs:string" name="token" use="optional" />
+	</xs:complexType>
+
+	<xs:complexType name="countingType">
+		<xs:choice>
+			<xs:element type="exp:countingItemSetType" name="questionSet"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="1"
+				minOccurs="0" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="codebookType">
+		<xs:choice>
+			<xs:element type="exp:codebookItemSetType" name="questionSet"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="1"
+				minOccurs="0" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="navigationType">
+		<xs:choice>
+			<xs:element type="exp:transitionSetType" name="transitionSet"
+				xmlns:exp="http://www.his.de/export/xml/export" maxOccurs="1"
+				minOccurs="0" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="exportType">
+		<xs:choice>
+			<xs:element type="exp:participantType" name="participant"
+				maxOccurs="unbounded" minOccurs="0"
+				xmlns:exp="http://www.his.de/export/xml/export" />
+			<xs:element type="exp:countingType" name="counting"
+				maxOccurs="1" minOccurs="0" xmlns:exp="http://www.his.de/export/xml/export" />
+			<xs:element type="exp:codebookType" name="codebook"
+				maxOccurs="1" minOccurs="0" xmlns:exp="http://www.his.de/export/xml/export" />
+			<xs:element type="exp:navigationType" name="navigation"
+				maxOccurs="1" minOccurs="0" xmlns:exp="http://www.his.de/export/xml/export" />
+		</xs:choice>
+		<xs:attribute type="xs:string" name="language" />
+		<xs:attribute type="xs:dateTime" name="date" />
+	</xs:complexType>
+</xs:schema>

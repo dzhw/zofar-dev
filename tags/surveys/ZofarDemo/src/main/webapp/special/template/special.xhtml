@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:zo="http://zofar.org/ui">
+
+<h:head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>Zofar Demo</title>
+	<h:outputStylesheet library="css" name="general.css" />
+</h:head>
+<h:body>
+	<form action="#{target}" method="#{method}">
+		<center>
+			<h:panelGroup layout="block" class="zofar-page">
+				
+				<table class="zo-template-header" width="100%">
+						<tr>
+							<td width="90%">
+								<h:outputLink   value="http://www.dzhw.eu/impressum" target="_blanck" >
+								<h:graphicImage library="images" name="dzhw.jpg" width="130px" url="www.dzhw.eu"/>
+								</h:outputLink>
+							</td>
+							<td width="10%" valign="bottom">
+<!-- 								<zo:progressbar value="#{progress}" />	 -->
+<!-- 								<h:outputLink   value="http://www.hisbus.de" target="_blanck" > -->
+<!-- 								<h:graphicImage library="images" name="Logo_HISBUS.jpg" width="130px" url="http://www.hisbus.de"/> -->
+<!-- 								</h:outputLink> -->
+							</td>
+						</tr>
+					</table>
+
+
+				<h:messages />
+				
+				<div style="width:100%">
+					<hr class="zo-spacer" />
+					</div>
+				
+				<h:panelGroup layout="block" class="zo-template-content"
+					style="text-align:center">
+					<ui:insert name="template-content" />
+				</h:panelGroup>
+
+
+				<div class="zo-template-footer" style="padding-top:10px">
+					<hr class="zo-spacer"/>
+					<h:panelGroup layout="block" class="zo-buttons"
+						style="padding-top:15px;text-align:center">
+						<ui:insert name="template-buttons" />
+					</h:panelGroup>
+					<ui:insert name="template-footer">
+							<!--  	<h:graphicImage library="images" name="his_dzhw_Logo.jpg" style="position:relative;top:-34px" height="40px"/> -->
+							<h:outputLabel name = "Plalzhalter"></h:outputLabel>
+						</ui:insert>
+				</div>
+			</h:panelGroup>
+		</center>
+	</form>
+</h:body>
+</html>

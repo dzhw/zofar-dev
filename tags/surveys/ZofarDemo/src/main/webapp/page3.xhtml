@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:composite="http://java.sun.com/jsf/composite/composite" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:matrix="http://java.sun.com/jsf/composite/matrix" xmlns:answer="http://java.sun.com/jsf/composite/answer">
+  <ui:param name="progress" value="17"/>
+  <ui:define name="template-content">
+    <container:section id="page3">
+      <composite:doubleMatrix id="matrix">
+        <f:facet name="header">
+          <text:question id="q">#{msgs['page3.body.matrix.q_0']}</text:question>
+        </f:facet>
+        <composite:doubleMatrixResponseDomain id="rd" noResponseOptions="5" isShowValues="true" itemClasses="zo-odd zo-even">
+          <f:facet name="leftScaleHeader">
+            <text:text id="ls">#{msgs['page3.body.matrix.rd.ls_0']}</text:text>
+          </f:facet>
+          <f:facet name="rightScaleHeader">
+            <text:text id="rs">#{msgs['page3.body.matrix.rd.rs_0']}</text:text>
+          </f:facet>
+          <f:facet name="leftHeader">
+            <text:text id="lh1">#{msgs['page3.body.matrix.rd.lh1_0']}</text:text>
+            <text:text id="lh2"/>
+            <text:text id="lh3"/>
+            <text:text id="lh4"/>
+            <text:text id="lh5">#{msgs['page3.body.matrix.rd.lh5_0']}</text:text>
+          </f:facet>
+          <f:facet name="rightHeader">
+            <text:text id="rh1">#{msgs['page3.body.matrix.rd.rh1_0']}</text:text>
+            <text:text id="rh2"/>
+            <text:text id="rh3"/>
+            <text:text id="rh4"/>
+            <text:text id="rh5">#{msgs['page3.body.matrix.rd.rh5_0']}</text:text>
+          </f:facet>
+          <f:facet name="leftMissingHeader">
+            <text:text id="lm1">#{msgs['page3.body.matrix.rd.lm1_0']}</text:text>
+          </f:facet>
+          <f:facet name="rightMissingHeader">
+            <text:text id="rm1">#{msgs['page3.body.matrix.rd.rm1_0']}</text:text>
+          </f:facet>
+          <composite:doubleMatrixItem id="i1">
+            <f:facet name="question">
+              <text:question id="q">#{msgs['page3.body.matrix.rd.i1.q_0']}</text:question>
+            </f:facet>
+            <f:facet name="left">
+              <matrix:singleChoiceMatrixItemResponseDomain id="l" value="#{v214.valueId}">
+                <answer:singleOption id="ao1" itemValue="1"/>
+                <answer:singleOption id="ao2" itemValue="2"/>
+                <answer:singleOption id="ao3" itemValue="3"/>
+                <answer:singleOption id="ao4" itemValue="4"/>
+                <answer:singleOption id="ao5" itemValue="5"/>
+                <answer:singleOption id="ao6" itemValue="-999" missing="true"/>
+              </matrix:singleChoiceMatrixItemResponseDomain>
+            </f:facet>
+            <f:facet name="right">
+              <matrix:singleChoiceMatrixItemResponseDomain id="r" value="#{v215.valueId}">
+                <answer:singleOption id="ao1" itemValue="1"/>
+                <answer:singleOption id="ao2" itemValue="2"/>
+                <answer:singleOption id="ao3" itemValue="3"/>
+                <answer:singleOption id="ao4" itemValue="4"/>
+                <answer:singleOption id="ao5" itemValue="5"/>
+                <answer:singleOption id="ao6" itemValue="-999" missing="true"/>
+              </matrix:singleChoiceMatrixItemResponseDomain>
+            </f:facet>
+          </composite:doubleMatrixItem>
+          <composite:doubleMatrixItem id="i3">
+            <f:facet name="question">
+              <text:question id="q">#{msgs['page3.body.matrix.rd.i3.q_0']}</text:question>
+            </f:facet>
+            <f:facet name="left">
+              <matrix:singleChoiceMatrixItemResponseDomain id="l" value="#{v218.valueId}">
+                <answer:singleOption id="ao1" itemValue="1"/>
+                <answer:singleOption id="ao2" itemValue="2"/>
+                <answer:singleOption id="ao3" itemValue="3"/>
+                <answer:singleOption id="ao4" itemValue="4"/>
+                <answer:singleOption id="ao5" itemValue="5"/>
+                <answer:singleOption id="ao6" itemValue="-999" missing="true"/>
+              </matrix:singleChoiceMatrixItemResponseDomain>
+            </f:facet>
+            <f:facet name="right">
+              <matrix:singleChoiceMatrixItemResponseDomain id="r" value="#{v219.valueId}">
+                <answer:singleOption id="ao1" itemValue="1"/>
+                <answer:singleOption id="ao2" itemValue="2"/>
+                <answer:singleOption id="ao3" itemValue="3"/>
+                <answer:singleOption id="ao4" itemValue="4"/>
+                <answer:singleOption id="ao5" itemValue="5"/>
+                <answer:singleOption id="ao6" itemValue="-999" missing="true"/>
+              </matrix:singleChoiceMatrixItemResponseDomain>
+            </f:facet>
+          </composite:doubleMatrixItem>
+          <composite:doubleMatrixItem id="i5">
+            <f:facet name="question">
+              <text:question id="q">#{msgs['page3.body.matrix.rd.i5.q_0']}</text:question>
+            </f:facet>
+            <f:facet name="left">
+              <matrix:singleChoiceMatrixItemResponseDomain id="l" value="#{v222.valueId}">
+                <answer:singleOption id="ao1" itemValue="1"/>
+                <answer:singleOption id="ao2" itemValue="2"/>
+                <answer:singleOption id="ao3" itemValue="3"/>
+                <answer:singleOption id="ao4" itemValue="4"/>
+                <answer:singleOption id="ao5" itemValue="5"/>
+                <answer:singleOption id="ao6" itemValue="-999" missing="true"/>
+              </matrix:singleChoiceMatrixItemResponseDomain>
+            </f:facet>
+            <f:facet name="right">
+              <matrix:singleChoiceMatrixItemResponseDomain id="r" value="#{v223.valueId}">
+                <answer:singleOption id="ao1" itemValue="1"/>
+                <answer:singleOption id="ao2" itemValue="2"/>
+                <answer:singleOption id="ao3" itemValue="3"/>
+                <answer:singleOption id="ao4" itemValue="4"/>
+                <answer:singleOption id="ao5" itemValue="5"/>
+                <answer:singleOption id="ao6" itemValue="-999" missing="true"/>
+              </matrix:singleChoiceMatrixItemResponseDomain>
+            </f:facet>
+          </composite:doubleMatrixItem>
+          <composite:doubleMatrixItem id="i6">
+            <f:facet name="question">
+              <text:question id="q">#{msgs['page3.body.matrix.rd.i6.q_0']}</text:question>
+            </f:facet>
+            <f:facet name="left">
+              <matrix:singleChoiceMatrixItemResponseDomain id="l" value="#{v224.valueId}">
+                <answer:singleOption id="ao1" itemValue="1"/>
+                <answer:singleOption id="ao2" itemValue="2"/>
+                <answer:singleOption id="ao3" itemValue="3"/>
+                <answer:singleOption id="ao4" itemValue="4"/>
+                <answer:singleOption id="ao5" itemValue="5"/>
+                <answer:singleOption id="ao6" itemValue="-999" missing="true"/>
+              </matrix:singleChoiceMatrixItemResponseDomain>
+            </f:facet>
+            <f:facet name="right">
+              <matrix:singleChoiceMatrixItemResponseDomain id="r" value="#{v225.valueId}">
+                <answer:singleOption id="ao1" itemValue="1"/>
+                <answer:singleOption id="ao2" itemValue="2"/>
+                <answer:singleOption id="ao3" itemValue="3"/>
+                <answer:singleOption id="ao4" itemValue="4"/>
+                <answer:singleOption id="ao5" itemValue="5"/>
+                <answer:singleOption id="ao6" itemValue="-999" missing="true"/>
+              </matrix:singleChoiceMatrixItemResponseDomain>
+            </f:facet>
+          </composite:doubleMatrixItem>
+        </composite:doubleMatrixResponseDomain>
+      </composite:doubleMatrix>
+      <container:section id="section">
+        <f:facet name="header">
+          <text:text id="text" block="true">#{msgs['page3.body.section.text_0']}</text:text>
+        </f:facet>
+      </container:section>
+    </container:section>
+  </ui:define>
+</ui:composition>

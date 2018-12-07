@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:pass="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:jsf="http://xmlns.jcp.org/jsf" xmlns:zo="http://zofar.org/ui">
+
+<h:head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!--    	<link rel="apple-touch-icon" href="#{request.contextPath}/resources/html5/images/apple-touch-icon.png"/> -->
+
+	<title>Zofar Demo</title>
+
+	<!-- Set Google Font in master.scss -->
+	<!-- Add Favicon via: http://realfavicongenerator.net/ -->
+	<link
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+		rel="stylesheet" />
+	<h:outputStylesheet library="html5/css" name="normalize.css" />
+	<h:outputStylesheet library="html5/bootstrap/css"
+		name="bootstrap.min.css" />
+	<h:outputStylesheet library="html5/css" name="master.css" />
+	<h:outputStylesheet library="html5/css" name="additional.css" />
+
+	<h:outputScript library="html5/js" name="modernizr-2.8.3.min.js" />
+	<h:outputScript library="html5/js" name="plugins.js" />
+	<h:outputScript library="js" name="zofarEvent.js" />
+
+</h:head>
+<h:body class="custom-#{view.viewId.substring(1, view.viewId.length()-6)}">
+    #{navigatorBean.registerViewID(view.viewId.substring(1, view.viewId.length()-6))}
+    #{sessionController.switchPageLocale(zofar.ifthenelse(zofar.isSet(language,sessionController.participant),language.value,'de'))}
+    <f:view locale="#{sessionController.currentLocale}">
+		<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="logos-outer justify-content-between">
+							<div class="logo">
+								<h:graphicImage library="html5/images" alt="DZHW Logo"
+									title="DZHW Logo" name="dzhw-logo.jpg" class="img-fluid"
+									url="http://www.dzhw.eu/impressum" />
+							</div>
+<!-- 							<div class="logo2"> -->
+<!-- 								<h:graphicImage library="images" alt="Development Logo" -->
+<!-- 									title="Development Logo" name="development1.jpg" class="img-fluid2" /> -->
+<!-- 							</div> -->
+							<div class="logout-icon">
+								<zo:logout-icon id="logout" name="logout" value="Logout" />
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container">
+			<h:form id="form" name="form" class="survey">
+				<zo:default id="defaultActionPanel" name="defaultActionPanel" isLastPage="#{lastPage}" />
+				<div class="survey-outer">
+					<ui:insert name="template-header" />
+					<ui:insert name="template-content" />
+<!-- 					Standard: alle Buttons unten; incl. Logout -->
+<!-- 					<zo:panel id="btPanel" name="btPanel" isLastPage="#{lastPage}" /> -->
+<!-- 					Responsive: Vor und Zurück Buttons unten an den Ränden; Logout-Icon oben rechts -->
+					<zo:panel-responsive id="btPanel" name="btPanel" isLastPage="#{lastPage}" />
+				</div>
+			</h:form>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="">Deutsches Zentrum für Hochschul- und
+					Wissenschaftsforschung GmbH</div>
+			</div>
+		</div>
+	</f:view>
+	<h:outputScript library="html5/js" name="jquery-1.12.0.min.js" />
+	<h:outputScript library="html5/bootstrap/js" name="tether.min.js" />
+	<h:outputScript library="html5/bootstrap/js" name="bootstrap.min.js" />
+	<h:outputScript library="html5/js" name="master.js" />
+	<h:outputScript library="html5/js" name="additional.js" />
+</h:body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:question="http://java.sun.com/jsf/composite/question" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:answer="http://java.sun.com/jsf/composite/answer">
+  <ui:param name="progress" value="58"/>
+  <ui:define name="template-content">
+    <container:section id="page10">
+      <question:multipleChoice id="mcq1">
+        <f:facet name="header">
+          <text:intro id="intro">#{msgs['page10.body.mcq1.intro_0']}</text:intro>
+        </f:facet>
+        <answer:multipleChoiceResponseDomain id="rd2" missingSeparated="true">
+          <answer:multipleOption value="#{varconsentF5.value}" id="aoc" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page10.body.mcq1.rd2.aoc.label']}</text:responseOption>
+            </f:facet>
+          </answer:multipleOption>
+        </answer:multipleChoiceResponseDomain>
+      </question:multipleChoice>
+      <question:multipleChoice id="mC1">
+        <f:facet name="header">
+          <text:question id="que1" block="true">#{msgs['page10.body.mC1.que1_0']}</text:question>
+          <text:instruction id="inst1" block="true">#{msgs['page10.body.mC1.inst1_0']}</text:instruction>
+        </f:facet>
+        <answer:multipleChoiceResponseDomain id="rd1" missingSeparated="true">
+          <answer:multipleOption value="#{o53vfbkkwill.value}" id="ao1" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page10.body.mC1.rd1.ao1.label']}</text:responseOption>
+            </f:facet>
+          </answer:multipleOption>
+          <answer:multipleOption value="#{o53vfbkkwun.value}" id="ao2" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page10.body.mC1.rd1.ao2.label']}</text:responseOption>
+            </f:facet>
+          </answer:multipleOption>
+          <answer:multipleOption value="#{o53vfbkknns.value}" id="ao3" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page10.body.mC1.rd1.ao3.label']}</text:responseOption>
+            </f:facet>
+          </answer:multipleOption>
+          <answer:multipleOption value="#{o53vfbkkmed.value}" id="ao4" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page10.body.mC1.rd1.ao4.label']}</text:responseOption>
+            </f:facet>
+          </answer:multipleOption>
+          <answer:multipleOption value="#{o53vfbkkson.value}" id="ao5" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page10.body.mC1.rd1.ao5.label']}</text:responseOption>
+            </f:facet>
+            <answer:attachedOpenQuestion id="ao6" var="#{o53vfbkksox}" maxlength="76" size="76"/>
+          </answer:multipleOption>
+        </answer:multipleChoiceResponseDomain>
+      </question:multipleChoice>
+      <container:section id="section">
+        <f:facet name="header">
+          <text:text id="text" block="true">#{msgs['page10.body.section.text_0']}</text:text>
+        </f:facet>
+      </container:section>
+    </container:section>
+  </ui:define>
+</ui:composition>

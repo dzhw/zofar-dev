@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
+	version="2.1">
+	<application>
+		<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+	</application>
+
+	<navigation-rule>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>root_index</from-outcome>
+			<to-view-id>/variables/index.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/variables/*</from-view-id>
+		<navigation-case>
+			<from-outcome>sub1_index</from-outcome>
+			<to-view-id>/variables/valuetypes/index.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/variables/valuetypes/*</from-view-id>
+		<navigation-case>
+			<from-outcome>module_index</from-outcome>
+			<to-view-id>/variables/index.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>module_create1</from-outcome>
+			<to-view-id>/variables/valuetypes/createString.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>module_create2</from-outcome>
+			<to-view-id>/variables/valuetypes/createNumber.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>module_create3</from-outcome>
+			<to-view-id>/variables/valuetypes/createBoolean.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>load</from-outcome>
+			<to-view-id>/variables/valuetypes/load.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>save</from-outcome>
+			<if>#{valueType.currentExist()}</if>
+			<to-view-id>/variables/valuetypes/modify.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>save</from-outcome>
+			<if>#{!valueType.currentExist()}</if>
+			<to-view-id>/variables/valuetypes/load.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>modify_pv</from-outcome>
+			<if>#{possibleValue.currentExist()}</if>
+			<to-view-id>/variables/valuetypes/modifyPv.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+</faces-config>

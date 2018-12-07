@@ -1,0 +1,20 @@
+<FindBugsFilter>
+    <Match>
+        <Package name="~eu\.dzhw\.twom\.hiscode\.*" />
+        <Class name="~.*Service" />
+        <Or>
+            <Field name="~.*Dao" />
+            <Field name="~.*Service" />
+        </Or>
+        <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+    </Match>
+    <Match>
+        <Package name="~eu\.dzhw\.twom\.hiscode\.*" />
+        <Class name="~.*ServiceImpl" />
+        <Or>
+            <Field name="~.*Dao" />
+            <Field name="~.*Service" />
+        </Or>
+        <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+    </Match>
+</FindBugsFilter>

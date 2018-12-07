@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:container="http://java.sun.com/jsf/composite/container"
+    xmlns:question="http://java.sun.com/jsf/composite/question"
+    xmlns:answer="http://java.sun.com/jsf/composite/answer"
+    xmlns:text="http://java.sun.com/jsf/composite/text"
+    xmlns:common="http://java.sun.com/jsf/composite/common"
+    xmlns:buttons="http://java.sun.com/jsf/composite/buttons"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <h:outputStylesheet library="css" name="general.css" />
+</h:head>
+<h:body>
+    #{navigatorBean.registerViewID(view.viewId.substring(1, view.viewId.length()-6))}
+    <f:view locale="#{sessionController.currentLocale}">
+        <f:loadBundle basename="de.his.zofar.messages.survey" var="surveyMsgs" />
+        <f:loadBundle
+            basename="#{'de.his.zofar.messages.'.concat(view.viewId.substring(1, view.viewId.length()-6))}"
+            var="msgbundle" />
+        <center>
+            <h:panelGroup layout="block" class="zofar-page">
+                <div class="zofar-page-header">
+                    <ui:insert name="page-header">
+                            <div style="float: right; width: 25%">
+                                <common:progressbar value="#{progress}" />
+                            </div>
+                        <div>
+                            <h:form>
+                                <span> <h:commandLink value="Deutsch"
+                                        action="#{sessionController.switchCurrentLocale('de')}" />
+                                </span>
+                                <span> <h:commandLink value="English"
+                                        action="#{sessionController.switchCurrentLocale('en')}" />
+                                </span>
+                            </h:form>
+                        </div>
+                        <h:outputText value="#{surveyMsgs.header}" />
+                    </ui:insert>
+                </div>
+                <h:form>
+                    <h:messages />
+
+                    <hr class="zofar-spacer" />
+
+                    <h:panelGroup layout="block" class="zofar-page-content">
+                        <ui:insert name="page-content" />
+                    </h:panelGroup>
+
+                    <hr class="zofar-spacer" />
+
+                    <h:panelGroup layout="block" class="zofar-page-buttons">
+                        <ui:insert name="page-buttons">
+                            <buttons:panel
+                                current="#{view.viewId.substring(1, view.viewId.length()-6)}"
+                                isLastPage="#{lastPage}" />
+                        </ui:insert>
+                    </h:panelGroup>
+                </h:form>
+                <div class="zofar-page-footer">
+                    <ui:insert name="page-footer">
+                        <h:outputText value="#{surveyMsgs.footer}" />
+                    </ui:insert>
+                </div>
+            </h:panelGroup>
+        </center>
+    </f:view>
+</h:body>
+</html>

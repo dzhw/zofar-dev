@@ -1,0 +1,48 @@
+<archetype
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0
+        http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+    <id>zofar.survey.archetype</id>
+    <sources />
+    <resources>
+        <!-- src main resources -->
+        <resource>src/main/resources/de/his/zofar/constants/Layout.properties</resource>
+        <resource>src/main/resources/de/his/zofar/constants/Survey.properties</resource>
+        
+        <resource>src/main/resources/hibernate.properties</resource>
+        <resource>src/main/resources/log4j.properties</resource>
+        <resource>src/main/resources/application-context.xml</resource>
+        <resource>src/main/resources/questionnaire.xml</resource>
+        <resource>src/main/resources/system.properties</resource>
+        
+        <resource>src/main/resources/survey/database.properties</resource>
+        <resource>src/main/resources/survey/dzhw_ma_preload.csv</resource>
+        <resource>src/main/resources/survey/labels.csv</resource>
+        <resource>src/main/resources/survey/preload.csv</resource>
+        <resource>src/main/resources/survey/preloads_postgres.sql</resource>
+        <resource>src/main/resources/survey/survey-variable-context.xml</resource>
+        
+        
+        
+        <resource>src/main/resources/display_0.1.xsd</resource>
+        <resource>src/main/resources/navigation_0.1.xsd</resource>
+        <resource>src/main/resources/researchdatacenter_0.1.xsd</resource>
+        <resource>src/main/resources/zofar_questionnaire_0.1.xsd</resource>
+        <!-- webapp -->
+        <resource>src/main/webapp/error/page-not-found.xhtml</resource>
+        <resource>src/main/webapp/error/session-expired.xhtml</resource>
+        <resource>src/main/webapp/template/survey.xhtml</resource>
+        <resource>src/main/webapp/WEB-INF/web.xml</resource>
+        
+        <resource>src/main/webapp/special/login.xhtml</resource>
+        <resource>src/main/webapp/special/template/special.xhtml</resource>
+        <resource>src/main/webapp/special/page-not-found.xhtml</resource>
+        
+        <resource>src/main/webapp/resources/css/general_new.css</resource>
+        <resource>src/main/webapp/resources/images/dzhw.jpg</resource>
+        
+    </resources>
+    <testSources />
+    <testResources />
+</archetype>

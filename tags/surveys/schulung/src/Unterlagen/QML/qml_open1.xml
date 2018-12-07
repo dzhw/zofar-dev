@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+
+	</zofar:preloads>
+	<zofar:variables>
+		<!-- Definition der Variablen -->
+		<zofar:variable name="sc1" type="singleChoiceAnswerOption"></zofar:variable>
+
+		<!-- Variable für offene Angaben -->
+		<zofar:variable name="open1" type="string"></zofar:variable>
+		<zofar:variable name="open1a" type="string"></zofar:variable>
+		<zofar:variable name="open2" type="string"></zofar:variable>
+		<zofar:variable name="open3" type="string"></zofar:variable>
+		<zofar:variable name="open4" type="string"></zofar:variable>
+		<zofar:variable name="open5" type="string"></zofar:variable>
+	</zofar:variables>
+
+	<!-- Startseite -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<!-- Einfache alleinstehende offene Frage -->
+			<zofar:questionOpen size="25" uid="o1" variable="open1">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:prefix>
+					<zofar:label uid="label">Beruf der Mutter:</zofar:label>
+				</zofar:prefix>
+			</zofar:questionOpen>
+
+			<!-- Große alleinstehende offene Frage -->
+			<zofar:questionOpen columns="100" rows="5" uid="o1a" variable="open1a" smallOption="false">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+			</zofar:questionOpen>
+
+			<!-- Einfache offene Frage als Teil eine Einfachnennung -->
+			<zofar:questionSingleChoice uid="SingleChoice1">
+				<zofar:header>
+					<!-- Fragenkopf -->
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:responseDomain variable="sc1" uid="rdc"
+					type="radio" missingSeparated="true">
+					<!-- Antwortcontainer -->
+					<!-- Antwortoption 1 -->
+					<zofar:answerOption uid="ao1" value="Wert1"
+						label="Label1" />
+					<!-- Antwortoption 2 -->
+					<zofar:answerOption uid="ao2" value="Wert2"
+						label="Label2" />
+					<!-- Missingoption 1 -->
+					<zofar:answerOption uid="ao3" value="Missing Wert 1"
+						label="andere" missing="true">
+						<zofar:questionOpen uid="o2" variable="open2">
+							<zofar:prefix>
+								<zofar:label uid="pre">, und zwar</zofar:label>
+							</zofar:prefix>
+							<zofar:postfix>
+								<zofar:label uid="post">Euro pro Monat</zofar:label>
+							</zofar:postfix>
+						</zofar:questionOpen>
+					</zofar:answerOption>
+				</zofar:responseDomain>
+			</zofar:questionSingleChoice>
+
+			<!-- Alleinstehende offene Frage zur Erfassung einer Schulnote -->
+			<zofar:questionOpen uid="o3" variable="open3"
+				type="grade" validationMessage="Dies ist keine gültige Schulnote">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:prefix>
+					<zofar:label uid="label">Note:</zofar:label>
+				</zofar:prefix>
+			</zofar:questionOpen>
+
+			<!-- Alleinstehende offene Frage zur Erfassung einer EMailadresse -->
+			<zofar:questionOpen uid="o4" variable="open4"
+				type="mail" validationMessage="Dies ist keine Email-Adresse">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:prefix>
+					<zofar:label uid="label">Mail:</zofar:label>
+				</zofar:prefix>
+			</zofar:questionOpen>
+
+
+			<!-- Alleinstehende offene Frage zur Erfassung einer Zahl zwischen 1 und 
+				100 -->
+			<zofar:questionOpen uid="o5" variable="open5"
+				type="number" validationMessage="Bitte geben Sie eine Zahl zwischen 1 und 100 ein"
+				minValue="1" maxValue="100">
+				<zofar:header>
+					<zofar:question uid="question1">Fragetext</zofar:question>
+					<zofar:instruction uid="instruction1">Ausfüllanweisung
+					</zofar:instruction>
+					<zofar:introduction uid="introduction1">Einleitung
+					</zofar:introduction>
+				</zofar:header>
+				<zofar:prefix>
+					<zofar:label uid="label">Zahl:</zofar:label>
+				</zofar:prefix>
+			</zofar:questionOpen>
+
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="end" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

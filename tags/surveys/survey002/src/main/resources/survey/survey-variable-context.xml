@@ -1,0 +1,2318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd"
+    default-autowire="byName">
+
+    <bean name="v1"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v1" />
+        <property name="localizedLabels">
+            <map key-type="java.lang.Boolean">
+                <entry key="true">
+                    <map>
+                        <entry key="de" value="ja" />
+                        <entry key="en" value="yes" />
+                    </map>
+                </entry>
+                <entry key="false">
+                    <map>
+                        <entry key="de" value="nein" />
+                        <entry key="en" value="no" />
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean name="v2"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v2" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="missing1" value="-97" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1">
+                    <map>
+                        <entry key="de" value="gut" />
+                        <entry key="en" value="good" />
+                    </map>
+                </entry>
+                <entry key="antwort2">
+                    <map>
+                        <entry key="de" value="schlecht" />
+                        <entry key="en" value="bad" />
+                    </map>
+                </entry>
+                <entry key="missing1">
+                    <map>
+                        <entry key="de" value="weiss nicht" />
+                        <entry key="en" value="don't know" />
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v3"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v3" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="missing1" value="-97" />
+            </map>
+        </property>
+       <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1">
+                    <map>
+                        <entry key="de" value="gut" />
+                        <entry key="en" value="good" />
+                    </map>
+                </entry>
+                <entry key="antwort2">
+                    <map>
+                        <entry key="de" value="schlecht" />
+                        <entry key="en" value="bad" />
+                    </map>
+                </entry>
+                <entry key="missing1">
+                    <map>
+                        <entry key="de" value="weiss nicht" />
+                        <entry key="en" value="don't know" />
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v4"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v4" />
+    </bean>
+    <bean name="v5"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v5" />
+    </bean>
+    <bean name="v6"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v6" />
+    </bean>
+    <bean name="v7"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v7" />
+    </bean>
+    <bean name="v8" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v8" />
+    </bean>
+    <bean name="v9" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v9" />
+    </bean>
+    <bean name="v10"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v10" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v11"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v11" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v12"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v12" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v13"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v13" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v14"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v14" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v15"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v15" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v16"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v16" />
+    </bean>
+    <bean name="v17"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v17" />
+    </bean>
+    <bean name="v18"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v18" />
+    </bean>
+    <bean name="v19"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v19" />
+    </bean>
+    <bean name="v20"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v20" />
+    </bean>
+    <bean name="v21"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v21" />
+    </bean>
+    <bean name="v22"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v22" />
+    </bean>
+    <bean name="v23"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v23" />
+    </bean>
+    <bean name="v24"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v24" />
+    </bean>
+    <bean name="v25"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v25" />
+    </bean>
+    <bean name="v26"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v26" />
+    </bean>
+    <bean name="v27"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v27" />
+    </bean>
+    <bean name="v28"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v28" />
+    </bean>
+    <bean name="v29"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v29" />
+    </bean>
+    <bean name="v30"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v30" />
+    </bean>
+    <bean name="v31"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v31" />
+    </bean>
+    <bean name="v32"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v32" />
+    </bean>
+    <bean name="v33"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v33" />
+    </bean>
+    <bean name="v34"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v34" />
+    </bean>
+    <bean name="v35"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v35" />
+    </bean>
+    <bean name="v36"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v36" />
+    </bean>
+    <bean name="v37"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v37" />
+    </bean>
+    <bean name="v38"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v38" />
+    </bean>
+    <bean name="v39"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v39" />
+    </bean>
+    <bean name="v40"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v40" />
+    </bean>
+    <bean name="v41"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v41" />
+    </bean>
+    <bean name="v42"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v42" />
+    </bean>
+    <bean name="v43"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v43" />
+    </bean>
+    <bean name="v44"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v44" />
+    </bean>
+    <bean name="v45"
+        class="de.his.zofar.presentation.surveyengine.BooleanValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v45" />
+    </bean>
+    <bean name="v46" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v46" />
+    </bean>
+    <bean name="v47" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v47" />
+    </bean>
+    <bean name="v48" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v48" />
+    </bean>
+    <bean name="v49" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v49" />
+    </bean>
+    <bean name="v50" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v50" />
+    </bean>
+    <bean name="v51" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v51" />
+    </bean>
+    <bean name="v52"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v52" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v53"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v53" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v54"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v54" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v55"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v55" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v56"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v56" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v57"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v57" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v58"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v58" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v59"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v59" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v60"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v60" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v61"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v61" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v62"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v62" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v63"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v63" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v64"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v64" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v65"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v65" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v66"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v66" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v67"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v67" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v68"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v68" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v69"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v69" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v70"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v70" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v71"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v71" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v72"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v72" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v73"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v73" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v74"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v74" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v75"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v75" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v76"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v76" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v77"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v77" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v78"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v78" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v79"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v79" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v80"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v80" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v81"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v81" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean name="v82" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v82" />
+    </bean>
+    
+    <bean name="v83" class="de.his.zofar.presentation.surveyengine.StringValueTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v83" />
+    </bean>
+    
+    <bean name="v84"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v84" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    
+    <bean name="v85"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v85" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    
+    <bean name="v86"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v86" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    
+    <bean name="v87"
+        class="de.his.zofar.presentation.surveyengine.SingleChoiceAnswerOptionTypeBean"
+        scope="request">
+        <constructor-arg ref="sessionController" />
+        <constructor-arg value="v87" />
+        <property name="optionValues">
+            <map>
+                <entry key="antwort1" value="0" />
+                <entry key="antwort2" value="1" />
+                <entry key="antwort3" value="2" />
+                <entry key="antwort4" value="3" />
+                <entry key="antwort5" value="4" />
+            </map>
+        </property>
+        <property name="optionLocalizedLabels">
+            <map>
+                <entry key="antwort1" >
+                    <map>
+                        <entry key="de" value="sehr gut"/>
+                        <entry key="en" value="very good"/>
+                    </map>
+                </entry>
+                <entry key="antwort2" >
+                    <map>
+                        <entry key="de" value="gut"/>
+                        <entry key="en" value="good"/>
+                    </map>
+                </entry>
+                <entry key="antwort3" >
+                    <map>
+                        <entry key="de" value="geht so"/>
+                        <entry key="en" value="ok"/>
+                    </map>
+                </entry>
+                <entry key="antwort4" >
+                    <map>
+                        <entry key="de" value="schlecht"/>
+                        <entry key="en" value="bad"/>
+                    </map>
+                </entry>
+                <entry key="antwort5" >
+                    <map>
+                        <entry key="de" value="sehr schlecht"/>
+                        <entry key="en" value="very bad"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <!-- session controller -->
+    <bean name="sessionController" scope="session"
+        class="de.his.zofar.presentation.surveyengine.controller.SessionController" />
+
+</beans>

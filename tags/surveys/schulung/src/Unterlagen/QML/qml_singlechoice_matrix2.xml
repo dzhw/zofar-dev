@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zofar:questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:zofar="http://www.his.de/zofar/xml/questionnaire" xmlns:nav="http://www.dzhw.eu/zofar/xml/navigation"
+	xmlns:display="http://www.dzhw.eu/zofar/xml/display" language="de">
+	<zofar:name>Name der Befragung</zofar:name>
+	<zofar:description>Beschreibung der Befragung</zofar:description>
+	<zofar:preloads>
+		<!-- Definition der Teilnehmer -->
+		<zofar:preload password="part1" name="part1"></zofar:preload>
+
+	</zofar:preloads>
+	<zofar:variables>
+		<!-- Variablen für Einfachnennung MatrixItems -->
+		<zofar:variable name="sc1" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc2" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc3" type="singleChoiceAnswerOption"></zofar:variable>
+		<zofar:variable name="sc4" type="singleChoiceAnswerOption"></zofar:variable>
+	</zofar:variables>
+
+	<!-- Startseite -->
+	<zofar:page uid="index">
+		<zofar:header>
+			<!-- Bereich des Seitenkopfes -->
+		</zofar:header>
+		<zofar:body uid="body">
+			<!-- MixMatrix Einfachnennung DropDown -->
+			<zofar:matrixQuestionMixed uid="mmx1">
+				<!-- Fragenkopf -->
+				<zofar:header>
+					<zofar:question uid="q">Wann haben Sie Ihre Promotion
+						begonnen und beendet?
+					</zofar:question>
+				</zofar:header>
+				<zofar:responseDomain noResponseOptions="2"
+					uid="rd" itemClasses="true">
+					<!-- Spaltenüberschriften der normalen Antwortoptionen -->
+					<zofar:header>
+						<zofar:title uid="t1">Monat</zofar:title>
+						<zofar:title uid="t2">Jahr</zofar:title>
+					</zofar:header>
+					<zofar:item uid="item1">
+					<!-- Fragetext erstes Item -->
+						<zofar:header>
+							<zofar:title uid="t1">Beginn:</zofar:title>
+						</zofar:header>
+						<zofar:body uid="b1">
+							<zofar:questionSingleChoice uid="sc1">
+								<zofar:header>
+								</zofar:header>
+								<zofar:responseDomain variable="sc1" uid="rd1"
+									itemClasses="true" type="dropdown">
+									<zofar:answerOption uid="ao0" value="0"
+										label="bitte auswählen:" />
+									<zofar:answerOption uid="ao1" value="1"
+										label="01" />
+									<zofar:answerOption uid="ao2" value="2"
+										label="02" />
+									<zofar:answerOption uid="ao3" value="3"
+										label="03" />
+								</zofar:responseDomain>
+							</zofar:questionSingleChoice>
+							<zofar:questionSingleChoice uid="sc2">
+								<zofar:header>
+								</zofar:header>
+								<zofar:responseDomain variable="sc2" uid="rd2"
+									itemClasses="true" type="dropdown">
+									<zofar:answerOption uid="ao0" value="0"
+										label="bitte auswählen:" />
+									<zofar:answerOption uid="ao1" value="1"
+										label="2008" />
+									<zofar:answerOption uid="ao2" value="2"
+										label="2009" />
+									<zofar:answerOption uid="ao3" value="3"
+										label="2010" />
+								</zofar:responseDomain>
+							</zofar:questionSingleChoice>
+						</zofar:body>
+					</zofar:item>
+					<zofar:item uid="item2">
+						<zofar:header>
+							<zofar:title uid="t2">Ende:</zofar:title>
+						</zofar:header>
+						<zofar:body uid="b1">
+							<zofar:questionSingleChoice uid="sc1">
+								<zofar:header>
+								</zofar:header>
+								<zofar:responseDomain variable="sc3" uid="rd1"
+									itemClasses="true" type="dropdown">
+									<zofar:answerOption uid="ao0" value="0"
+										label="bitte auswählen:" />
+									<zofar:answerOption uid="ao1" value="1"
+										label="01" />
+									<zofar:answerOption uid="ao2" value="2"
+										label="02" />
+									<zofar:answerOption uid="ao3" value="3"
+										label="03" />
+								</zofar:responseDomain>
+							</zofar:questionSingleChoice>
+							<zofar:questionSingleChoice uid="sc2">
+								<zofar:header>
+								</zofar:header>
+								<zofar:responseDomain variable="sc4" uid="rd1"
+									itemClasses="true" type="dropdown">
+									<zofar:answerOption uid="ao0" value="0"
+										label="bitte auswählen:" />
+									<zofar:answerOption uid="ao1" value="1"
+										label="2008" />
+									<zofar:answerOption uid="ao2" value="2"
+										label="2009" />
+									<zofar:answerOption uid="ao3" value="3"
+										label="2010" />
+								</zofar:responseDomain>
+							</zofar:questionSingleChoice>
+						</zofar:body>
+					</zofar:item>
+				</zofar:responseDomain>
+			</zofar:matrixQuestionMixed>
+		</zofar:body>
+		<zofar:transitions>
+			<!-- Definition der Seitennavigation -->
+			<zofar:transition target="end" />
+		</zofar:transitions>
+	</zofar:page>
+
+	<!-- Endseite -->
+	<zofar:page uid="end">
+		<zofar:header></zofar:header>
+		<zofar:body uid="body"></zofar:body>
+	</zofar:page>
+</zofar:questionnaire>

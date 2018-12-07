@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:common="http://java.sun.com/jsf/composite/common">
+  <ui:param name="progress" value="100"/>
+  <ui:param name="lastPage" value="true"/>
+  <ui:define name="template-content">
+    <container:section id="end">
+      <container:section id="s">
+        <f:facet name="header">
+          <text:title id="q" block="true">#{msgs['end.b.s.q_0']}</text:title>
+        </f:facet>
+      </container:section>
+    </container:section>
+  </ui:define>
+  <ui:define name="template-left-navigation">
+    <common:jumperContainer separator="side"/>
+  </ui:define>
+  <ui:define name="template-top-navigation">
+    <common:jumperContainer separator="top"/>
+  </ui:define>
+</ui:composition>

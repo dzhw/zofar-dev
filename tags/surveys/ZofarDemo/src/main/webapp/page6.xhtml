@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/survey.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:container="http://java.sun.com/jsf/composite/container" xmlns:question="http://java.sun.com/jsf/composite/question" xmlns:f="http://java.sun.com/jsf/core" xmlns:text="http://java.sun.com/jsf/composite/text" xmlns:answer="http://java.sun.com/jsf/composite/answer">
+  <ui:param name="progress" value="35"/>
+  <ui:define name="template-content">
+    <container:section id="page6">
+      <question:singleChoice id="sc2">
+        <f:facet name="header">
+          <text:question id="q2">#{msgs['page6.b.sc2.q2_0']}</text:question>
+        </f:facet>
+        <answer:radioButtonSingleChoiceResponseDomain direction="horizontal" labelPosition="right" value="#{stwirteig.valueId}" var="#{stwirteig}" id="rd2" showValues="false" missingSeparated="true">
+          <answer:singleOption itemValue="1" id="ao1" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page6.b.sc2.rd2.ao1.label']}</text:responseOption>
+            </f:facet>
+          </answer:singleOption>
+          <answer:singleOption itemValue="2" id="ao2" missing="false"/>
+          <answer:singleOption itemValue="3" id="ao3" missing="false"/>
+          <answer:singleOption itemValue="4" id="ao4" missing="false"/>
+          <answer:singleOption itemValue="5" id="ao5" missing="false">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page6.b.sc2.rd2.ao5.label']}</text:responseOption>
+            </f:facet>
+          </answer:singleOption>
+          <answer:singleOption itemValue="-12" id="ao6" missing="true">
+            <f:facet name="labels">
+              <text:responseOption id="label">#{msgs['page6.b.sc2.rd2.ao6.label']}</text:responseOption>
+            </f:facet>
+          </answer:singleOption>
+        </answer:radioButtonSingleChoiceResponseDomain>
+      </question:singleChoice>
+      <container:section id="section">
+        <f:facet name="header">
+          <text:text id="text" block="true">#{msgs['page6.b.section.text_0']}</text:text>
+        </f:facet>
+      </container:section>
+    </container:section>
+  </ui:define>
+</ui:composition>

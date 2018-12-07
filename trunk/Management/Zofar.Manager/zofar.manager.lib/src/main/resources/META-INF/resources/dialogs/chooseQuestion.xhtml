@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:composite="http://java.sun.com/jsf/composite">
+
+<composite:interface>
+	<composite:attribute name="uid" required="true" type="java.lang.String" />
+	<composite:attribute name="popuplabel" default="Load Question"
+		type="java.lang.String" />
+	<composite:attribute name="update" default="" type="java.lang.String" />
+	<composite:attribute name="loader" required="true"
+		method-signature="void f(javax.faces.event.ActionEvent)" />
+</composite:interface>
+
+<composite:implementation>
+	<rich:popupPanel id="#{cc.attrs.uid}" modal="true" resizeable="true"
+		onmaskclick="#{rich:component(cc.attrs.uid)}.hide()">
+		<f:facet name="header">
+			<h:outputText value="#{cc.attrs.popuplabel}" />
+		</f:facet>
+		<f:facet name="controls">
+			<h:outputLink value="#"
+				onclick="#{rich:component(cc.attrs.uid)}.hide(); return false;">X
+            			</h:outputLink>
+		</f:facet>
+		<h:form ajaxSubmit="true">
+			<h:outputText value="Not implemented yet" />
+		</h:form>
+	</rich:popupPanel>
+</composite:implementation>
+
+</html>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template/special.xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<ui:param name="userpassHandler"
+		value="#{facesContext.externalContext.requestContextPath}/j_spring_security_check" />
+	<ui:param name="tokenHandler"
+		value="#{facesContext.externalContext.requestContextPath}/special/login.html" />
+	<ui:param name="method"
+		value="#{(loginController.loginMode() == 'TOKEN' || loginController.loginMode() == 'ANONYM') ? 'GET' : 'POST'}" />
+	<ui:param name="target"
+		value="#{(loginController.loginMode() == 'TOKEN' || loginController.loginMode() == 'ANONYM') ? tokenHandler : userpassHandler}" />
+
+	<ui:define name="template-content">
+		<ui:fragment rendered="#{loginController.loginMode() == 'TOKEN'}">
+			<ui:fragment
+				rendered="#{(not empty param['zofar_token']) and (empty param['message'])}">
+				#{loginController.directLogin(param['zofar_token'])}
+			</ui:fragment>
+		</ui:fragment>
+
+		<ui:fragment rendered="#{loginController.loginMode() == 'ANONYM'}">
+			<ui:fragment
+				rendered="#{(not empty param['zofar_captcha_validated']) and (empty param['message'])}">
+				#{loginController.anonymLogin(param['zofar_captcha_validated'],'huschelpuschel')}
+			</ui:fragment>
+		</ui:fragment>
+
+		<ui:fragment rendered="#{param['message']=='SessionExpired'}">
+<!-- 			Session ist abgelaufen -->
+		</ui:fragment>
+		<ui:fragment rendered="#{param['message']=='LoggedOut'}">
+<!-- 			Ausgeloggt -->
+		</ui:fragment>
+		<ui:fragment rendered="#{param['message']=='AuthentificationFailed'}">
+<!-- 			Login fehlgeschlagen -->
+		</ui:fragment>
+
+		<p></p>
+
+		<ui:fragment rendered="#{loginController.loginMode() == 'TOKEN'}">
+			<div class="form_line">
+				<div class="line_label">
+					<h:outputLabel value="Token: " for="zofar_token" />
+
+					<input type="text" name="zofar_token" tabindex="1"
+						value="#{param['zofar_token']}" size="20" checked="checked" />
+				</div>
+			</div>
+		</ui:fragment>
+
+		<ui:fragment rendered="#{loginController.loginMode() == 'ANONYM'}">
+			<div class="form_line">
+				<br />
+				<h:graphicImage library="images" name="zofar193x60.png"
+					width="147px" url="" />
+				<br /> <br /> <span
+					style="color: #396FA6; font-weight: bold; font-size: 170%; margin-top: 20px; margin-bottom: 25px; text-align: center;">
+
+					<br />Das Onlinebefragungssystem Zofar <br />
+					<br /> <br />
+				</span> <span
+					style="display: block; text-align: center; font-size: medium; margin-right: 15%; margin-left: 15%">
+					Zwischen 2009 und 2015 wurde am Deutschen Zentrum für Hochschul- und Wissenschaftsforschung GmbH
+
+(DZHW) das Onlinebefragungssystem Zofar entwickelt. Es handelt sich um eine auf die spezifischen Bedürfnisse sozialwissenschaftlicher Forschung zugeschnittene Java-Enterprise-Anwendung, die wir unter einer Open Source Lizenz (AGPL V3+) betreiben. Zofar unterstützt etliche Standardfragetypen (darunter sowohl offene Fragen als auch Einfach- und Mehrfachauswahlen, verschiedene Auswahlmatrizen, semantische Differenziale sowie Hybride daraus) und ist darüber hinaus in der Lage, neue Fragetypen abzubilden, wie die benutzerfreundliche Erfassung langjähriger Biographien auf Monatsebene oder die Erhebung komplexer Daten mittels mehrerer verbundener Fragen auf einer Formularseite. Es bietet Ihnen nicht zuletzt eine Reihe von Möglichkeiten der inhaltlichen und visuellen Gestaltung von Onlinebefragungen (bpsw. verschiedene Login-Verfahren, optionale Anzeige der Befragungslänge, Integration von Corporate Designs, Einbindung von Fremdsprachen, Umsetzung von komplexen Filterführungen).  <br />
+				<br />
+				<br />Bitte verschaffen Sie sich einen eigenen Eindruck vom Befragungssystem <br />
+				und starten Sie Zofar mit einem Klick auf den unten stehenden Button.<br />
+				<br />
+				</span> 
+				
+				<input type="submit" value="Hier starten" tabindex="3"
+					style="text-align: center;" class="zo-button_login" />
+				<br />
+				<br /> <br />
+				<div class="line_label">
+					<input type="hidden" id="zofar_captcha_validated"
+						name="zofar_captcha_validated"
+						value="#{anonymousCreator.generateCaptchaId()}" tabindex="1"
+						size="20" checked="checked" />
+				</div>
+			</div>
+		</ui:fragment>
+
+		<ui:fragment
+			rendered="#{loginController.loginMode() != 'TOKEN' and loginController.loginMode() != 'ANONYM'}">
+			<div class="form_line">
+				<div class="line_label">
+					<h:outputLabel value="Username:" for="j_username" />
+					<input type="text" id="j_username" name="j_username" tabindex="1"
+						size="20" checked="checked" />
+				</div>
+			</div>
+
+			<div class="form_line">
+				<div class="line_label">
+					<br></br>
+					<h:outputLabel value="Password: " for="j_password" />
+					<input type="password" id="j_password" name="j_password" size="20"
+						tabindex="2" />
+				</div>
+			</div>
+		</ui:fragment>
+	</ui:define>
+</ui:composition>
